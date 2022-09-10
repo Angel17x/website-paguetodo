@@ -1,0 +1,243 @@
+
+<navbar [className]="'other'"></navbar>
+
+
+
+<section>
+  <div class="container-fluid bg-gradient">
+    <div class="row d-flex align-items-stretch justify-content-center align-content-lg-stretch">
+      <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch justify-content-center align-content-stretch">
+        <div class="card card-shadow d-flex flex-column align-items-center justify-content-center p-4 text-center m-1 w-100 h-100">
+          <span class="icon-3-rem text-blue-dark"><i class="fas fa-map-marker-alt"></i></span>
+          <h5 class="h5 text-bold">NUESTRA OFICINA</h5>
+          <p class="text text-muted">Av. Luis Roche con 3ra transversal de Altamira, Municipio Chacao, Torre Nuevo Mundo piso 7, Caracas, Venezuela.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch justify-content-center align-content-stretch">
+        <div class="card card-shadow d-flex flex-column align-items-center justify-content-center p-4 text-center m-1 w-100 h-100">
+          <span class="icon-3-rem text-blue-dark"><i class="fas fa-phone"></i></span>
+          <h5 class="h5 text-bold">NÚMERO DE TELÉFONO</h5>
+          <a href="tel:+5802122773400" class="text-decoration-none text-muted text mt-2">+58 (0212) 2773400</a>
+          <a href="https://wa.me/+5804241509043?text=Hola%20solicito%20información" target="_blank" class="text-decoration-none text-muted text">+58 (0424) 1509043</a>
+          <a href="https://wa.me/+5804241509084?text=Hola%20solicito%20información" target="_blank" class="text-decoration-none text-muted text">+58 (0424) 1509084</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch justify-content-center align-content-stretch">
+        <div class="card card-shadow d-flex flex-column align-items-center justify-content-center p-4 text-center m-1 w-100 h-100">
+          <span class="icon-3-rem text-blue-dark"><i class="fas fa-envelope"></i></span>
+          <h5 class="h5 text-bold">CORREO</h5>
+          <a class="text text-muted">operaciones@paguetodo.com</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch justify-content-center align-content-stretch">
+        <div class="card card-shadow d-flex flex-column align-items-center justify-content-center p-4 text-center m-1 w-100 h-100">
+          <a href="https://wa.me/+584241509043?text=Hola%20solicito%20información" target="_blank">
+            <span class="icon-3-rem text-blue-dark"><i class="fa-brands fa-whatsapp"></i></span>
+            <h5 class="h5 text-bold text-blue-dark">CHATEA CON NOSOTROS</h5>
+            <p class="text text-blue-dark">+58 (0424) 1509043</p>
+          </a>
+        </div>
+      </div>
+    </div>
+      <form>
+          <div class="row d-flex justify-content-center align-items-center text-nav p-2">
+              <div class="col-12 col-md-6 col-lg-6 mt-5">
+                <div class="row d-flex justify-content-center text-nav">
+                  <div class="col-4 col-md-3 col-lg-3">
+                    <div class="input-group mb-3">
+                      <label for="typeRif" class="text form-label text-bold text-white">Tipo</label>
+                      <select id="typeRif" name="typeRif" [(ngModel)]="typeRif" class="pt-3 w-100 input-group-text text-start bg-transparent text-white warning">
+                        <option class="text-muted" value="V" selected>V</option>
+                        <option class="text-muted" value="J">J</option>
+                        <option class="text-muted" value="E">E</option>
+                        <option class="text-muted" value="P">P</option>
+                        <option class="text-muted" value="G">G</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-8 col-md-9 col-lg-9">
+                    <div class="input-group mb-3">
+                      <label for="rif" class="text form-label text-bold text-white">Número de RIF/CI</label>
+                      <input maxlength="9" class="text-white pt-3 w-100 input-group-text text-start bg-transparent tlf warning form-control" (paste)="false" required [(ngModel)]="rif" (keyup)="keypressValidateInput($event.target, null, 3, 'rif', $event)" (keypress)="keypressNumber($event)"  name="rif" id="rif" placeholder="Ingrese su número de rif"  type="text"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
+                      <div id="phoneFeedback" class="invalid-feedback warning">
+                        Ingrese un número de rif válido
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3 col-sm-12 col-md-6 col-lg-6 text-start form-group">
+                    <label for="name" class="text form-label text-bold text-white" >Nombre y apellido</label>
+                    <input required type="text" class="text form-control p-3 bg-transparent text-white warning" id="name" placeholder="Ingrese su nombre y apellido" [(ngModel)]="name" name="name" maxlength="40" (keyup)="keypressValidateInput($event.target, 'string', 4, null)" (keypress)="keypressValidateInput($event.target, 'string', 4, null)">
+                    <div id="nameFeedback" class="invalid-feedback warning">
+                      Ingrese un nombre y apellido válido
+                    </div>
+                  </div>
+                <div class="mb-3 col-sm-12 col-md-6 col-lg-6 text-start form-group" >
+                  <label for="email" class="text form-label text-bold text-white">Correo</label>
+                  <input  required type="email" class="text form-control p-3 bg-transparent text-white warning" id="email" aria-describedby="emailHelp" name="email" placeholder="ingrese su correo electrónico" [(ngModel)]="email" maxlength="40" (keyup)="keypressValidateInput($event.target, 'string', 4, 'email')" (keypress)="keypressValidateInput($event.target, 'string', 4, 'email')">
+                  <div id="emailFeedback" class="invalid-feedback warning">
+                    Ingrese un correo electrónico válido
+                  </div>
+                </div>
+                <div class="col-4 col-md-3 col-lg-3">
+                  <div class="input-group mb-3">
+                    <label for="typePhone" class="text form-label text-bold text-white">Operadora</label>
+                    <select id="typePhone" name="typePhone" [(ngModel)]="typePhone" class="pt-3 w-100 input-group-text text-start bg-transparent text-white warning">
+                      <option class="text-muted" value="414" selected>414</option>
+                      <option class="text-muted" value="424">424</option>
+                      <option class="text-muted" value="412">412</option>
+                      <option class="text-muted" value="416">416</option>
+                      <option class="text-muted" value="426">426</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-8 col-md-9 col-lg-9">
+                  <div class="input-group mb-3">
+                    <label for="phone" class="text form-label text-bold text-white">Número de teléfono</label>
+                    <input maxlength="7" class="text-white pt-3 w-100 input-group-text text-start bg-transparent tlf warning form-control"  required [(ngModel)]="phone" (keyup)="keypressValidateInput($event.target, 'string', 6, 'phone')" (keypress)="keypressValidateInput($event.target, 'string', 6, null)"  name="phone" id="phone" placeholder="Ingrese su número de teléfono"  type="text"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
+                    <div id="phoneFeedback" class="invalid-feedback warning">
+                      Ingrese un número de teléfono válido
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-3 col-sm-12 col-md-12 col-lg-12 text-start form-group" >
+                  <label for="typeArea" class="text form-label text-bold text-white">Área del servicio</label>
+                  <select (change)="changeArea($event.target)" id="typeArea" name="typeArea" class="text form-select bg-transparent p-3 text-white warning" aria-label="Default select example" [(ngModel)]="typeArea">
+                      <option class="text text-muted" [value]="item?.value" *ngFor="let item of listArea">{{item?.name}}</option>
+                  </select>
+                  <div id="typeAreaFeedback" class="invalid-feedback warning">
+                      Seleccione un área de servicio 
+                  </div>
+              </div>
+                <div class="mb-3 col-sm-12 col-md-12 col-lg-12 text-start form-group" *ngIf="typeArea!=null || typeArea!='null'">
+                  <label for="typeRequest" class="text form-label text-bold text-white">Tipo de solicitud</label>
+                  <select (change)="changeRequest($event.target)" id="typeRequest" name="typeRequest" class="text form-select bg-transparent p-3 text-white warning" aria-label="Default select example" [(ngModel)]="typeRequest">
+                      <option class="text text-muted" [value]="item?.value" *ngFor="let item of listRequest">{{item?.name}}</option>
+                  </select>
+                  <div id="typeRequestFeedback" class="invalid-feedback warning">
+                      Seleccione un tipo de solicitud a realizar
+                  </div>
+              </div>
+              <div class="mb-3 col-sm-12 col-md-12 col-lg-12 text-start form-group" *ngIf="typeRequest!=null && listSelected.length!=0">
+                <label for="asunto" style="text-transform:capitalize;" class="text form-label text-bold text-white">{{translate2(typeRequest)}}</label>
+                <select (change)="changeInputSelect($event.target)" id="asunto" name="asunto" class="text form-select bg-transparent p-3 text-white warning" aria-label="Default select example" [(ngModel)]="asunto">
+                    <option class="text text-muted" [value]="item?.value" *ngFor="let item of listSelected">{{item?.name}}</option>
+                </select>
+                <div id="asuntoFeedback" class="invalid-feedback warning">
+                    Seleccione el tipo de {{translate2(typeRequest)}}
+                </div>
+              </div>
+                <div class="mb-3 col-12 text-start form-group" >
+                    <label for="mensaje" class="form-label text text-bold text-white">Mensaje</label>
+                    <textarea name="message" class="text form-control p-3 bg-transparent text-white warning" id="message" rows="5" placeholder="Escriba aquí su mensaje..." [(ngModel)]="message"></textarea>
+                    <div id="mensajeFeedback" class="invalid-feedback warning">
+                      Ingrese un mensaje
+                    </div>
+                  </div>
+                <div class="mb-3 col-12 text-start form-group d-flex justify-content-end" >
+                    <div class="btns">
+                        <button type="submit" (click)="sendForm()" [class]="typeButton">ENVIAR MENSAJE</button>
+                    </div>
+                </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-6">
+                <div class="row d-flex flex-column justify-content-center align-items-center">
+                  <div class="col-12">
+                    <div class="row d-flex flex-column align-items-center justify-content-center text-center h-auto">
+                      <div class="col-12 mb-2 mt-5">
+                          <h2  class="title-6 text-white">Contáctanos</h2>
+                      </div>
+                      <div class="col-12 col-md-12 col-lg-12">
+                          <p class="text text-center text-white" >
+                            Contáctanos para cualquier requerimiento o consulta de nuestros servicios
+                          </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div  class="col-12 d-flex flex-column justify-content-center align-items-center text-center mt-2">
+                    <div>
+                      <a class="a icon-red-big m-4" target="_blank" href="https://www.instagram.com/paguetodo/?hl=es"><span><i class="fab fa-instagram"></i></span></a>
+                      <a class="a icon-red-big m-4" target="_blank" href="https://www.facebook.com/Paguetodo-172132649656211"><span><i class="fab fa-facebook"></i></span></a>
+                      <a class="a icon-red-big m-4" target="_blank" href="https://twitter.com/paguetodo"><span><i class="fab fa-twitter"></i></span></a>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+          </div>
+      </form>
+  </div>
+</section>
+
+<div class="modal" tabindex="-1" role="dialog" style="text-align:center;margin-top:180px;" scroll="no" id="pleaseWait" data-backdrop="static" data-bs-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog" role="document">
+    <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalSuccess" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalSuccessLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-none">
+        <button type="button" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" [routerLink]='["/home"]' ></button>
+      </div>
+      <div class="modal-body text-center d-flex justify-content-center flex-column">
+        <div class="row d-flex justify-content-center flex-column text-center">
+          <span class="icon-big"><i class="fas fa-check-circle"></i></span>
+          <p class="h2">Gracias por enviar su solicitud!</p>
+          <div class="col-12 d-flex justify-content-center">
+            <div class="col-12 col-md-6 col-lg-6">
+              <p class="p">Será contactado via correo electrónico</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="modal-footer border-top-none text-center justify-content-center">
+        <button type="button" type="button" data-bs-dismiss="modal" aria-label="Close" [routerLink]='["/home"]' class="btn btn-primary m-1 p-3">
+          CONTINUAR
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modalFailed" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="modalSuccessLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-none">
+        <button type="button" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center d-flex justify-content-center flex-column">
+        <div class="row d-flex justify-content-center flex-column text-center" style="word-break:break-all;">
+          <span class="icon-big-red"><i class="fa-solid fa-circle-xmark"></i></span>
+          <div class="title-4">No podemos procesar su solicitud en estos momentos por favor envianos un correo a <a href="mailto:operaciones@paguetodo.com">operaciones@paguetodo.com</a>
+          </div>
+          <div class="col-12 d-flex justify-content-center">
+            <div class="col-12 col-md-6 col-lg-6">
+              <p class="text text-muted">Discúlpenos por los inconvenientes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modalErrorTypeRequest" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="modalSuccessLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-none">
+        <button (click)="restoreValues()" type="button" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center d-flex justify-content-center flex-column">
+        <div class="row d-flex justify-content-center flex-column text-center" style="word-break:break-all;">
+          <span class="icon-big-red"><i class="fa-solid fa-circle-xmark"></i></span>
+          <div class="title-4">No podemos procesar su solicitud en estos momentos por favor envianos un correo a
+          </div>
+          <a class="title-3" href="mailto:operaciones@paguetodo.com">operaciones@paguetodo.com</a>
+          <div class="col-12 d-flex justify-content-center">
+            <p class="text text-muted">Discúlpenos por los inconvenientes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

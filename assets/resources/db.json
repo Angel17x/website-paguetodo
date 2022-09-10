@@ -1,0 +1,4087 @@
+{
+  "cards": [
+    {
+      "title": "Punto de venta",
+      "subtitle": "Venta del dispositivo",
+      "description": "Impulsa el crecimiento de su negocio, haciendo el proceso de cobro de manera práctica, rápida y segura."  
+    },
+    {
+      "title": "Recaudación",
+      "subtitle": "Mobile App Website",
+      "description": "Un medio seguro y eficiente de generar ventas, cobranzas y ganancias, donde puedes gestionar el pago de facturas a usuarios. Hacemos un cobro eficiente para tí."  
+    },
+    {
+      "title": "Desarrollo a la medida",
+      "description": "Con este servicio, nos adaptamos a tí a tus necesidades logramos plasmar tus sueños y metas de manera DIGITAL"  
+    },
+    {
+      "title": "Productos",
+      "subtitle": "Mobile App Website",
+      "description": "Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Accumsan sed faucibu s faucibus augue. Cras ut."
+    }
+  ],
+  "puntos": [
+    {
+    "id": 1,
+    "name": "Android POS A90",
+    "type": "POS",
+    "details": {
+        "Descripcion": "Aisino-terminal pos inteligente A90, sistema de pago inalámbrico, móvil, android, NFC/RFID.",
+        "Sistema operativo": "Android 7.1.",
+        "Procesador": "Quad-core Cortex-A7 1.1GHz.",
+        "Memoria": "RAM: 1GB (Opcional 2GB) FLASH: 8GB (Opcional 16GB) Tarjeta Micro SD hasta 32GB.",
+        "Pantalla": "Pantalla IPS de 5,5' 1280 × 720 píxeles Pantalla táctil capacitiva multipunto.",
+        "Comunicación": "4G (Soporta 3G y 2G) Bluetooth 4.2 Wi-Fi 2.4GHz, Opcional: 5GHz.",
+        "Llaves": "1 * tecla de encendido, 1 * tecla de alimentación de papel, 3 * teclas táctiles.",
+        "Impresión": "Impresora Térmica, Ancho Papel: 58mm, Diámetro: 40mm.",
+        "Lectores De Tarjetas": "Lector De Tarjetas De Banda Magnética, Lector De Tarjetas Inteligentes, Lector De Tarjetas Sin Contacto.",
+        "Audio": "altavoz, zumbador, micrófono.",
+        "Ranuras Para Tarjetas": "2 * SIM, 2 * PSAM, 1 * Micro SD.",
+        "GNSS": "GPS/GLONASS/BeiDou.",
+        "Puertos Periféricos": "1 * USB Tipo-C, Opcional: Interfaz de Módulo Controlado por Impuestos.",
+        "Pesos": "440g.",
+        "Dimensiones": "205×82×65mm L×W×H.",
+        "Cámara":" cámara frontal de 2 MP, cámara trasera de 5 MP, enfoque automático, linterna, escáner 1D/2D.",
+        "Bateria": "3.6V/ 5200mAh.",
+        "Direccionales": "4 * Indicadores sin contacto, 1 * Indicador de carga.",
+        "Certificaciones": "PCI PTS 5.x, EMV L1&L2, EMV CL L1, Mastercard Paypass, Visa Paywave, JCB J/Speedy, Amex Expresspay, Discover D-PAS, Union Pay QuickPass, Mastercard TQM, RuPay, NSICCS, PURE, FCC, CE , ROHS, Anatel, SDPPI, SABRE, NTRA VOC, BIS, WPC.",
+        "Fuente De Alimentación: Entrada": "100-240V 50/60Hz 0.5A Salida: 5V/ 2A.",
+        "Ambiental": "Temperatura de funcionamiento: -10 ℃ ~ 50 ℃, Temperatura de almacenamiento: -20 ℃ ~ 70 ℃, Humedad relativa: 5%~95%, Sin condensación.",
+        "Configuraciones Opcionales": "Estaciones de Acoplamiento: 3 Estaciones de Acoplamiento Opcionales, Soporte de Carga, Reflexión de Escaneo, Puertos Serie, Ethernet, Puerto de Extensión USB, Comunicación Inalámbrica."
+    },
+    "bestSeller": true,
+    "price": 270.00 ,
+    "currency": "$",
+    "status": "Disponible",
+    "size": "205 × 82 × 65mm L×W×H",
+    "images":[
+      "assets/images/png/puntos-de-ventas-pos-2.png",
+      "assets/images/png/puntos-de-ventas-pos-2-1.png",
+      "assets/images/png/puntos-de-ventas-pos-2-2.png",
+      "assets/images/png/puntos-de-ventas-pos-2-3.png",
+      "assets/images/png/puntos-de-ventas-pos-2-4.png",
+      "assets/images/png/puntos-de-ventas-pos-2-5.png",
+      "assets/images/png/puntos-de-ventas-pos-2-6.png"
+    ]
+    },
+    {
+      "id": 2,
+      "name": "Android Mini POS A80",
+      "type": "POS",
+      "details": {
+        "Descripcion": "Pantalla táctil inalámbrica A80, sistema de pago en línea sin conexión, EMV, certificado para pago bancario.",
+        "Sistema operativo": "Android 10.0.",
+        "Procesador": "Quad-core Cortex-A53, 1.4GHz + Procesador Seguro.",
+        "Memoria": "1GB (Opcional 2GB) FLASH: 8GB (Opcional 16GB) Tarjeta Micro SD hasta 32GB.",
+        "Pantalla": "Pantalla IPS de 5' 1280 × 720 píxeles Pantalla táctil capacitiva multipunto.",
+        "Comunicación": "4G (Soporta 3G y 2G) Bluetooth 4.2 Wi-Fi 2.4GHz.",
+        "Llaves": "1 * tecla de encendido, 1 * tecla de alimentación de papel, 3 * teclas táctiles.",
+        "Pindpad": "teclado virtual seguro para ingreso de PIN, resistente al agua, resistente al polvo, retro iluminado.",
+        "Lectores De Tarjetas": "Lector De Tarjetas Inteligentes, Lector De Tarjetas Sin Contacto.",
+        "Sonido": "Altavoz.",
+        "Ranuras Para Tarjetas": "1 * SIM, 1 * PSAM, 1 * Micro SD.",
+        "GNSS": "GPS/GLONASS/BeiDou.",
+        "Direccionales": "4 * Indicadores sin contacto, 1 * Indicador de carga.",
+        "Puertos Periféricos": "1 * USB OTG, Tipo-C, 5V.",
+        "Cámara": "Escáner 1D/2D con cámara trasera de enfoque fijo de 2 MP, opcional: Cámara trasera con enfoque automático de 5 MP.",
+        "Dimensiones": "150×76×17mm L×W×H.",
+        "Peso": "220g.",
+        "Batería": "3.85V/3000mAh.",
+        "Fuente De Alimentación": "DC 5V/2A.",
+        "Certificaciones": "PCI PTS 5.x, EMV L1&L2, EMV CL L1, Mastercard Paypass, Visa Paywave, JCB J/Speedy, Amex Expresspay, Discover D-PAS, Union Pay QuickPass, Mastercard TQM, RuPay, NSICCS, PURE, FCC, CE , ROHS, Anatel, SDPPI, SABRE, NTRA VOC, BIS, WPC.",
+        "Ambiental": "Temperatura de funcionamiento: -10 ℃ ~ 50 ℃, Temperatura de almacenamiento: -20 ℃ ~ 70 ℃, Humedad relativa: 5%~95%, Sin condensación.",
+        "Configuraciones Opcionales": "Estación de Acoplamiento Inalámbrica ASD18."
+      },
+      "bestSeller": false,
+      "price": 200.00,
+      "currency": "$",
+      "status": "Disponible",
+      "size": "150 × 75 × 16mm L×W×H",
+      "images":[
+        "assets/images/png/puntos-de-ventas-pos-1.png",
+        "assets/images/png/puntos-de-ventas-pos-1-1.png",
+        "assets/images/png/puntos-de-ventas-pos-1-2.png",
+        "assets/images/png/puntos-de-ventas-pos-1-3.png",
+        "assets/images/png/puntos-de-ventas-pos-1-4.png",
+        "assets/images/png/puntos-de-ventas-pos-1-5.png",
+        "assets/images/png/puntos-de-ventas-pos-1-6.png"
+      ]
+      },
+      {
+        "id": 3,
+        "name": "Docking Station ASD18 (for A80)",
+        "type": "POS",
+        "details": {
+            "Descripcion": "Estación de enlace para punto de venta A80.",
+            "Impresora": "Impresora térmica, Ancho del papel: 58 mm, Diámetro: 40 mm.",
+            "Llaves": "1 * tecla de función, pulsación corta: control de alimentación de papel, pulsación larga: modo de emparejamiento Bluetooth.",
+            "Comunicación": "Bluetooth (Entre A80 y la Estación de Acoplamiento).",
+            "Conexiones": "Pago Pin, conector de alimentación.",
+            "Direccionales": "1 * Indicador de encendido, 1 * Indicador de estado, 1 * Indicador de falta de papel.",
+            "Fuente De Alimentación": "DC 9V/2A.",
+            "Antiestática": "±8KV Descarga Contacto, ±15KV Descarga Aire.",
+            "Peso": "260g.",
+            "Dimensiones": "225×87.5×62.6mm L×W×H.",
+            "Ambiental":" temperatura de funcionamiento: 0 ℃ ~ 50 ℃, temperatura de almacenamiento: -20 ℃ ~ 70 ℃, humedad relativa: 10 %~90 %, sin condensación."
+        },
+        "bestSeller": true,
+        "price": 60.00,
+        "currency": "$",
+        "status": "Disponible",
+        "size": "10x50m",
+        "images":[
+            "assets/images/png/puntos-de-ventas-pos-3.png",
+            "assets/images/png/puntos-de-ventas-pos-3-2.png",
+            "assets/images/png/puntos-de-ventas-pos-3-3.png",
+            "assets/images/png/puntos-de-ventas-pos-3-4.png"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "PINPAD V10",
+        "type": "POS",
+        "details": {
+           "Descripcion": "PINPad Aisino V10 para mart Tarjeta de teclado terminal pos mini pos barato pos máquina de nfc.",
+            "Lugar Del Origen": "China.",
+            "Marca": "Aisino.",
+            "Garantía": "1 año.",
+            "UPC": "Núcleo RISC de 32 bits (ARMv7-M).",
+            "Tipo De Pantalla Táctil": "Pantalla capacitiva.",
+            "Capacidad Del Disco Duro": "8 MB.",
+            "Memoria": "1 MB, ROM: 8 MB.",
+            "Pantalla": "pantalla táctil a color capacitiva de 2,8 pulgadas 320*240.",
+            "Llaves": "18 Llaves.",
+            "Lectores De Tarjetas": "Lector NFC.",
+            "Direccionales": "4 indicadores LED.",
+            "Ambiental": "Temperatura de funcionamiento: 0 ℃ ~ 50 ℃.",
+            "Puertos Periféricos": "1 RS232,5V-12V Alimentado 1 Micro USB Alimentado, 5V.",
+            "Peso": "200g.",
+            "Configuraciones Opcionales": "2.1",
+            "Dimensiones": "148.5*79.5*45mm."
+
+        },
+        "bestSeller": false,
+        "price": 100.00,
+        "currency": "$",
+        "status": "Disponible",
+        "size": "148.5*79.5*45mm",
+        "images":[
+            "assets/images/png/pindpad-2.png",
+            "assets/images/png/pindpad-3.png",
+            "assets/images/png/pindpad-4.png",
+            "assets/images/png/pindpad-5.png",
+            "assets/images/png/pindpad-6.png",
+            "assets/images/png/pindpad-7.png"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "QPOS Mini",
+        "type": "POS",
+        "details": {
+            "Descripcion": "Mini máquina de pago sin contacto, 2021 emv, QPOS, terminal pos móvil.",
+            "Lugar Del Origen": "Guangdong, China.",
+            "Marca": "OEM.",
+            "Garantía": "1 año.",
+            "Sistema De Acción": "Alondra 4,0.",
+            "UPC": "Corteza ARM.",
+            "Tipo De Pantalla Táctil": "Sin pantalla táctil.",
+            "Capacidad Del Disco Duro": "256KB RAM.",
+            "Peso": "150g.",
+            "Sistema operativo": "Lark 4,0.",
+            "Interfaz": "USB.",
+            "Comunicación": "BT/GPRS/NFC.",
+            "Seguridad": "Seguro PIN pad permite transacciones EMV.",
+            "Función": "BLE GPRS, etc.",
+            "Dimensiones": "109,8x64, 4x24,3mm."
+        },
+        "bestSeller": true,
+        "price": 100.00,
+        "currency": "$",
+        "status": "Disponible",
+        "size": "109,8x64,4x24,3mm",
+        "images":[
+            "assets/images/png/minipos-1.png",
+            "assets/images/png/minipos-2.png",
+            "assets/images/png/minipos-3.png",
+            "assets/images/png/minipos-4.png",
+            "assets/images/png/minipos-5.png"
+        ]
+      }
+  ],
+  "venezuela":[
+    {
+        "iso_31662": "VE-X",
+        "estado": "AMAZONAS",
+        "capital": "PUERTO AYACUCHO",
+        "id_estado": 1,
+        "municipios": [
+            {
+                "municipio": "ALTO ORINOCO",
+                "capital": "LA ESMERALDA",
+                "parroquia": [
+                    "ALTO ORINOCO LA ESMERALDA",
+                    "HUACHAMACARE ACANAÑA",
+                    "MARAWAKA TOKY SHAMANAÑA",
+                    "MAVAKA MAVAKA",
+                    "SIERRA PARIMA PARIMABÉ"
+                ]
+            },
+            {
+                "municipio": "ATABAPO",
+                "capital": "SAN FERNANDO DE ATABAPO",
+                "parroquia": [
+                    "UCATA LAJA LISA",
+                    "YAPACANA MACURUCO",
+                    "CANAME GUARINUMA"
+                ]
+            },
+            {
+                "municipio": "ATURES",
+                "capital": "PUERTO AYACUCHO",
+                "parroquia": [
+                    "FERNANDO GIRÓN TOVAR",
+                    "LUIS ALBERTO GÓMEZ",
+                    "PAHUEÑA LIMÓN DE PARHUEÑA",
+                    "PLATANILLAL PLATANILLAL"
+                ]
+            },
+            {
+                "municipio": "AUTANA",
+                "capital": "ISLA RATÓN",
+                "parroquia": [
+                    "SAMARIAPO SAMARIAPO",
+                    "SIPAPO PENDARE",
+                    "MUNDUAPO MUNDUAPO",
+                    "GUAYAPO SAN PEDRO DEL ORINOCO"
+                ]
+            },
+            {
+                "municipio": "MANAPIARE",
+                "capital": "SAN JUAN DE MANAPIARE",
+                "parroquia": [
+                    "ALTO VENTUARI CACURÍ",
+                    "MEDIO VENTUARI MANAMI",
+                    "BAJO VENTUARI MARUETA"
+                ]
+            },
+            {
+                "municipio": "MAROA",
+                "capital": "MAROA",
+                "parroquia": [
+                    "VICTORINO",
+                    "COMUNIDAD"
+                ]
+            },
+            {
+                "municipio": "RÍO NEGRO",
+                "capital": "SAN CARLOS DE RÍO NEGRO", 
+                "parroquia": [
+                    "CASIQUIARE CURIMACARE",
+                    "COCUY",
+                    "SAN CARLOS DE RÍO NEGRO",
+                    "SOLANO SOLANO"
+                ]
+            }
+        ],
+        "ciudades": [
+            "MAROA",
+            "PUERTO AYACUCHO",
+            "SAN FERNANDO DE ATABAPO"
+        ]
+    },
+    {
+        "iso_31662": "VE-B",
+        "estado": "ANZOÁTEGUI",
+        "capital": "BARCELONA",
+        "id_estado": 2,
+        "municipios": [
+            {
+                "municipio": "ANACO",
+                "capital": "ANACO",
+                "parroquia": [
+                    "ANACO",
+                    "SAN JOAQUÍN"
+                ]
+            },
+            {
+                "municipio": "ARAGUA",
+                "capital": "ARAGUA DE BARCELONA",
+                "parroquia": [
+                    "CACHIPO",
+                    "ARAGUA DE BARCELONA"
+                ]
+            },
+            {
+                "municipio": "BOLÍVAR",
+                "capital": "BARCELONA",
+                "parroquia": [
+                    "BERGATÍN",
+                    "CAIGUA",
+                    "EL CARMEN.",
+                    "EL PILAR",
+                    "NARICUAL.",
+                    "SAN CRISTÓBAL"
+                ]
+            },
+            {
+                "municipio": "BRUZUAL",
+                "capital": "CLARINES",
+                "parroquia": [
+                    "CLARINES",
+                    "GUANAPE",
+                    "SABANA DE UCHIRE"
+                ]
+            },
+            {
+                "municipio": "CAJIGAL",
+                "capital": "ONOTO",
+                "parroquia": [
+                    "ONOTO",
+                    "SAN PABLO"
+                ]
+            },
+            {
+                "municipio": "CARVAJAL",
+                "capital": "VALLE DE GUANAPE",
+                "parroquia": [
+                    "VALLE DE GUANAPE",
+                    "SANTA BÁRBARA"
+                ]
+            },
+            {
+                "municipio": "DIEGO BAUTISTA URBANEJA",
+                "capital": "LECHERÍA",
+                "parroquia": [
+                    "LECHERÍA",
+                    "EL MORRO"
+                ]
+            },
+            {
+                "municipio": "FREITES",
+                "capital": "CANTAURA",
+                "parroquia": [
+                    "CANTAURA",
+                    "LIBERTADOR",
+                    "SANTA ROSA",
+                    "URICA"
+                ]
+            },
+            {
+                "municipio": "GUANIPA",
+                "capital": "SAN JOSÉ DE GUANIPA",
+                "parroquia": [
+                    "SAN JOSÉ DE GUANIPA"
+                ]
+            },
+            {
+                "municipio": "GUANTA",
+                "capital": "GUANTA",
+                "parroquia": [
+                    "GUANTA",
+                    "CHORRERÓN"
+                ]
+            },
+            {
+                "municipio": "INDEPENDENCIA",
+                "capital": "SOLEDAD",
+                "parroquia": [
+                    "MAMO",
+                    "SOLEDAD"
+                ]
+            },
+            {
+                "municipio": "LIBERTAD",
+                "capital": "SAN MATEO",
+                "parroquia": [
+                    "SAN MATEO",
+                    "EL CARITO",
+                    "SANTA INÉS",
+                    "LA ROMEREÑA"
+                ]
+            },
+            {
+                "municipio": "MCGREGOR",
+                "capital": "EL CHAPARRO",
+                "parroquia": [
+                    "EL CHAPARRO",
+                    "TOMÁS ALFARO",
+                    "CALATRAVA"
+                ]
+            },
+            {
+                "municipio": "MIRANDA",
+                "capital": "PARIAGUÁN",
+                "parroquia": [
+                    "ATAPIRIRE",
+                    "BOCA DEL PAO",
+                    "EL PAO",
+                    "PARIAGUÁN"
+                ]
+            },
+            {
+                "municipio": "MONAGAS",
+                "capital": "MAPIRE",
+                "parroquia": [
+                    "MAPIRE",
+                    "PIAR",
+                    "SANTA CLARA",
+                    "SAN DIEGO DE CABRUTICA",
+                    "UVERITO",
+                    "ZUATA"
+                ]
+            },
+            {
+                "municipio": "PEÑALVER",
+                "capital": "PUERTO PÍRITU",
+                "parroquia": [
+                    "PUERTO PÍRITU",
+                    "SAN MIGUEL",
+                    "SUCRE"
+                ]
+            },
+            {
+                "municipio": "PÍRITU",
+                "capital": "PÍRITU",
+                "parroquia": [
+                    "PÍRITU",
+                    "SAN FRANCISCO"
+                ]
+            },
+            {
+                "municipio": "SAN JUAN DE CAPISTRANO",
+                "capital": "BOCA DE UCHIRE",
+                "parroquia": [
+                    "BOCA DE UCHIRE",
+                    "BOCA DE CHÁVEZ"
+                ]
+            },
+            {
+                "municipio": "SANTA ANA",
+                "capital": "SANTA ANA",
+                "parroquia": [
+                    "PUEBLO NUEVO",
+                    "SANTA ANA"
+                ]
+            },
+            {
+                "municipio": "SIMÓN RODRÍGUEZ",
+                "capital": "EL TIGRE",
+                "parroquia": [
+                    "EDMUNDO BARRIOS",
+                    "MIGUEL OTERO SILVA"
+                ]
+            },
+            {
+                "municipio": "SOTILLO",
+                "capital": "PUERTO LA CRUZ",
+                "parroquia": [
+                    "PUERTO LA CRUZ",
+                    "POZUELOS"
+                ]
+            }
+        ],
+        "ciudades": [
+            "ANACO",
+            "ARAGUA DE BARCELONA",
+            "BARCELONA",
+            "BOCA DE UCHIRE",
+            "CANTAURA",
+            "CLARINES",
+            "EL CHAPARRO",
+            "EL PAO ANZOÁTEGUI",
+            "EL TIGRE",
+            "EL TIGRITO",
+            "GUANAPE",
+            "GUANTA",
+            "LECHERÍA",
+            "ONOTO",
+            "PARIAGUÁN",
+            "PÍRITU",
+            "PUERTO LA CRUZ",
+            "PUERTO PÍRITU",
+            "SABANA DE UCHIRE",
+            "SAN MATEO ANZOÁTEGUI",
+            "SAN PABLO ANZOÁTEGUI",
+            "SAN TOMÉ",
+            "SANTA ANA DE ANZOÁTEGUI",
+            "SANTA FE ANZOÁTEGUI",
+            "SANTA ROSA",
+            "SOLEDAD",
+            "URICA",
+            "VALLE DE GUANAPE"
+        ]
+    },
+    {
+        "iso_31662": "VE-C",
+        "estado": "APURE",
+        "capital": "SAN FERNANDO DE APURE",
+        "id_estado": 3,
+        "municipios": [
+            {
+                "municipio": "ACHAGUAS",
+                "capital": "ACHAGUAS",
+                "parroquia": [
+                    "ACHAGUAS",
+                    "APURITO",
+                    "EL YAGUAL",
+                    "GUACHARA",
+                    "MUCURITAS",
+                    "QUESERAS DEL MEDIO"
+                ]
+            },
+            {
+                "municipio": "BIRUACA",
+                "capital": "BIRUACA",
+                "parroquia": [
+                    "BIRUACA"
+                ]
+            },
+            {
+                "municipio": "MUÑOZ",
+                "capital": "BRUZUAL",
+                "parroquia": [
+                    "BRUZUAL",
+                    "MANTECAL",
+                    "QUINTERO",
+                    "RINCÓN HONDO",
+                    "SAN VICENTE"
+                ]
+            },
+            {
+                "municipio": "PÁEZ",
+                "capital": "GUASDUALITO",
+                "parroquia": [
+                    "GUASDUALITO",
+                    "ARAMENDI",
+                    "EL AMPARO",
+                    "SAN CAMILO",
+                    "URDANETA"
+                ]
+            },
+            {
+                "municipio": "PEDRO CAMEJO",
+                "capital": "SAN JUAN DE PAYARA",
+                "parroquia": [
+                    "SAN JUAN DE PAYARA",
+                    "CODAZZI",
+                    "CUNAVICHE"
+                ]
+            },
+            {
+                "municipio": "RÓMULO GALLEGOS",
+                "capital": "ELORZA",
+                "parroquia": [
+                    "ELORZA",
+                    "LA TRINIDAD"
+                ]
+            },
+            {
+                "municipio": "SAN FERNANDO",
+                "capital": "SAN FERNANDO DE APURE",
+                "parroquia": [
+                    "SAN FERNANDO",
+                    "EL RECREO",
+                    "PEÑALVER",
+                    "SAN RAFAEL DE ATAMAICA"
+                ]
+            }
+        ],
+        "ciudades": [
+            "ACHAGUAS",
+            "BIRUACA",
+            "BRUZUAL",
+            "EL AMPARO",
+            "EL NULA",
+            "ELORZA",
+            "GUASDUALITO",
+            "MANTECAL",
+            "PUERTO PÁEZ",
+            "SAN FERNANDO DE APURE",
+            "SAN JUAN DE PAYARA"
+        ]
+    },
+    {
+        "iso_31662": "VE-D",
+        "estado": "ARAGUA",
+        "capital": "MARACAY",
+        "id_estado": 4,
+        "municipios": [
+            {
+                "municipio": "BOLÍVAR",
+                "capital": "SAN MATEO",
+                "parroquia": [
+                    "BOLÍVAR"
+                ]
+            },
+            {
+                "municipio": "CAMATAGUA",
+                "capital": "CAMATAGUA",
+                "parroquia": [
+                    "CAMATAGUA",
+                    "CARMEN DE CURA"
+                ]
+            },
+            {
+                "municipio": "FRANCISCO LINARES ALCÁNTARA",
+                "capital": "SANTA RITA",
+                "parroquia": [
+                    "SANTA RITA",
+                    "FRANCISCO DE MIRANDA",
+                    "MOSEÑOR FELICIANO GONZÁLEZ"
+                ]
+            },
+            {
+                "municipio": "GIRARDOT",
+                "capital": "MARACAY",
+                "parroquia": [
+                    "PEDRO JOSÉ OVALLES",
+                    "JOAQUÍN CRESPO",
+                    "JOSÉ CASANOVA GODOY",
+                    "MADRE MARÍA DE SAN JOSÉ",
+                    "ANDRÉS ELOY BLANCO",
+                    "LOS TACARIGUA",
+                    "LAS DELICIAS",
+                    "CHORONÍ"
+                ]
+            },
+            {
+                "municipio": "JOSÉ ÁNGEL LAMAS",
+                "capital": "SANTA CRUZ DE ARAGUA",
+                "parroquia": [
+                    "SANTA CRUZ"
+                ]
+            },
+            {
+                "municipio": "JOSÉ FÉLIX RIBAS",
+                "capital": "LA VICTORIA",
+                "parroquia": [
+                    "JOSÉ FÉLIX RIBAS",
+                    "CASTOR NIEVES RÍOS",
+                    "LAS GUACAMAYAS",
+                    "PAO DE ZÁRATE",
+                    "ZUATA"
+                ]
+            },
+            {
+                "municipio": "JOSÉ RAFAEL REVENGA",
+                "capital": "EL CONSEJO",
+                "parroquia": [
+                    "JOSÉ RAFAEL REVENGA"
+                ]
+            },
+            {
+                "municipio": "LIBERTADOR",
+                "capital": "PALO NEGRO",
+                "parroquia": [
+                    "PALO NEGRO",
+                    "SAN MARTÍN DE PORRES"
+                ]
+            },
+            {
+                "municipio": "MARIO BRICEÑO IRAGORRY",
+                "capital": "EL LIMÓN",
+                "parroquia": [
+                    "EL LIMÓN",
+                    "CAÑA DE AZÚCAR"
+                ]
+            },
+            {
+                "municipio": "OCUMARE DE LA COSTA DE ORO",
+                "capital": "OCUMARE DE LA COSTA",
+                "parroquia": [
+                    "OCUMARE DE LA COSTA"
+                ]
+            },
+            {
+                "municipio": "SAN CASIMIRO",
+                "capital": "SAN CASIMIRO",
+                "parroquia": [
+                    "SAN CASIMIRO",
+                    "GÜIRIPA",
+                    "OLLAS DE CARAMACATE",
+                    "VALLE MORÍN"
+                ]
+            },
+            {
+                "municipio": "SAN SEBASTIÁN",
+                "capital": "SAN SEBASTIÁN DE LOS REYES",
+                "parroquia": [
+                    "SAN SEBASTIÁN"
+                ]
+            },
+            {
+                "municipio": "SANTIAGO MARIÑO",
+                "capital": "TURMERO",
+                "parroquia": [
+                    "TURMERO",
+                    "AREVALO APONTE",
+                    "CHUAO",
+                    "SAMÁN DE GÜERE",
+                    "ALFREDO PACHECO MIRANDA"
+                ]
+            },
+            {
+                "municipio": "SANTOS MICHELENA",
+                "capital": "LAS TEJERÍAS",
+                "parroquia": [
+                    "SANTOS MICHELENA",
+                    "TIARA"
+                ]
+            },
+            {
+                "municipio": "SUCRE",
+                "capital": "CAGUA",
+                "parroquia": [
+                    "CAGUA",
+                    "BELLA VISTA"
+                ]
+            },
+            {
+                "municipio": "TOVAR",
+                "capital": "COLONIA TOVAR",
+                "parroquia": [
+                    "TOVAR"
+                ]
+            },
+            {
+                "municipio": "URDANETA",
+                "capital": "BARBACOAS",
+                "parroquia": [
+                    "URDANETA",
+                    "LAS PEÑITAS",
+                    "SAN FRANCISCO DE CARA",
+                    "TAGUAY"
+                ]
+            },
+            {
+                "municipio": "ZAMORA",
+                "capital": "VILLA DE CURA",
+                "parroquia": [
+                    "ZAMORA",
+                    "MAGDALENO",
+                    "SAN FRANCISCO DE ASÍS",
+                    "VALLES DE TUCUTUNEMO",
+                    "AUGUSTO MIJARES"
+                ]
+            }
+        ],
+        "ciudades": [
+            "BARBACOAS",
+            "CAGUA",
+            "CAMATAGUA",
+            "CHORONÍ",
+            "COLONIA TOVAR",
+            "EL CONSEJO",
+            "LA VICTORIA",
+            "LAS TEJERÍAS",
+            "MAGDALENO",
+            "MARACAY",
+            "OCUMARE DE LA COSTA",
+            "PALO NEGRO",
+            "SAN CASIMIRO",
+            "SAN MATEO",
+            "SAN SEBASTIÁN",
+            "SANTA CRUZ DE ARAGUA",
+            "TOCORÓN",
+            "TURMERO",
+            "VILLA DE CURA",
+            "ZUATA"
+        ]
+    },
+    {
+        "iso_31662": "VE-E",
+        "estado": "BARINAS",
+        "capital": "BARINAS",
+        "id_estado": 5,
+        "municipios": [
+            {
+                "municipio": "ALBERTO ARVELO TORREALBA",
+                "capital": "SABANETA",
+                "parroquia": [
+                    "SABANETA",
+                    "JUAN ANTONIO RODRÍGUEZ DOMÍNGUEZ"
+                ]
+            },
+            {
+                "municipio": "ANDRÉS ELOY BLANCO",
+                "capital": "EL CANTÓN",
+                "parroquia": [
+                    "EL CANTÓN",
+                    "SANTA CRUZ DE GUACAS",
+                    "PUERTO VIVAS"
+                ]
+            },
+            {
+                "municipio": "ANTONIO JOSÉ DE SUCRE",
+                "capital": "SOCOPÓ",
+                "parroquia": [
+                    "TICOPORO",
+                    "NICOLÁS PULIDO",
+                    "ANDRÉS BELLO"
+                ]
+            },
+            {
+                "municipio": "ARISMENDI",
+                "capital": "ARISMENDI",
+                "parroquia": [
+                    "ARISMENDI",
+                    "GUADARRAMA",
+                    "LA UNIÓN",
+                    "SAN ANTONIO"
+                ]
+            },
+            {
+                "municipio": "BARINAS",
+                "capital": "BARINAS",
+                "parroquia": [
+                    "BARINAS",
+                    "ALBERTO ARVELO LARRIVA",
+                    "SAN SILVESTRE",
+                    "SANTA INÉS",
+                    "SANTA LUCÍA",
+                    "TORUNOS",
+                    "EL CARMEN",
+                    "RÓMULO BETANCOURT",
+                    "CORAZÓN DE JESÚS",
+                    "RAMÓN IGNACIO MÉNDEZ",
+                    "ALTO BARINAS",
+                    "MANUEL PALACIO FAJARDO",
+                    "JUAN ANTONIO RODRÍGUEZ DOMÍNGUEZ",
+                    "DOMINGA ORTIZ DE PÁEZ"
+                ]
+            },
+            {
+                "municipio": "BOLÍVAR",
+                "capital": "BARINITAS",
+                "parroquia": [
+                    "BARINITAS",
+                    "ALTAMIRA DE CÁCERES",
+                    "CALDERAS"
+                ]
+            },
+            {
+                "municipio": "CRUZ PAREDES",
+                "capital": "BARRANCAS",
+                "parroquia": [
+                    "BARRANCAS",
+                    "EL SOCORRO",
+                    "MAZPARRITO"
+                ]
+            },
+            {
+                "municipio": "EZEQUIEL ZAMORA",
+                "capital": "SANTA BÁRBARA",
+                "parroquia": [
+                    "SANTA BÁRBARA",
+                    "PEDRO BRICEÑO MÉNDEZ",
+                    "RAMÓN IGNACIO MÉNDEZ",
+                    "JOSÉ IGNACIO DEL PUMAR"
+                ]
+            },
+            {
+                "municipio": "OBISPOS",
+                "capital": "OBISPOS",
+                "parroquia": [
+                    "OBISPOS",
+                    "LOS GUASIMITOS",
+                    "EL REAL",
+                    "LA LUZ"
+                ]
+            },
+            {
+                "municipio": "PEDRAZA",
+                "capital": "CIUDAD BOLIVIA",
+                "parroquia": [
+                    "CIUDAD BOLÍVIA",
+                    "JOSÉ IGNACIO BRICEÑO",
+                    "JOSÉ FÉLIX RIBAS",
+                    "PÁEZ"
+                ]
+            },
+            {
+                "municipio": "ROJAS",
+                "capital": "LIBERTAD",
+                "parroquia": [
+                    "LIBERTAD",
+                    "DOLORES",
+                    "SANTA ROSA",
+                    "PALACIO FAJARDO",
+                    "SIMÓN RODRÍGUEZ"
+                ]
+            },
+            {
+                "municipio": "SOSA",
+                "capital": "CIUDAD DE NUTRIAS",
+                "parroquia": [
+                    "CIUDAD DE NUTRIAS",
+                    "EL REGALO",
+                    "PUERTO NUTRIAS",
+                    "SANTA CATALINA",
+                    "SIMÓN BOLÍVAR"
+                ]
+            }
+        ],
+        "ciudades": [
+            "BARINAS",
+            "BARINITAS",
+            "BARRANCAS",
+            "CALDERAS",
+            "CAPITANEJO",
+            "CIUDAD BOLIVIA",
+            "EL CANTÓN",
+            "LAS VEGUITAS",
+            "LIBERTAD DE BARINAS",
+            "SABANETA",
+            "SANTA BÁRBARA DE BARINAS",
+            "SOCOPÓ"
+        ]
+    },
+    {
+        "iso_31662": "VE-F",
+        "estado": "BOLÍVAR",
+        "capital": "CIUDAD BOLÍVAR",
+        "id_estado": 6,
+        "municipios": [
+            {
+                "municipio": "ANGOSTURA",
+                "capital": "CIUDAD PÍAR",
+                "parroquia": [
+                    "RAÚL LEONI",
+                    "BARCELONETA",
+                    "SANTA BÁRBARA",
+                    "SAN FRANCISCO"
+                ]   
+            },
+            {
+                "municipio": "CARONÍ",
+                "capital": "CIUDAD GUAYANA",
+                "parroquia": [
+                    "CACHAMAY",
+                    "CHIRICA",
+                    "DALLA COSTA",
+                    "ONCE DE ABRIL",
+                    "SIMÓN BOLÍVAR",
+                    "UNARE",
+                    "UNIVERSIDAD",
+                    "VISTA AL SOL",
+                    "POZO VERDE",
+                    "YOCOIMA",
+                    "5 DE JULIO"
+                ]   
+            },
+            {
+                "municipio": "CEDEÑO",
+                "capital": "CAICARA DEL ORINOCO",
+                "parroquia": [
+                    "CEDEÑO",
+                    "ALTAGRACIA",
+                    "ASCENSIÓN FARRERAS",
+                    "GUANIAMO",
+                    "LA URBANA",
+                    "PIJIGUAOS"
+                ]   
+            },
+            {
+                "municipio": "EL CALLAO",
+                "capital": "EL CALLAO",
+                "parroquia": [
+                    "EL CALLAO"
+                ]   
+            },
+            {
+                "municipio": "GRAN SABANA",
+                "capital": "SANTA ELENA DE UAIRÉN",
+                "parroquia": [
+                    "GRAN SABANA",
+                    "IKABARÚ"
+                ]   
+            },
+            {
+                "municipio": "HERES",
+                "capital": "CIUDAD BOLÍVAR",
+                "parroquia": [
+                    "CATEDRAL",
+                    "ZEA",
+                    "ORINOCO",
+                    "JOSÉ ANTONIO PÁEZ",
+                    "MARHUANTA",
+                    "AGUA SALADA",
+                    "VISTA HERMOSA",
+                    "LA SABANITA",
+                    "PANAPANA"
+                ]   
+            },
+            {
+                "municipio": "PÍAR",
+                "capital": "UPATA",
+                "parroquia": [
+                    "ANDRÉS ELOY BLANCO",
+                    "PEDRO COVA"
+                ]   
+            },
+            {
+                "municipio": "ROSCIO",
+                "capital": "GUASIPATI",
+                "parroquia": [
+                    "ROSCIO",
+                    "SALÓM"
+                ]   
+            },
+            {
+                "municipio": "SIFONTES",
+                "capital": "EL DORADO",
+                "parroquia": [
+                    "SIFONTES",
+                    "DALLA COSTA",
+                    "SAN ISIDRO"
+                ]   
+            },
+            {
+                "municipio": "SUCRE",
+                "capital": "MARIPA",
+                "parroquia": [
+                    "SUCRE",
+                    "ARIPAO",
+                    "GUARATARO",
+                    "LAS MAJADAS",
+                    "MOITACO"
+                ]   
+            },
+            {
+                "municipio": "PADRE PEDRO CHIEN",
+                "capital": "EL PALMAR",
+                "parroquia": [
+                    "PADRE PEDRO CHIEN",
+                    "RÍO GRANDE"
+                ]  
+            }
+        ],
+        "ciudades": [
+            "CAICARA DEL ORINOCO",
+            "CANAIMA",
+            "CIUDAD BOLÍVAR",
+            "CIUDAD PIAR",
+            "EL CALLAO",
+            "EL DORADO",
+            "EL MANTECO",
+            "EL PALMAR",
+            "EL PAO",
+            "GUASIPATI",
+            "GURI",
+            "LA PARAGUA",
+            "MATANZAS",
+            "PUERTO ORDAZ",
+            "SAN FÉLIX",
+            "SANTA ELENA DE UAIRÉN",
+            "TUMEREMO",
+            "UNARE",
+            "UPATA"
+        ]
+    },
+    {
+        "iso_31662": "VE-G",
+        "estado": "CARABOBO",
+        "capital": "VALENCIA",
+        "id_estado": 7,
+        "municipios": [
+            {
+                "municipio": "BEJUMA",
+                "capital": "BEJUMA",
+                "parroquia": [
+                    "BEJUMA",
+                    "CANOABO",
+                    "SIMÓN BOLÍVAR"
+                ]
+            },
+            {
+                "municipio": "CARLOS ARVELO",
+                "capital": "GÜIGÜE",
+                "parroquia": [
+                    "GÜIGÜE",
+                    "CARABOBO",
+                    "TACARIGUA"
+                ]
+            },
+            {
+                "municipio": "DIEGO IBARRA",
+                "capital": "MARIARA",
+                "parroquia": [
+                    "MARIARA",
+                    "AGUAS CALIENTES"
+                ]
+            },
+            {
+                "municipio": "GUACARA",
+                "capital": "GUACARA",
+                "parroquia": [
+                    "CIUDAD ALIANZA",
+                    "GUACARA",
+                    "YAGUA"
+                ]
+            },
+            {
+                "municipio": "MORA",
+                "capital": "MORÓN",
+                "parroquia": [
+                    "MORÓN",
+                    "URAMA"
+                ]
+            },
+            {
+                "municipio": "LIBERTADOR",
+                "capital": "TOCUYITO",
+                "parroquia": [
+                    "VALENCIA",
+                    "CAMPO CARABOBO"
+                ]
+            },
+            {
+                "municipio": "LOS GUAYOS",
+                "capital": "LOS GUAYOS",
+                "parroquia": [
+                    "LOS GUAYOS"
+                ]
+            },
+            {
+                "municipio": "MIRANDA",
+                "capital": "MIRANDA",
+                "parroquia": [
+                    "MIRANDA"
+                ]
+            },
+            {
+                "municipio": "MONTALBÁN",
+                "capital": "MONTALBÁN",
+                "parroquia": [
+                    "MONTALBÁN"
+                ]
+            },
+            {
+                "municipio": "NAGUANAGUA",
+                "capital": "NAGUANAGUA",
+                "parroquia": [
+                    "NAGUANAGUA"
+                ]
+            },
+            {
+                "municipio": "PUERTO CABELLO",
+                "capital": "PUERTO CABELLO",
+                "parroquia": [
+                    "BARTOLOMÉ SALÓM",
+                    "DEMOCRACIA",
+                    "FRATERNIDAD",
+                    "GOAIGOAZA",
+                    "JUAN JOSÉ FLORES",
+                    "UNIÓN",
+                    "BORBURATA",
+                    "PATANEMO"
+                ]
+            },
+            {
+                "municipio": "SAN DIEGO",
+                "capital": "SAN DIEGO",
+                "parroquia": [
+                    "SAN DIEGO"
+                ]
+            },
+            {
+                "municipio": "SAN JOAQUÍN",
+                "capital": "SAN JOAQUÍN",
+                "parroquia": [
+                    "SAN JOAQUÍN"
+                ]
+            },
+            {
+                "municipio": "VALENCIA",
+                "capital": "VALENCIA",
+                "parroquia": [
+                    "URBANA CANDELARIA",
+                    "URBANA CATEDRAL",
+                    "URBANA EL SOCORRO",
+                    "URBANA MIGUEL PEÑA",
+                    "URBANA RAFAEL URDANETA",
+                    "URBANA SAN BLAS",
+                    "URBANA SAN JOSÉ",
+                    "URBANA SANTA ROSA",
+                    "NO URBANA NEGRO PRIMERO"
+                ]
+            }
+        ],
+        "ciudades": [
+            "BEJUMA",
+            "BELÉN",
+            "CAMPO DE CARABOBO",
+            "CANOABO",
+            "CENTRAL TACARIGUA",
+            "CHIRGUA",
+            "CIUDAD ALIANZA",
+            "EL PALITO",
+            "GUACARA",
+            "GUIGUE",
+            "LAS TRINCHERAS",
+            "LOS GUAYOS",
+            "MARIARA",
+            "MIRANDA",
+            "MONTALBÁN",
+            "MORÓN",
+            "NAGUANAGUA",
+            "PUERTO CABELLO",
+            "SAN JOAQUÍN",
+            "TOCUYITO",
+            "URAMA",
+            "VALENCIA",
+            "VIGIRIMITA"
+        ]
+    },
+    {
+        "iso_31662": "VE-H",
+        "estado": "COJEDES",
+        "capital": "SAN CARLOS",
+        "id_estado": 8,
+        "municipios": [
+            {
+                "municipio": "ANZOÁTEGUI",
+                "capital": "COJEDES",
+                "parroquia": [
+                    "COJEDES",
+                    "JUAN DE MATA SUÁREZ"
+                ]
+            },
+            {
+                "municipio": "TINAQUILLO",
+                "capital": "TINAQUILLO",
+                "parroquia": [
+                    "TINAQUILLO"
+                ]
+            },
+            {
+                "municipio": "GIRARDOT",
+                "capital": "EL BAÚL",
+                "parroquia": [
+                    "EL BAÚL",
+                    "SUCRE"
+                ]
+            },
+            {
+                "municipio": "LIMA BLANCO",
+                "capital": "MACAPO",
+                "parroquia": [
+                    "LA AGUADITA",
+                    "MACAPO"
+                ]
+            },
+            {
+                "municipio": "PAO DE SAN JUAN BAUTISTA",
+                "capital": "EL PAO",
+                "parroquia": [
+                    "EL PAO"
+                ]
+            },
+            {
+                "municipio": "RICAURTE",
+                "capital": "LIBERTAD",
+                "parroquia": [
+                    "EL AMPARO",
+                    "LIBERTAD DE COJEDES"
+                ]
+            },
+            {
+                "municipio": "RÓMULO GALLEGOS",
+                "capital": "LAS VEGAS",
+                "parroquia": [
+                    "RÓMULO GALLEGOS"
+                ]
+            },
+            {
+                "municipio": "SAN CARLOS",
+                "capital": "SAN CARLOS",
+                "parroquia": [
+                    "SAN CARLOS DE AUSTRIA",
+                    "JUAN ÁNGEL BRAVO",
+                    "MANUEL MANRIQUE"
+                ]
+            },
+            {
+                "municipio": "TINACO",
+                "capital": "TINACO",
+                "parroquia": [
+                    "GENERAL EN JEFE JOSÉ LAURENCIO SILVA"
+                ]
+            }
+        ],
+        "ciudades": [
+            "AGUIRRE",
+            "APARTADEROS COJEDES",
+            "ARISMENDI",
+            "CAMURIQUITO",
+            "EL BAÚL",
+            "EL LIMÓN",
+            "EL PAO COJEDES",
+            "EL SOCORRO",
+            "LA AGUADITA",
+            "LAS VEGAS",
+            "LIBERTAD DE COJEDES",
+            "MAPUEY",
+            "PIÑEDO",
+            "SAMANCITO",
+            "SAN CARLOS",
+            "SUCRE",
+            "TINACO",
+            "TINAQUILLO",
+            "VALLECITO"
+        ]
+    },
+    {
+        "iso_31662": "VE-Y",
+        "estado": "DELTA AMACURO",
+        "capital": "TUCUPITA",
+        "id_estado": 9,
+        "municipios": [
+            {
+                "municipio": "ANTONIO DÍAZ",
+                "capital": "CURIAPO",
+                "parroquia": [
+                    "CURIAPO",
+                    "ALMIRANTE LUIS BRIÓN",
+                    "FRANCISCO ANICETO LUGO BOCA DE CUYUBINI",
+                    "MANUEL RENAUD",
+                    "PADRE BARRAL",
+                    "SANTOS DE ABELGAS"
+                ]
+            },
+            {
+                "municipio": "CASACOIMA",
+                "capital": "SIERRA IMATACA",
+                "parroquia": [
+                    "IMATACA MORUCA",
+                    "CINCO DE JULIO PIACOA",
+                    "JUAN BAUTISTA ARISMENDI",
+                    "MANUEL PIAR SANTA CATALINA",
+                    "RÓMULO GALLEGOS"
+                ]
+            },
+            {
+                "municipio": "PEDERNALES",
+                "capital": "PEDERNALES",
+                "parroquia": [
+                    "PEDERNALES",
+                    "LUIS BELTRÁN PRIETO FIGUEROA"
+                ]
+            },
+            {
+                "municipio": "TUCUPITA",
+                "capital": "TUCUPITA",
+                "parroquia": [
+                    "SAN JOSÉ",
+                    "JOSÉ VIDAL MARCANO CAPARAL DE GUARA",
+                    "JUAN MILLÁN",
+                    "LEONARDO RUÍZ PINEDA PALOMA",
+                    "MARISCAL ANTONIO JOSÉ DE SUCRE",
+                    "MONSEÑOR ARGIMIRO GARCÍA SAN RAFAEL",
+                    "SAN RAFAEL",
+                    "VIRGEN DEL VALLE"
+                ]
+            }
+        ],
+        "ciudades": [
+            "TUCUPITA"
+        ]
+    },
+    {
+        "iso_31662": "VE-A",
+        "estado": "DISTRITO CAPITAL",
+        "capital": "CARACAS",
+        "id_estado": 24,
+        "municipios": [
+            {
+                "municipio": "LIBERTADOR",
+                "capital": "CARACAS",
+                "parroquia": [
+                    "23 DE ENERO",
+                    "ALTAGRACIA",
+                    "ANTÍMANO",
+                    "CARICUAO",
+                    "CATEDRAL",
+                    "COCHE",
+                    "EL JUNQUITO",
+                    "EL PARAÍSO",
+                    "EL RECREO",
+                    "EL VALLE",
+                    "CANDELARIA",
+                    "LA PASTORA",
+                    "LA VEGA",
+                    "MACARAO",
+                    "SAN AGUSTÍN",
+                    "SAN BERNARDINO",
+                    "SAN JOSÉ",
+                    "SAN JUAN",
+                    "SAN PEDRO",
+                    "SANTA ROSALÍA",
+                    "SANTA TERESA",
+                    "SUCRE (CATIA)"
+                ]        
+            }
+        ],
+        "ciudades":[
+            "CARACAS"
+        ]
+    },
+    {
+        "iso_31662": "VE-I",
+        "estado": "FALCÓN",
+        "capital": "CORO",
+        "id_estado": 10,
+        "municipios": [
+            {
+                "municipio": "ACOSTA",
+                "capital": "SAN JUAN DE LOS CAYOS",
+                "parroquia": [
+                    "CAPADARE",
+                    "LA PASTORA",
+                    "LIBERTADOR",
+                    "SAN JUAN DE LOS CAYOS"
+                ]
+            },
+            {
+                "municipio": "BOLÍVAR",
+                "capital": "SAN LUIS",
+                "parroquia": [
+                    "ARACUA",
+                    "LA PEÑA",
+                    "SAN LUIS"
+                ]
+            },
+            {
+                "municipio": "BUCHIVACOA",
+                "capital": "CAPATÁRIDA",
+                "parroquia": [
+                    "BARIRO",
+                    "BOROJÓ",
+                    "CAPATÁRIDA",
+                    "GUAJIRO",
+                    "SEQUE",
+                    "ZAZÁRIDA",
+                    "VALLE DE EROA"
+                ]
+            },
+            {
+                "municipio": "CARIRUBANA",
+                "capital": "PUNTO FIJO",
+                "parroquia": [
+                    "NORTE",
+                    "CARIRUBANA",
+                    "SANTA ANA",
+                    "URBANA PUNTA CARDÓN"
+                ]
+            },
+            {
+                "municipio": "COLINA",
+                "capital": "LA VELA DE CORO",
+                "parroquia": [
+                    "LA VELA DE CORO",
+                    "ACURIGUA",
+                    "GUAIBACOA",
+                    "LAS CALDERAS",
+                    "MACORUCA"
+                ]
+            },
+            {
+                "municipio": "DABAJURO",
+                "capital": "DABAJURO",
+                "parroquia": [
+                    "DABAJURO"
+                ]
+            },
+            {
+                "municipio": "DEMOCRACIA",
+                "capital": "PEDREGAL",
+                "parroquia": [
+                    "AGUA CLARA",
+                    "AVARIA",
+                    "PEDREGAL",
+                    "PIEDRA GRANDE",
+                    "PURURECHE"
+                ]
+            },
+            {
+                "municipio": "FALCÓN",
+                "capital": "PUEBLO NUEVO",
+                "parroquia": [
+                    "ADAURE",
+                    "ADÍCORA",
+                    "BARAIVED",
+                    "BUENA VISTA",
+                    "JADACAQUIVA",
+                    "EL VÍNCULO",
+                    "EL HATO",
+                    "MORUY",
+                    "PUEBLO NUEVO"
+                ]
+            },
+            {
+                "municipio": "FEDERACIÓN",
+                "capital": "CHURUGUARA",
+                "parroquia": [
+                    "AGUA LARGA",
+                    "CHURUGUARA",
+                    "EL PAUJÍ",
+                    "INDEPENDENCIA",
+                    "MAPARARÍ"
+                ]
+            },
+            {
+                "municipio": "JACURA",
+                "capital": "JACURA",
+                "parroquia": [
+                    "AGUA LINDA",
+                    "ARAURIMA",
+                    "JACURA"
+                ]
+            },
+            {
+                "municipio": "LOS TAQUES",
+                "capital": "SANTA CRUZ DE LOS TAQUES",
+                "parroquia": [
+                    "LOS TAQUES",
+                    "JUDIBANA"
+                ]
+            },
+            {
+                "municipio": "MANAURE",
+                "capital": "YARACAL",
+                "parroquia": [
+                    "CACIQUE MANAURE"
+                ]
+            },
+            {
+                "municipio": "MAUROA",
+                "capital": "MENE DE MAUROA",
+                "parroquia": [
+                    "MENE DE MAUROA",
+                    "SAN FÉLIX",
+                    "CASIGUA"
+                ]
+            },
+            {
+                "municipio": "MIRANDA",
+                "capital": "SANTA ANA DE CORO",
+                "parroquia": [
+                    "GUZMÁN GUILLERMO",
+                    "MITARE",
+                    "RÍO SECO",
+                    "SABANETA",
+                    "SAN ANTONIO",
+                    "SAN GABRIEL",
+                    "SANTA ANA"
+                ]
+            },
+            {
+                "municipio": "MONSEÑOR ITURRIZA",
+                "capital": "CHICHIRIVICHE",
+                "parroquia": [
+                    "BOCA DEL TOCUYO",
+                    "CHICHIRIVICHE",
+                    "TOCUYO DE LA COSTA"
+                ]
+            },
+            {
+                "municipio": "PALMASOLA",
+                "capital": "PALMASOLA",
+                "parroquia": [
+                    "PALMASOLA"
+                ]
+            },
+            {
+                "municipio": "PETIT",
+                "capital": "CABURE",
+                "parroquia": [
+                    "CABURE",
+                    "COLINA",
+                    "CURIMAGUA"
+                ]
+            },
+            {
+                "municipio": "PÍRITU",
+                "capital": "PÍRITU",
+                "parroquia": [
+                    "SAN JOSÉ DE LA COSTA",
+                    "PÍRITU"
+                ]
+            },
+            {
+                "municipio": "SAN FRANCISCO",
+                "capital": "MIRIMIRE",
+                "parroquia": [
+                    "capital SAN FRANCISCO"
+                ]
+            },
+            {
+                "municipio": "SUCRE",
+                "capital": "LA CRUZ DE TARATARA",
+                "parroquia": [
+                    "SUCRE",
+                    "PECAYA"
+                ]
+            },
+            {
+                "municipio": "SILVA",
+                "capital": "TUCACAS",
+                "parroquia": [
+                    "TUCACAS",
+                    "BOCA DE AROA"
+                ]
+            },
+            {
+                "municipio": "TOCÓPERO",
+                "capital": "TOCÓPERO",
+                "parroquia": [
+                    "TOCÓPERO"
+                ]
+            },
+            {
+                "municipio": "UNIÓN",
+                "capital": "SANTA CRUZ DE BUCARAL",
+                "parroquia": [
+                    "EL CHARAL",
+                    "LAS VEGAS DEL TUY",
+                    "SANTA CRUZ DE BUCARAL"
+                ]
+            },
+            {
+                "municipio": "URUMACO",
+                "capital": "URUMACO",
+                "parroquia": [
+                    "BRUZUAL",
+                    "URUMACO"
+                ]
+            },
+            {
+                "municipio": "ZAMORA",
+                "capital": "PUERTO CUMAREBO",
+                "parroquia": [
+                    "PUERTO CUMAREBO",
+                    "LA CIÉNAGA",
+                    "LA SOLEDAD",
+                    "PUEBLO CUMAREBO",
+                    "ZAZÁRIDA"
+                ]
+            }
+        ],
+        "ciudades": [
+            "ADÍCORA",
+            "BOCA DE AROA",
+            "CABURE",
+            "CAPADARE",
+            "CAPATÁRIDA",
+            "CHICHIRIVICHE",
+            "CHURUGUARA",
+            "CORO",
+            "CUMAREBO",
+            "DABAJURO",
+            "JUDIBANA",
+            "LA CRUZ DE TARATARA",
+            "LA VELA DE CORO",
+            "LOS TAQUES",
+            "MAPARARI",
+            "MENE DE MAUROA",
+            "MIRIMIRE",
+            "PEDREGAL",
+            "PÍRITU FALCÓN",
+            "PUEBLO NUEVO FALCÓN",
+            "PUERTO CUMAREBO",
+            "PUNTA CARDÓN",
+            "PUNTO FIJO",
+            "SAN JUAN DE LOS CAYOS",
+            "SAN LUIS",
+            "SANTA ANA FALCÓN",
+            "SANTA CRUZ DE BUCARAL",
+            "TOCOPERO",
+            "TOCUYO DE LA COSTA",
+            "TUCACAS",
+            "YARACAL"
+        ]
+    },
+    {
+        "iso_31662": "VE-J",
+        "estado": "GUÁRICO",
+        "capital": "SAN JUAN DE LOS MORROS",
+        "id_estado": 11,
+        "municipios": [
+            {
+                "municipio": "CAMAGUÁN",
+                "capital": "CAMAGUÁN",
+                "parroquia": [
+                    "CAMAGUÁN",
+                    "PUERTO MIRANDA",
+                    "UVERITO"
+                ]
+            },
+            {
+                "municipio": "CHAGUARAMAS",
+                "capital": "CHAGUARAMAS",
+                "parroquia": [
+                    "CHAGUARAMAS"
+                ]
+            },
+            {
+                "municipio": "EL SOCORRO",
+                "capital": "EL SOCORRO",
+                "parroquia": [
+                    "EL SOCORRO"
+                ]
+            },
+            {
+                "municipio": "INFANTE",
+                "capital": "VALLE DE LA PASCUA",
+                "parroquia": [
+                    "VALLE DE LA PASCUA",
+                    "ESPINO"
+                ]
+            },
+            {
+                "municipio": "LAS MERCEDES",
+                "capital": "LAS MERCEDES",
+                "parroquia": [
+                    "LAS MERCEDES",
+                    "CABRUTA",
+                    "SANTA RITA DE MANAPIRE"
+                ]
+            },
+            {
+                "municipio": "MELLADO",
+                "capital": "EL SOMBRERO",
+                "parroquia": [
+                    "EL SOMBRERO",
+                    "SOSA"
+                ]
+            },
+            {
+                "municipio": "MIRANDA",
+                "capital": "CALABOZO",
+                "parroquia": [
+                    "EL CALVARIO",
+                    "EL RASTRO",
+                    "GUARDATINAJAS",
+                    "capital URBANA CALABOZO"
+                ]
+            },
+            {
+                "municipio": "MONAGAS",
+                "capital": "ALTAGRACIA DE ORITUCO",
+                "parroquia": [
+                    "ALTAGRACIA DE ORITUCO",
+                    "SAN RAFAEL DE ORITUCO",
+                    "SAN FRANCISCO JAVIER DE LEZAMA",
+                    "PASO REAL DE MACAIRA",
+                    "CARLOS SOUBLETTE",
+                    "SAN FRANCISCO DE MACAIRA",
+                    "LIBERTAD DE ORITUCO"
+                ]
+            },
+            {
+                "municipio": "ORTIZ",
+                "capital": "ORTIZ",
+                "parroquia": [
+                    "SAN JOSÉ DE TIZNADOS",
+                    "SAN FRANCISCO DE TIZNADOS",
+                    "SAN LORENZO DE TIZNADOS",
+                    "ORTIZ"
+                ]
+            },
+            {
+                "municipio": "RIBAS",
+                "capital": "TUCUPIDO",
+                "parroquia": [
+                    "TUCUPIDO",
+                    "SAN RAFAEL DE LAYA"
+                ]
+            },
+            {
+                "municipio": "ROSCIO",
+                "capital": "SAN JUAN DE LOS MORROS",
+                "parroquia": [
+                    "CANTAGALLO",
+                    "SAN JUAN DE LOS MORROS",
+                    "PARAPARA"
+                ]
+            },
+            {
+                "municipio": "SAN GERÓNIMO DE GUAYABAL",
+                "capital": "GUAYABAL",
+                "parroquia": [
+                    "GUAYABAL",
+                    "CAZORLA"
+                ]
+            },
+            {
+                "municipio": "SAN JOSÉ DE GUARIBE",
+                "capital": "SAN JOSÉ DE GUARIBE",
+                "parroquia": [
+                    "SAN JOSÉ DE GUARIBE",
+                    "UVERAL"
+                ]
+            },
+            {
+                "municipio": "SANTA MARÍA DE IPIRE",
+                "capital": "SANTA MARÍA DE IPIRE",
+                "parroquia": [
+                    "SANTA MARÍA DE IPIRE",
+                    "ALTAMIRA"
+                ]
+            },
+            {
+                "municipio": "ZARAZA",
+                "capital": "ZARAZA",
+                "parroquia": [
+                    "UNARE",
+                    "ZARAZA"
+                ]
+            }
+        ],
+        "ciudades": [
+            "ALTAGRACIA DE ORITUCO",
+            "CABRUTA",
+            "CALABOZO",
+            "CAMAGUÁN",
+            "CHAGUARAMAS GUÁRICO",
+            "EL SOCORRO",
+            "EL SOMBRERO",
+            "LAS MERCEDES DE LOS LLANOS",
+            "LEZAMA",
+            "ONOTO",
+            "ORTÍZ",
+            "SAN JOSÉ DE GUARIBE",
+            "SAN JUAN DE LOS MORROS",
+            "SAN RAFAEL DE LAYA",
+            "SANTA MARÍA DE IPIRE",
+            "TUCUPIDO",
+            "VALLE DE LA PASCUA",
+            "ZARAZA"
+        ]
+    },
+    {
+        "iso_31662": "VE-K",
+        "estado": "LARA",
+        "capital": "BARQUISIMETO",
+        "id_estado": 12,
+        "municipios": [
+            {
+                "municipio": "ANDRÉS ELOY BLANCO",
+                "capital": "SANARE",
+                "parroquia": [
+                    "QUEBRADA HONDA DE GUACHE",
+                    "PÍO TAMAYO",
+                    "YACAMBÚ"
+                ]
+            },
+            {
+                "municipio": "CRESPO",
+                "capital": "DUACA",
+                "parroquia": [
+                    "FREITEZ",
+                    "JOSÉ MARÍA BLANCO"
+                ]
+            },
+            {
+                "municipio": "IRIBARREN",
+                "capital": "BARQUISIMETO",
+                "parroquia": [
+                    "CATEDRAL",
+                    "CONCEPCIÓN",
+                    "EL CUJÍ",
+                    "JUAN DE VILLEGAS",
+                    "SANTA ROSA",
+                    "TAMACA",
+                    "UNIÓN",
+                    "AGUEDO FELIPE ALVARADO",
+                    "BUENA VISTA",
+                    "JUÁREZ"
+                ]
+            },
+            {
+                "municipio": "JIMÉNEZ",
+                "capital": "QUIBOR",
+                "parroquia": [
+                    "JUAN BAUTISTA RODRÍGUEZ",
+                    "CUARA",
+                    "DIEGO DE LOZADA",
+                    "PARAÍSO DE SAN JOSÉ",
+                    "SAN MIGUEL",
+                    "TINTORERO",
+                    "JOSÉ BERNARDO DORANTE",
+                    "CORONEL MARIANO PERAZA"
+                ]
+            },
+            {
+                "municipio": "MORÁN",
+                "capital": "EL TOCUYO",
+                "parroquia": [
+                    "ANZOÁTEGUI",
+                    "BOLÍVAR",
+                    "GUÁRICO",
+                    "HILARIO LUNA Y LUNA",
+                    "HUMOCARO BAJO",
+                    "HUMOCARO ALTO",
+                    "LA CANDELARIA",
+                    "MORÁN"
+                ]
+            },
+            {
+                "municipio": "PALAVECINO",
+                "capital": "CABUDARE",
+                "parroquia": [
+                    "CABUDARE",
+                    "JOSÉ GREGORIO BASTIDAS",
+                    "AGUA VIVA"
+                ]
+            },
+            {
+                "municipio": "SIMÓN PLANAS",
+                "capital": "SARARE",
+                "parroquia": [
+                    "BURÍA",
+                    "GUSTAVO VEGA",
+                    "SARARE"
+                ]
+            },
+            {
+                "municipio": "TORRES",
+                "capital": "CARORA",
+                "parroquia": [
+                    "ALTAGRACIA",
+                    "ANTONIO DÍAZ",
+                    "CAMACARO",
+                    "CASTAÑEDA",
+                    "CECILIO ZUBILLAGA",
+                    "CHIQUINQUIRA",
+                    "EL BLANCO",
+                    "ESPINOZA DE LOS MONTEROS",
+                    "HERIBERTO ARROLLO",
+                    "LARA",
+                    "LAS MERCEDES",
+                    "MANUEL MORILLO",
+                    "MONTAÑA VERDE",
+                    "MONTES DE OCA",
+                    "REYES DE VARGAS",
+                    "TORRES",
+                    "TRINIDAD SAMUEL"
+                ]
+            },
+            {
+                "municipio": "URDANETA",
+                "capital": "SIQUISIQUE",
+                "parroquia": [
+                    "SIQUISIQUE",
+                    "SAN MIGUEL",
+                    "MOROTURO",
+                    "XAGUAS"
+                ]
+            }
+        ],
+        "ciudades": [
+            "AGUADA GRANDE",
+            "ATARIGUA",
+            "BARQUISIMETO",
+            "BOBARE",
+            "CABUDARE",
+            "CARORA",
+            "CUBIRO",
+            "CUJÍ",
+            "DUACA",
+            "EL MANZANO",
+            "EL TOCUYO",
+            "GUARÍCO",
+            "HUMOCARO ALTO",
+            "HUMOCARO BAJO",
+            "LA MIEL",
+            "MOROTURO",
+            "QUÍBOR",
+            "RÍO CLARO",
+            "SANARE",
+            "SANTA INÉS",
+            "SARARE",
+            "SIQUISIQUE",
+            "TINTORERO"
+        ]
+    },
+    {
+        "iso_31662": "VE-L",
+        "estado": "MÉRIDA",
+        "capital": "MÉRIDA",
+        "id_estado": 13,
+        "municipios": [
+            {
+                "municipio": "ALBERTO ADRIANI",
+                "capital": "EL VIGÍA",
+                "parroquia": [
+                    "PRESIDENTE BETANCOURT",
+                    "PRESIDENTE PÁEZ",
+                    "PRESIDENTE RÓMULO GALLEGOS",
+                    "GABRIEL PICÓN GONZÁLEZ",
+                    "HÉCTOR AMABLE MORA",
+                    "JOSÉ NUCETE SARDI",
+                    "PULIDO MÉNDEZ"
+                ]
+            },
+            {
+                "municipio": "ANDRÉS BELLO",
+                "capital": "LA AZULITA",
+                "parroquia": [
+                    "LA AZULITA"
+                ]
+            },
+            {
+                "municipio": "ANTONIO PINTO SALINAS",
+                "capital": "SANTA CRUZ DE MORA",
+                "parroquia": [
+                    "SANTA CRUZ DE MORA",
+                    "MESA BOLÍVAR",
+                    "MESA DE LAS PALMAS"
+                ]
+            },
+            {
+                "municipio": "ARICAGUA",
+                "capital": "ARICAGUA",
+                "parroquia": [
+                    "ARICAGUA",
+                    "SAN ANTONIO"
+                ]
+            },
+            {
+                "municipio": "ARZOBISPO CHACÓN",
+                "capital": "CANAGUÁ",
+                "parroquia": [
+                    "CANAGUA",
+                    "CAPURÍ",
+                    "CHACANTÁ",
+                    "EL MOLINO",
+                    "GUAIMARAL",
+                    "MUCUTUY",
+                    "MUCUCHACHÍ"
+                ]
+            },
+            {
+                "municipio": "CAMPO ELÍAS",
+                "capital": "EJIDO",
+                "parroquia": [
+                    "FERNÁNDEZ PEÑA",
+                    "MATRIZ",
+                    "MONTALBÁN",
+                    "ACEQUIAS",
+                    "JAJÍ",
+                    "LA MESA",
+                    "SAN JOSÉ DEL SUR"
+                ]
+            },
+            {
+                "municipio": "CARACCIOLO PARRA OLMEDO",
+                "capital": "TUCANÍ",
+                "parroquia": [
+                    "TUCANÍ",
+                    "FLORENCIO RAMÍREZ"
+                ]
+            },
+            {
+                "municipio": "CARDENAL QUINTERO",
+                "capital": "SANTO DOMINGO",
+                "parroquia": [
+                    "SANTO DOMINGO",
+                    "LAS PIEDRAS"
+                ]
+            },
+            {
+                "municipio": "GUARAQUE",
+                "capital": "GUARAQUE",
+                "parroquia": [
+                    "GUARAQUE",
+                    "MESA DE QUINTERO",
+                    "RÍO NEGRO"
+                ]
+            },
+            {
+                "municipio": "JULIO CÉSAR SALAS",
+                "capital": "ARAPUEY",
+                "parroquia": [
+                    "ARAPUEY",
+                    "PALMIRA"
+                ]
+            },
+            {
+                "municipio": "JUSTO BRICEÑO",
+                "capital": "TORONDOY",
+                "parroquia": [
+                    "SAN CRISTÓBAL DE TORONDOY",
+                    "TORONDOY"
+                ]
+            },
+            {
+                "municipio": "LIBERTADOR",
+                "capital": "MÉRIDA",
+                "parroquia": [
+                    "ANTONIO SPINETTI DINI",
+                    "ARIAS",
+                    "CARACCIOLO PARRA PÉREZ",
+                    "DOMINGO PEÑA",
+                    "EL LLANO",
+                    "GONZALO PICÓN FEBRES",
+                    "JACINTO PLAZA",
+                    "JUAN RODRÍGUEZ SUÁREZ",
+                    "LASSO DE LA VEGA",
+                    "MARIANO PICÓN SALAS",
+                    "MILLA",
+                    "OSUNA RODRÍGUEZ",
+                    "SAGRARIO",
+                    "EL MORRO",
+                    "LOS NEVADOS"
+                ]
+            },
+            {
+                "municipio": "MIRANDA",
+                "capital": "TIMOTES",
+                "parroquia": [
+                    "ANDRÉS ELOY BLANCO",
+                    "LA VENTA",
+                    "PIÑANGO",
+                    "TIMOTES"
+                ]
+            },
+            {
+                "municipio": "OBISPO RAMOS DE LORA",
+                "capital": "SANTA ELENA DE ARENALES",
+                "parroquia": [
+                    "ELOY PAREDES",
+                    "SAN RAFAEL DE ALCÁZAR",
+                    "SANTA ELENA DE ARENALES"
+                ]
+            },
+            {
+                "municipio": "PADRE NOGUERA",
+                "capital": "SANTA MARÍA DE CAPARO",
+                "parroquia": [
+                    "SANTA MARÍA DE CAPARO"
+                ]
+            },
+            {
+                "municipio": "PUEBLO LLANO",
+                "capital": "PUEBLO LLANO",
+                "parroquia": [
+                    "PUEBLO LLANO"
+                ]
+            },
+            {
+                "municipio": "RANGEL",
+                "capital": "MUCUCHÍES",
+                "parroquia": [
+                    "CACUTE",
+                    "LA TOMA",
+                    "MUCUCHÍES",
+                    "MUCURUBÁ",
+                    "SAN RAFAEL"
+                ]
+            },
+            {
+                "municipio": "RIVAS DÁVILA",
+                "capital": "BAILADORES",
+                "parroquia": [
+                    "GERÓNIMO MALDONADO",
+                    "BAILADORES"
+                ]
+            },
+            {
+                "municipio": "SANTOS MARQUINA",
+                "capital": "TABAY",
+                "parroquia": [
+                    "TABAY"
+                ]
+            },
+            {
+                "municipio": "SUCRE",
+                "capital": "LAGUNILLAS",
+                "parroquia": [
+                    "CHIGUARÁ",
+                    "ESTÁNQUEZ",
+                    "LAGUNILLAS",
+                    "LA TRAMPA",
+                    "PUEBLO NUEVO DEL SUR",
+                    "SAN JUAN"
+                ]
+            },
+            {
+                "municipio": "TOVAR",
+                "capital": "TOVAR",
+                "parroquia": [
+                    "EL AMPARO",
+                    "EL LLANO",
+                    "SAN FRANCISCO",
+                    "TOVAR"
+                ]
+            },
+            {
+                "municipio": "TULIO FEBRES CORDERO",
+                "capital": "NUEVA BOLIVIA",
+                "parroquia": [
+                    "INDEPENDENCIA",
+                    "MARÍA DE LA CONCEPCIÓN PALACIOS BLANCO",
+                    "NUEVA BOLIVIA",
+                    "SANTA APOLONIA"
+                ]
+            },
+            {
+                "municipio": "ZEA",
+                "capital": "ZEA",
+                "parroquia": [
+                    "CAÑO EL TIGRE",
+                    "ZEA"
+                ]
+            }
+        ],
+        "ciudades": [
+            "APARTADEROS MÉRIDA",
+            "ARAPUEY",
+            "BAILADORES",
+            "CAJA SECA",
+            "CANAGUÁ",
+            "CHACHOPO",
+            "CHIGUARA",
+            "EJIDO",
+            "EL VIGÍA",
+            "LA AZULITA",
+            "LA PLAYA",
+            "LAGUNILLAS MÉRIDA",
+            "MÉRIDA",
+            "MESA DE BOLÍVAR",
+            "MUCUCHÍES",
+            "MUCUJEPE",
+            "MUCURUBA",
+            "NUEVA BOLIVIA",
+            "PALMARITO",
+            "PUEBLO LLANO",
+            "SANTA CRUZ DE MORA",
+            "SANTA ELENA DE ARENALES",
+            "SANTO DOMINGO",
+            "TABÁY",
+            "TIMOTES",
+            "TORONDOY",
+            "TOVAR",
+            "TUCANI",
+            "ZEA"
+        ]
+    },
+    {
+        "iso_31662": "VE-M",
+        "estado": "MIRANDA",
+        "capital": "LOS TEQUES",
+        "id_estado": 14,
+        "municipios": [
+            {
+                "municipio": "ACEVEDO",
+                "capital": "CAUCAGUA",
+                "parroquia": [
+                    "ARAGÜITA",
+                    "ARÉVALO GONZÁLEZ",
+                    "CAPAYA",
+                    "CAUCAGUA",
+                    "PANAQUIRE",
+                    "RIBAS",
+                    "EL CAFÉ",
+                    "MARIZAPA"
+                ]
+            },
+            {
+                "municipio": "ANDRÉS BELLO",
+                "capital": "SAN JOSÉ DE BARLOVENTO",
+                "parroquia": [
+                    "CUMBO",
+                    "SAN JOSÉ DE BARLOVENTO"
+                ]
+            },
+            {
+                "municipio": "BARUTA",
+                "capital": "BARUTA",
+                "parroquia": [
+                    "EL CAFETAL",
+                    "LAS MINAS",
+                    "NUESTRA SEÑORA DEL ROSARIO"
+                ]
+            },
+            {
+                "municipio": "BRIÓN",
+                "capital": "HIGUEROTE",
+                "parroquia": [
+                    "HIGUEROTE",
+                    "CURIEPE",
+                    "TACARIGUA DE BRIÓN"
+                ]
+            },
+            {
+                "municipio": "BUROZ",
+                "capital": "MAMPORAL",
+                "parroquia": [
+                    "MAMPORAL"
+                ]
+            },
+            {
+                "municipio": "CARRIZAL",
+                "capital": "CARRIZAL",
+                "parroquia": [
+                    "CARRIZAL"
+                ]
+            },
+            {
+                "municipio": "CHACAO",
+                "capital": "CHACAO",
+                "parroquia": [
+                    "CHACAO"
+                ]
+            },
+            {
+                "municipio": "CRISTÓBAL ROJAS",
+                "capital": "CHARALLAVE",
+                "parroquia": [
+                    "CHARALLAVE",
+                    "LAS BRISAS"
+                ]
+            },
+            {
+                "municipio": "EL HATILLO",
+                "capital": "SANTA ROSALÍA DE PALERMO",
+                "parroquia": [
+                    "EL HATILLO"
+                ]
+            },
+            {
+                "municipio": "GUAICAIPURO",
+                "capital": "LOS TEQUES",
+                "parroquia": [
+                    "ALTAGRACIA DE LA MONTAÑA",
+                    "CECILIO ACOSTA",
+                    "LOS TEQUES",
+                    "EL JARILLO",
+                    "SAN PEDRO",
+                    "TÁCATA",
+                    "PARACOTOS"
+                ]
+            },
+            {
+                "municipio": "INDEPENDENCIA",
+                "capital": "SANTA TERESA DEL TUY",
+                "parroquia": [
+                    "CARTANAL",
+                    "SANTA TERESA DEL TUY"
+                ]
+            },
+            {
+                "municipio": "LANDER",
+                "capital": "OCUMARE DEL TUY",
+                "parroquia": [
+                    "LA DEMOCRACIA",
+                    "OCUMARE DEL TUY",
+                    "SANTA BÁRBARA"
+                ]
+            },
+            {
+                "municipio": "LOS SALIAS",
+                "capital": "SAN ANTONIO DE LOS ALTOS",
+                "parroquia": [
+                    "SAN ANTONIO DE LOS ALTOS"
+                ]
+            },
+            {
+                "municipio": "PÁEZ",
+                "capital": "RÍO CHICO",
+                "parroquia": [
+                    "RÍO CHICO",
+                    "EL GUAPO",
+                    "TACARIGUA DE LA LAGUNA",
+                    "PAPARO",
+                    "SAN FERNANDO DEL GUAPO"
+                ]
+            },
+            {
+                "municipio": "PAZ CASTILLO",
+                "capital": "SANTA LUCÍA",
+                "parroquia": [
+                    "SANTA LUCÍA DEL TUY"
+                ]
+            },
+            {
+                "municipio": "PEDRO GUAL",
+                "capital": "CÚPIRA",
+                "parroquia": [
+                    "CÚPIRA",
+                    "MACHURUCUTO"
+                ]
+            },
+            {
+                "municipio": "PLAZA",
+                "capital": "GUARENAS",
+                "parroquia": [
+                    "GUARENAS"
+                ]
+            },
+            {
+                "municipio": "SIMÓN BOLÍVAR",
+                "capital": "SAN FRANCISCO DE YARE",
+                "parroquia": [
+                    "SAN ANTONIO DE YARE",
+                    "SAN FRANCISCO DE YARE"
+                ]
+            },
+            {
+                "municipio": "SUCRE",
+                "capital": "PETARE",
+                "parroquia": [
+                    "LEONCIO MARTÍNEZ",
+                    "PETARE",
+                    "CAUCAGÜITA",
+                    "FILAS DE MARICHE",
+                    "LA DOLORITA"
+                ]
+            },
+            {
+                "municipio": "URDANETA",
+                "capital": "CÚA",
+                "parroquia": [
+                    "CÚA",
+                    "NUEVA CÚA"
+                ]
+            },
+            {
+                "municipio": "ZAMORA",
+                "capital": "GUATIRE",
+                "parroquia": [
+                    "GUATIRE",
+                    "BOLÍVAR"
+                ]
+            }
+        ],
+        "ciudades": [
+            "ARAGUITA",
+            "CARRIZAL",
+            "CAUCAGUA",
+            "CHAGUARAMAS MIRANDA",
+            "CHARALLAVE",
+            "CHIRIMENA",
+            "CHUSPA",
+            "CÚA",
+            "CUPIRA",
+            "CURIEPE",
+            "EL GUAPO",
+            "EL JARILLO",
+            "FILAS DE MARICHE",
+            "GUARENAS",
+            "GUATIRE",
+            "HIGUEROTE",
+            "LOS ANAUCOS",
+            "LOS TEQUES",
+            "OCUMARE DEL TUY",
+            "PANAQUIRE",
+            "PARACOTOS",
+            "RÍO CHICO",
+            "SAN ANTONIO DE LOS ALTOS",
+            "SAN DIEGO DE LOS ALTOS",
+            "SAN FERNANDO DEL GUAPO",
+            "SAN FRANCISCO DE YARE",
+            "SAN JOSÉ DE LOS ALTOS",
+            "SAN JOSÉ DE RÍO CHICO",
+            "SAN PEDRO DE LOS ALTOS",
+            "SANTA LUCÍA",
+            "SANTA TERESA",
+            "TACARIGUA DE LA LAGUNA",
+            "TACARIGUA DE MAMPORAL",
+            "TÁCATA",
+            "TURUMO"
+        ]
+    },
+    {
+        "iso_31662": "VE-N",
+        "estado": "MONAGAS",
+        "capital": "MATURÍN",
+        "id_estado": 15,
+        "municipios": [
+            {
+                "municipio": "ACOSTA",
+                "capital": "SAN ANTONIO DE CAPAYACUAR",
+                "parroquia": [
+                    "SAN ANTONIO DE MATURÍN",
+                    "SAN FRANCISCO DE MATURÍN"
+                ]
+            },
+            {
+                "municipio": "AGUASAY",
+                "capital": "AGUASAY",
+                "parroquia": [
+                    "AGUASAY"
+                ]
+            },
+            {
+                "municipio": "BOLÍVAR",
+                "capital": "CARIPITO",
+                "parroquia": [
+                    "CARIPITO"
+                ]
+            },
+            {
+                "municipio": "CARIPE",
+                "capital": "CARIPE",
+                "parroquia": [
+                    "EL GUÁCHARO",
+                    "LA GUANOTA",
+                    "SABANA DE PIEDRA",
+                    "SAN AGUSTÍN",
+                    "TERESEN",
+                    "CARIPE"
+                ]
+            },
+            {
+                "municipio": "CEDEÑO",
+                "capital": "CAICARA DE MATURÍN",
+                "parroquia": [
+                    "AREO",
+                    "capital CEDEÑO",
+                    "SAN FÉLIX DE CANTALICIO",
+                    "VIENTO FRESCO"
+                ]
+            },
+            {
+                "municipio": "EZEQUIEL ZAMORA",
+                "capital": "PUNTA DE MATA",
+                "parroquia": [
+                    "EL TEJERO",
+                    "PUNTA DE MATA"
+                ]
+            },
+            {
+                "municipio": "LIBERTADOR",
+                "capital": "TEMBLADOR",
+                "parroquia": [
+                    "CHAGUARAMAS",
+                    "LAS ALHUACAS",
+                    "TABASCA",
+                    "TEMBLADOR"
+                ]
+            },
+            {
+                "municipio": "MATURÍN",
+                "capital": "MATURÍN",
+                "parroquia": [
+                    "ALTO DE LOS GODOS",
+                    "BOQUERÓN",
+                    "LAS COCUIZAS",
+                    "LA CRUZ",
+                    "SAN SIMÓN",
+                    "EL COROZO",
+                    "EL FURRIAL",
+                    "JUSEPÍN",
+                    "LA PICA",
+                    "SAN VICENTE"
+                ]
+            },
+            {
+                "municipio": "PIAR",
+                "capital": "ARAGUA DE MATURÍN",
+                "parroquia": [
+                    "APARICIO",
+                    "ARAGUA DE MATURÍN",
+                    "CHAGUAMAL",
+                    "EL PINTO",
+                    "GUANAGUANA",
+                    "LA TOSCANA",
+                    "TAGUAYA"
+                ]
+            },
+            {
+                "municipio": "PUNCERES",
+                "capital": "QUIRIQUIRE",
+                "parroquia": [
+                    "CACHIPO",
+                    "QUIRIQUIRE"
+                ]
+            },
+            {
+                "municipio": "SANTA BÁRBARA",
+                "capital": "SANTA BÁRBARA",
+                "parroquia": [
+                    "SANTA BÁRBARA"
+                ]
+            },
+            {
+                "municipio": "SOTILLO",
+                "capital": "BARRANCAS DEL ORINOCO",
+                "parroquia": [
+                    "BARRANCAS",
+                    "LOS BARRANCOS DE FAJARDO"
+                ]
+            },
+            {
+                "municipio": "URACOA",
+                "capital": "URACOA",
+                "parroquia": [
+                    "URACOA"
+                ]
+            }
+        ],
+        "ciudades": [
+            "AGUASAY",
+            "ARAGUA DE MATURÍN",
+            "BARRANCAS DEL ORINOCO",
+            "CAICARA DE MATURÍN",
+            "CARIPE",
+            "CARIPITO",
+            "CHAGUARAMAL",
+            "CHAGUARAMAS MONAGAS",
+            "EL FURRIAL",
+            "EL TEJERO",
+            "JUSEPÍN",
+            "LA TOSCANA",
+            "MATURÍN",
+            "MIRAFLORES",
+            "PUNTA DE MATA",
+            "QUIRIQUIRE",
+            "SAN ANTONIO DE MATURÍN",
+            "SAN VICENTE MONAGAS",
+            "SANTA BÁRBARA",
+            "TEMBLADOR",
+            "TERESEN",
+            "URACOA"
+        ]
+    },
+    {
+        "iso_31662": "VE-O",
+        "estado": "NUEVA ESPARTA",
+        "capital": "LA ASUNCIÓN",
+        "id_estado": 16,
+        "municipios": [
+            {
+                "municipio": "ANTOLÍN DEL CAMPO",
+                "capital": "PARAGUACHÍ",
+                "parroquia": [
+                    "ANTOLÍN DEL CAMPO"
+                ]
+            },
+            {
+                "municipio": "ARISMENDI",
+                "capital": "LA ASUNCIÓN",
+                "parroquia": [
+                    "ARISMENDI"
+                ]
+            },
+            {
+                "municipio": "DÍAZ",
+                "capital": "SAN JUAN BAUTISTA",
+                "parroquia": [
+                    "SAN JUAN BAUTISTA",
+                    "ZABALA"
+                ]
+            },
+            {
+                "municipio": "GARCÍA",
+                "capital": "EL VALLE",
+                "parroquia": [
+                    "GARCÍA",
+                    "FRANCISCO FAJARDO"
+                ]
+            },
+            {
+                "municipio": "GÓMEZ",
+                "capital": "SANTA ANA",
+                "parroquia": [
+                    "BOLÍVAR",
+                    "GUEVARA",
+                    "CERRO DE MATASIETE",
+                    "SANTA ANA",
+                    "SUCRE"
+                ]
+            },
+            {
+                "municipio": "MANEIRO",
+                "capital": "PAMPATAR",
+                "parroquia": [
+                    "AGUIRRE",
+                    "MANEIRO"
+                ]
+            },
+            {
+                "municipio": "MARCANO",
+                "capital": "JUAN GRIEGO",
+                "parroquia": [
+                    "ADRIÁN",
+                    "JUAN GRIEGO",
+                    "YAGUARAPARO"
+                ]
+            },
+            {
+                "municipio": "MARIÑO",
+                "capital": "PORLAMAR",
+                "parroquia": [
+                    "PORLAMAR"
+                ]
+            },
+            {
+                "municipio": "PENÍNSULA DE MACANAO",
+                "capital": "BOCA DE RÍO",
+                "parroquia": [
+                    "SAN FRANCISCO DE MACANAO",
+                    "BOCA DE RÍO"
+                ]
+            },
+            {
+                "municipio": "TUBORES",
+                "capital": "PUNTA DE PIEDRAS",
+                "parroquia": [
+                    "TUBORES",
+                    "LOS BARALES"
+                ]
+            },
+            {
+                "municipio": "VILLALBA",
+                "capital": "SAN PEDRO DE COCHE",
+                "parroquia": [
+                    "VICENTE FUENTES",
+                    "VILLALBA"
+                ]
+            }
+        ],
+        "ciudades": [
+            "ALTAGRACIA",
+            "BOCA DE POZO",
+            "BOCA DE RÍO",
+            "EL ESPINAL",
+            "EL VALLE DEL ESPÍRITU SANTO",
+            "EL YAQUE",
+            "JUANGRIEGO",
+            "LA ASUNCIÓN",
+            "LA GUARDIA",
+            "PAMPATAR",
+            "PORLAMAR",
+            "PUERTO FERMÍN",
+            "PUNTA DE PIEDRAS",
+            "SAN FRANCISCO DE MACANAO",
+            "SAN JUAN BAUTISTA",
+            "SAN PEDRO DE COCHE",
+            "SANTA ANA DE NUEVA ESPARTA",
+            "VILLA ROSA"
+        ]
+    },
+    {
+        "iso_31662": "VE-P",
+        "estado": "PORTUGUESA",
+        "capital": "GUANARE",
+        "id_estado": 17,
+        "municipios": [
+            {
+                "municipio": "AGUA BLANCA",
+                "capital": "AGUA BLANCA",
+                "parroquia": [
+                    "AGUA BLANCA"
+                ]
+            },
+            {
+                "municipio": "ARAURE",
+                "capital": "ARAURE",
+                "parroquia": [
+                    "ARAURE",
+                    "RÍO ACARIGUA"
+                ]
+            },
+            {
+                "municipio": "ESTELLER",
+                "capital": "PÍRITU",
+                "parroquia": [
+                    "PÍRITU",
+                    "UVERAL"
+                ]
+            },
+            {
+                "municipio": "GUANARE",
+                "capital": "GUANARE",
+                "parroquia": [
+                    "CORDOVA",
+                    "GUANARE",
+                    "SAN JOSÉ DE LA MONTAÑA",
+                    "SAN JUAN DE GUANAGUANARE",
+                    "VIRGEN DE COROMOTO"
+                ]
+            },
+            {
+                "municipio": "GUANARITO",
+                "capital": "GUANARITO",
+                "parroquia": [
+                    "GUANARITO",
+                    "TRINIDAD DE LA CAPILLA",
+                    "DIVINA PASTORA"
+                ]
+            },
+            {
+                "municipio": "MONSEÑOR JOSÉ VICENTE DE UNDA",
+                "capital": "PARAÍSO DE CHABASQUÉN",
+                "parroquia": [
+                    "PEÑA BLANCA"
+                ]
+            },
+            {
+                "municipio": "OSPINO",
+                "capital": "OSPINO",
+                "parroquia": [
+                    "APARICIÓN",
+                    "LA ESTACIÓN",
+                    "OSPINO"
+                ]
+            },
+            {
+                "municipio": "PÁEZ",
+                "capital": "ACARIGUA",
+                "parroquia": [
+                    "ACARIGUA",
+                    "PAYARA",
+                    "PIMPINELA",
+                    "RAMÓN PERAZA"
+                ]
+            },
+            {
+                "municipio": "PAPELÓN",
+                "capital": "PAPELÓN",
+                "parroquia": [
+                    "CAÑO DELGADITO",
+                    "PAPELÓN"
+                ]
+            },
+            {
+                "municipio": "SAN GENARO DE BOCONOÍTO",
+                "capital": "BOCONOÍTO",
+                "parroquia": [
+                    "ANTOLÍN TOVAR ANQUINO",
+                    "BOCONOÍTO"
+                ]
+            },
+            {
+                "municipio": "SAN RAFAEL DE ONOTO",
+                "capital": "SAN RAFAEL DE ONOTO",
+                "parroquia": [
+                    "SANTA FÉ",
+                    "SAN RAFAEL DE ONOTO",
+                    "THERMO MORALES"
+                ]
+            },
+            {
+                "municipio": "SANTA ROSALÍA",
+                "capital": "EL PLAYÓN",
+                "parroquia": [
+                    "FLORIDA",
+                    "EL PLAYÓN"
+                ]
+            },
+            {
+                "municipio": "SUCRE",
+                "capital": "BISCUCUY",
+                "parroquia": [
+                    "BISCUCUY",
+                    "CONCEPCIÓN",
+                    "SAN JOSÉ DE SAGUAZ",
+                    "SAN RAFAEL DE PALO ALZADO",
+                    "UVENCIO ANTONIO VELÁSQUEZ",
+                    "VILLA ROSA"
+                ]
+            },
+            {
+                "municipio": "TURÉN",
+                "capital": "VILLA BRUZUAL",
+                "parroquia": [
+                    "CANELONES",
+                    "SANTA CRUZ",
+                    "SAN ISIDRO LABRADOR"
+                ]
+            }
+        ],
+        "ciudades": [
+            "ACARIGUA",
+            "AGUA BLANCA",
+            "ARAURE",
+            "BISCUCUY",
+            "BOCONOITO",
+            "CAMPO ELÍAS",
+            "CHABASQUÉN",
+            "GUANARE",
+            "GUANARITO",
+            "LA APARICIÓN",
+            "LA MISIÓN",
+            "MESA DE CAVACAS",
+            "OSPINO",
+            "PAPELÓN",
+            "PAYARA",
+            "PIMPINELA",
+            "PÍRITU DE PORTUGUESA",
+            "SAN RAFAEL DE ONOTO",
+            "SANTA ROSALÍA",
+            "TURÉN"
+        ]
+    },
+    {
+        "iso_31662": "VE-R",
+        "estado": "SUCRE",
+        "capital": "CUMANÁ",
+        "id_estado": 18,
+        "municipios": [
+            {
+                "municipio": "ANDRÉS ELOY BLANCO",
+                "capital": "CASANAY",
+                "parroquia": [
+                    "MARIÑO",
+                    "RÓMULO GALLEGOS"
+                ]
+            },
+            {
+                "municipio": "ANDRÉS MATA",
+                "capital": "SAN JOSÉ DE AEROCUAR",
+                "parroquia": [
+                    "SAN JOSÉ DE AEROCUAR",
+                    "TAVERA ACOSTA"
+                ]
+            },
+            {
+                "municipio": "ARISMENDI",
+                "capital": "RÍO CARIBE",
+                "parroquia": [
+                    "RÍO CARIBE",
+                    "ANTONIO JOSÉ DE SUCRE",
+                    "EL MORRO DE PUERTO SANTO",
+                    "PUERTO SANTO",
+                    "SAN JUAN DE LAS GALDONAS"
+                ]
+            },
+            {
+                "municipio": "BENÍTEZ",
+                "capital": "EL PILAR",
+                "parroquia": [
+                    "EL PILAR",
+                    "EL RINCÓN",
+                    "GENERAL FRANCISCO ANTONIO VÁQUEZ",
+                    "GUARAÚNOS",
+                    "TUNAPUICITO",
+                    "UNIÓN"
+                ]
+            },
+            {
+                "municipio": "BERMÚDEZ",
+                "capital": "CARÚPANO",
+                "parroquia": [
+                    "SANTA CATALINA",
+                    "SANTA ROSA",
+                    "SANTA TERESA",
+                    "BOLÍVAR",
+                    "MARACAPANA"
+                ]
+            },
+            {
+                "municipio": "BOLÍVAR",
+                "capital": "MARIGÜITAR",
+                "parroquia": []
+            },
+            {
+                "municipio": "CAJIGAL",
+                "capital": "YAGUARAPARO",
+                "parroquia": [
+                    "LIBERTAD",
+                    "EL PAUJIL",
+                    "YAGUARAPARO"
+                ]
+            },
+            {
+                "municipio": "CRUZ SALMERÓN ACOSTA",
+                "capital": "ARAYA",
+                "parroquia": [
+                    "CRUZ SALMERÓN ACOSTA",
+                    "CHACOPATA",
+                    "MANICUARE"
+                ]
+            },
+            {
+                "municipio": "LIBERTADOR",
+                "capital": "TUNAPUY",
+                "parroquia": [
+                    "TUNAPUY",
+                    "CAMPO ELÍAS"
+                ]
+            },
+            {
+                "municipio": "MARIÑO",
+                "capital": "IRAPA",
+                "parroquia": [
+                    "IRAPA",
+                    "CAMPO CLARO",
+                    "MARAVAL",
+                    "SAN ANTONIO DE IRAPA",
+                    "SORO"
+                ]
+            },
+            {
+                "municipio": "MEJÍA",
+                "capital": "SAN ANTONIO DEL GOLFO",
+                "parroquia": [
+                    "MEJÍA"
+                ]
+            },
+            {
+                "municipio": "MONTES",
+                "capital": "CUMANACOA",
+                "parroquia": [
+                    "CUMANACOA",
+                    "ARENAS",
+                    "ARICAGUA",
+                    "COCOLLAR",
+                    "SAN FERNANDO",
+                    "SAN LORENZO"
+                ]
+            },
+            {
+                "municipio": "RIBERO",
+                "capital": "CARIACO",
+                "parroquia": [
+                    "VILLA FRONTADO (MUELLE DE CARIACO)",
+                    "CATUARO",
+                    "RENDÓN",
+                    "SAN CRUZ",
+                    "SANTA MARÍA"
+                ]
+            },
+            {
+                "municipio": "SUCRE",
+                "capital": "CUMANÁ",
+                "parroquia": [
+                    "ALTAGRACIA CUMANÁ",
+                    "SANTA INÉS CUMANÁ",
+                    "VALENTÍN VALIENTE CUMANÁ",
+                    "AYACUCHO CUMANÁ",
+                    "SAN JUAN",
+                    "RAÚL LEONI",
+                    "GRAN MARISCAL"
+                ]
+            },
+            {
+                "municipio": "VALDEZ",
+                "capital": "GÜIRIA",
+                "parroquia": [
+                    "CRISTÓBAL COLÓN",
+                    "BIDEAU",
+                    "PUNTA DE PIEDRAS",
+                    "GÜIRIA"
+                ]
+            }
+        ],
+        "ciudades": [
+            "ALTOS DE SUCRE",
+            "ARAYA",
+            "CARIACO",
+            "CARÚPANO",
+            "CASANAY",
+            "CUMANÁ",
+            "CUMANACOA",
+            "EL MORRO PUERTO SANTO",
+            "EL PILAR",
+            "EL POBLADO",
+            "GUACA",
+            "GUIRIA",
+            "IRAPA",
+            "MANICUARE",
+            "MARIGUITAR",
+            "RÍO CARIBE",
+            "SAN ANTONIO DEL GOLFO",
+            "SAN JOSÉ DE AEROCUAR",
+            "SAN VICENTE DE SUCRE",
+            "SANTA FE DE SUCRE",
+            "TUNAPUY",
+            "YAGUARAPARO",
+            "YOCO"
+        ]
+    },
+    {
+        "iso_31662": "VE-S",
+        "estado": "TÁCHIRA",
+        "capital": "SAN CRISTÓBAL",
+        "id_estado": 19,
+        "municipios": [
+            {
+                "municipio": "ANDRÉS BELLO",
+                "capital": "CORDERO",
+                "parroquia": [
+                    "ANDRÉS BELLO"
+                ]
+            },
+            {
+                "municipio": "ANTONIO RÓMULO COSTA",
+                "capital": "LAS MESAS",
+                "parroquia": [
+                    "ANTONIO RÓMULO COSTA"
+                ]
+            },
+            {
+                "municipio": "AYACUCHO",
+                "capital": "COLÓN",
+                "parroquia": [
+                    "AYACUCHO",
+                    "RIVAS BERTI",
+                    "SAN PEDRO DEL RÍO"
+                ]
+            },
+            {
+                "municipio": "BOLÍVAR",
+                "capital": "SAN ANTONIO DEL TÁCHIRA",
+                "parroquia": [
+                    "BOLÍVAR",
+                    "PALOTAL",
+                    "GENERAL JUAN VICENTE GÓMEZ",
+                    "ISAÍAS MEDINA ANGARITA"
+                ]
+            },
+            {
+                "municipio": "CÁRDENAS",
+                "capital": "TÁRIBA",
+                "parroquia": [
+                    "CÁRDENAS",
+                    "AMENODORO RANGEL LAMUS",
+                    "LA FLORIDA"
+                ]
+            },
+            {
+                "municipio": "CÓRDOBA",
+                "capital": "SANTA ANA DE TÁCHIRA",
+                "parroquia": [
+                    "CÓRDOBA"
+                ]
+            },
+            {
+                "municipio": "FERNÁNDEZ FEO",
+                "capital": "SAN RAFAEL DEL PIÑAL",
+                "parroquia": [
+                    "FERNÁNDEZ FEO",
+                    "ALBERTO ADRIANI",
+                    "SANTO DOMINGO"
+                ]
+            },
+            {
+                "municipio": "FRANCISCO DE MIRANDA",
+                "capital": "SAN JOSÉ DE BOLÍVAR",
+                "parroquia": [
+                    "FRANCISCO DE MIRANDA"
+                ]
+            },
+            {
+                "municipio": "GARCÍA DE HEVIA",
+                "capital": "LA FRÍA",
+                "parroquia": [
+                    "GARCÍA DE HEVIA",
+                    "BOCA DE GRITA",
+                    "JOSÉ ANTONIO PÁEZ"
+                ]
+            },
+            {
+                "municipio": "GUÁSIMOS",
+                "capital": "PALMIRA",
+                "parroquia": [
+                    "GUÁSIMOS"
+                ]
+            },
+            {
+                "municipio": "INDEPENDENCIA",
+                "capital": "CAPACHO NUEVO",
+                "parroquia": [
+                    "INDEPENDENCIA",
+                    "JUAN GERMÁN ROSCIO",
+                    "ROMÁN CÁRDENAS"
+                ]
+            },
+            {
+                "municipio": "JÁUREGUI",
+                "capital": "LA GRITA",
+                "parroquia": [
+                    "JÁUREGUI",
+                    "EMILIO CONSTANTINO GUERRERO",
+                    "MONSEÑOR MIGUEL ANTONIO SALAS"
+                ]
+            },
+            {
+                "municipio": "JOSÉ MARÍA VARGAS",
+                "capital": "EL COBRE",
+                "parroquia": [
+                    "JOSÉ MARÍA VARGAS"
+                ]
+            },
+            {
+                "municipio": "JUNÍN",
+                "capital": "RUBIO",
+                "parroquia": [
+                    "JUNÍN",    
+                    "LA PETRÓLEA",  
+                    "QUINIMARÍ",    
+                    "BRAMÓN"   
+                ]
+            },
+            {
+                "municipio": "LIBERTAD",
+                "capital": "CAPACHO VIEJO",
+                "parroquia": [
+                    "LIBERTAD",
+                    "CIPRIANO CASTRO",
+                    "MANUEL FELIPE RUGELES"
+                ]
+            },
+            {
+                "municipio": "LIBERTADOR",
+                "capital": "ABEJALES",
+                "parroquia": [
+                    "capital LIBERTADOR",
+                    "DORADAS",
+                    "EMETERIO OCHOA",
+                    "SAN JOAQUÍN DE NAVAY"
+                ]
+            },
+            {
+                "municipio": "LOBATERA",
+                "capital": "LOBATERA",
+                "parroquia": [
+                    "LOBATERA",
+                    "CONSTITUCIÓN"
+                ]
+            },
+            {
+                "municipio": "MICHELENA",
+                "capital": "MICHELENA",
+                "parroquia": [
+                    "MICHELENA"
+                ]
+            },
+            {
+                "municipio": "PANAMERICANO",
+                "capital": "COLONCITO",
+                "parroquia": [
+                    "PANAMERICANO",
+                    "LA PALMITA"
+                ]
+            },
+            {
+                "municipio": "PEDRO MARÍA UREÑA",
+                "capital": "UREÑA",
+                "parroquia": [
+                    "PEDRO MARÍA UREÑA",
+                    "NUEVA ARCADIA"
+                ]
+            },
+            {
+                "municipio": "RAFAEL URDANETA",
+                "capital": "DELICIAS",
+                "parroquia": [
+                    "DELICIAS",
+                    "PECAYA"
+                ]
+            },
+            {
+                "municipio": "SAMUEL DARÍO MALDONADO",
+                "capital": "LA TENDIDA",
+                "parroquia": [
+                    "SAMUEL DARÍO MALDONADO",
+                    "BOCONÓ",
+                    "HERNÁNDEZ"
+                ]
+            },
+            {
+                "municipio": "SAN CRISTÓBAL",
+                "capital": "SAN CRISTÓBAL",
+                "parroquia": [
+                    "LA CONCORDIA",
+                    "SAN JUAN BAUTISTA",
+                    "PEDRO MARÍA MORANTES",
+                    "SAN SEBASTIÁN",
+                    "DR. FRANCISCO ROMERO LOBO"
+                ]
+            },
+            {
+                "municipio": "SEBORUCO",
+                "capital": "SEBORUCO",
+                "parroquia": [
+                    "SEBORUCO"
+                ]
+            },
+            {
+                "municipio": "SIMÓN RODRÍGUEZ",
+                "capital": "SAN SIMÓN",
+                "parroquia": [
+                    "SIMÓN RODRÍGUEZ"
+                ]
+            },
+            {
+                "municipio": "SUCRE",
+                "capital": "QUENIQUEA",
+                "parroquia": [
+                    "SUCRE",
+                    "ELEAZAR LÓPEZ CONTRERAS",
+                    "SAN PABLO"
+                ]
+            },
+            {
+                "municipio": "TORBES",
+                "capital": "SAN JOSECITO",
+                "parroquia": [
+                    "SAN JOSÉ OBRERO",
+                    "SAN JUAN EUDES"
+                ]
+            },
+            {
+                "municipio": "URIBANTE",
+                "capital": "PREGONERO",
+                "parroquia": [
+                    "URIBANTE",
+                    "CÁRDENAS",
+                    "JUAN PABLO PEÑALOSA",
+                    "POTOSÍ"
+                ]
+            },
+            {
+                "municipio": "SAN JUDAS TADEO",
+                "capital": "UMUQUENA",
+                "parroquia": [
+                    "SAN JUDAS TADEO"
+                ]
+            }
+        ],
+        "ciudades": [
+            "ABEJALES",
+            "BOROTA",
+            "BRAMON",
+            "CAPACHO",
+            "COLÓN",
+            "COLONCITO",
+            "CORDERO",
+            "EL COBRE",
+            "EL PINAL",
+            "INDEPENDENCIA",
+            "LA FRÍA",
+            "LA GRITA",
+            "LA PEDRERA",
+            "LA TENDIDA",
+            "LAS DELICIAS",
+            "LAS HERNÁNDEZ",
+            "LOBATERA",
+            "MICHELENA",
+            "PALMIRA",
+            "PREGONERO",
+            "QUENIQUEA",
+            "RUBIO",
+            "SAN ANTONIO DEL TACHIRA",
+            "SAN CRISTOBAL",
+            "SAN JOSÉ DE BOLÍVAR",
+            "SAN JOSECITO",
+            "SAN PEDRO DEL RÍO",
+            "SANTA ANA TÁCHIRA",
+            "SEBORUCO",
+            "TÁRIBA",
+            "UMUQUENA"
+        ]
+    },
+    {
+        "iso_31662": "VE-T",
+        "estado": "TRUJILLO",
+        "capital": "TRUJILLO",
+        "id_estado": 20,
+        "municipios": [
+            {
+                "municipio": "ANDRÉS BELLO",
+                "capital": "SANTA ISABEL",
+                "parroquia": [
+                    "ARAGUANEY",
+                    "EL JAGUITO",
+                    "LA ESPERANZA",
+                    "SANTA ISABEL"
+                ]
+            },
+            {
+                "municipio": "BOCONÓ",
+                "capital": "BOCONÓ",
+                "parroquia": [
+                    "BOCONÓ",
+                    "EL CARMEN",
+                    "MOSQUEY",
+                    "AYACUCHO",
+                    "BURBUSAY",
+                    "GENERAL RIBAS",
+                    "GUARAMACAL",
+                    "VEGA DE GUARAMACAL",
+                    "MONSEÑOR JÁUREGUI",
+                    "RAFAEL RANGEL",
+                    "SAN MIGUEL",
+                    "SAN JOSÉ"
+                ]
+            },
+            {
+                "municipio": "BOLÍVAR",
+                "capital": "SABANA GRANDE",
+                "parroquia": [
+                    "SABANA GRANDE",
+                    "CHEREGÜÉ",
+                    "GRANADOS"
+                ]
+            },
+            {
+                "municipio": "CANDELARIA",
+                "capital": "CHEJENDÉ",
+                "parroquia": [
+                    "ARNOLDO GABALDÓN",
+                    "BOLIVIA",
+                    "CARRILLO",
+                    "CEGARRA",
+                    "CHEJENDÉ",
+                    "MANUEL SALVADOR ULLOA",
+                    "SAN JOSÉ"
+                ]
+            },
+            {
+                "municipio": "CARACHE",
+                "capital": "CARACHE",
+                "parroquia": [
+                    "CARACHE",
+                    "LA CONCEPCIÓN",
+                    "CUICAS",
+                    "PANAMERICANA",
+                    "SANTA CRUZ"
+                ]
+            },
+            {
+                "municipio": "ESCUQUE",
+                "capital": "ESCUQUE",
+                "parroquia": [
+                    "ESCUQUE",
+                    "LA UNIÓN (EL ALTO ESCUQUE)",
+                    "SANTA RITA",
+                    "SABANA LIBRE"
+                ]
+            },
+            {
+                "municipio": "JOSÉ FELIPE MÁRQUEZ CAÑIZALEZ",
+                "capital": "EL PARADERO",
+                "parroquia": [
+                    "EL SOCORRO",
+                    "LOS CAPRICHOS",
+                    "ANTONIO JOSÉ DE SUCRE"
+                ]
+            },
+            {
+                "municipio": "JUAN VICENTE CAMPOS ELÍAS",
+                "capital": "CAMPO ELÍAS",
+                "parroquia": [
+                    "CAMPO ELÍAS",
+                    "ARNOLDO GABALDÓN"
+                ]
+            },
+            {
+                "municipio": "LA CEIBA",
+                "capital": "SANTA APOLONIA",
+                "parroquia": [
+                    "SANTA APOLONIA",
+                    "EL PROGRESO",
+                    "LA CEIBA",
+                    "TRES DE FEBRERO"
+                ]
+            },
+            {
+                "municipio": "MIRANDA",
+                "capital": "EL DIVIDIVE",
+                "parroquia": [
+                    "EL DIVIDIVE",
+                    "AGUA SANTA",
+                    "AGUA CALIENTE",
+                    "EL CENIZO",
+                    "VALERITA"
+                ]
+            },
+            {
+                "municipio": "MONTE CARMELO",
+                "capital": "MONTE CARMELO",
+                "parroquia": [
+                    "MONTE CARMELO",
+                    "BUENA VISTA",
+                    "SANTA MARÍA DEL HORCÓN"
+                ]
+            },
+            {
+                "municipio": "MOTATÁN",
+                "capital": "MOTATÁN",
+                "parroquia": [
+                    "MOTATÁN",
+                    "EL BAÑO",
+                    "JALISCO"
+                ]
+            },
+            {
+                "municipio": "PAMPÁN",
+                "capital": "PAMPÁN",
+                "parroquia": [
+                    "PAMPÁN",
+                    "FLOR DE PATRIA",
+                    "LA PAZ",
+                    "SANTA ANA"
+                ]
+            },
+            {
+                "municipio": "PAMPANITO",
+                "capital": "PAMPANITO",
+                "parroquia": [
+                    "PAMPANITO",
+                    "LA CONCEPCIÓN",
+                    "PAMPANITO II"
+                ]
+            },
+            {
+                "municipio": "RAFAEL RANGEL",
+                "capital": "BETIJOQUE",
+                "parroquia": [
+                    "BETIJOQUE",
+                    "JOSÉ GREGORIO HERNÁNDEZ",
+                    "LA PUEBLITA",
+                    "LOS CEDROS"
+                ]
+            },
+            {
+                "municipio": "SAN RAFAEL DE CARVAJAL",
+                "capital": "CARVAJAL",
+                "parroquia": [
+                    "CARVAJAL",
+                    "CAMPO ALEGRE",
+                    "ANTONIO NICOLÁS BRICEÑO",
+                    "JOSÉ LEONARDO SUÁREZ"
+                ]
+            },
+            {
+                "municipio": "SUCRE",
+                "capital": "SABANA DE MENDOZA",
+                "parroquia": [
+                    "SABANA DE MENDOZA",
+                    "JUNÍN",
+                    "VALMORE RODRÍGUEZ",
+                    "EL PARAÍSO"
+                ]
+            },
+            {
+                "municipio": "TRUJILLO",
+                "capital": "TRUJILLO",
+                "parroquia": [
+                    "ANDRÉS LINARES",
+                    "CHIQUINQUIRÁ",
+                    "CRISTÓBAL MENDOZA",
+                    "CRUZ CARRILLO",
+                    "MATRIZ",
+                    "MONSEÑOR CARRILLO",
+                    "TRES ESQUINAS"
+                ]
+            },
+            {
+                "municipio": "URDANETA",
+                "capital": "LA QUEBRADA",
+                "parroquia": [
+                    "CABIMBÚ",
+                    "JAJÓ",
+                    "LA MESA DE ESNUJAQUE",
+                    "SANTIAGO",
+                    "TUÑAME",
+                    "LA QUEBRADA"
+                ]
+            },
+            {
+                "municipio": "VALERA",
+                "capital": "VALERA",
+                "parroquia": [
+                    "JUAN IGNACIO MONTILLA",
+                    "LA BEATRIZ",
+                    "LA PUERTA",
+                    "MENDOZA DEL VALLE DE MOMBOY",
+                    "MERCEDES DÍAZ",
+                    "SAN LUIS"
+                ]
+            }
+        ],
+        "ciudades": [
+            "BATATAL",
+            "BETIJOQUE",
+            "BOCONÓ",
+            "CARACHE",
+            "CHEJENDE",
+            "CUICAS",
+            "EL DIVIDIVE",
+            "EL JAGUITO",
+            "ESCUQUE",
+            "ISNOTÚ",
+            "JAJÓ",
+            "LA CEIBA",
+            "LA CONCEPCIÓN DE TRUJLLO",
+            "LA MESA DE ESNUJAQUE",
+            "LA PUERTA",
+            "LA QUEBRADA",
+            "MENDOZA FRÍA",
+            "MESETA DE CHIMPIRE",
+            "MONAY",
+            "MOTATÁN",
+            "PAMPÁN",
+            "PAMPANITO",
+            "SABANA DE MENDOZA",
+            "SAN LÁZARO",
+            "SANTA ANA DE TRUJILLO",
+            "TOSTÓS",
+            "TRUJILLO",
+            "VALERA"
+        ]
+    },
+    {
+        "iso_31662": "VE-W",
+        "estado": "LA GUAIRA",
+        "capital": "LA GUAIRA",
+        "id_estado": 21,
+        "municipios": [
+            {
+                "municipio": "VARGAS",
+                "capital": "LA GUAIRA",
+                "parroquia": [
+                    "CARABALLEDA",
+                    "CARAYACA",
+                    "CARLOS SOUBLETTE",
+                    "CARUAO CHUSPA",
+                    "CATIA LA MAR",
+                    "EL JUNKO",
+                    "LA GUAIRA",
+                    "MACUTO",
+                    "MAIQUETÍA",
+                    "NAIGUATÁ",
+                    "URIMARE"
+                ]
+            }
+        ],
+        "ciudades": [
+            "LA GUAIRA",
+            "CARABALLEDA",
+            "CATIA LA MAR",
+            "MACUTO",
+            "MAIQUETIA"
+        ]
+    },
+    {
+        "iso_31662": "VE-U",
+        "estado": "YARACUY",
+        "capital": "SAN FELIPE",
+        "id_estado": 22,
+        "municipios": [
+            {
+                "municipio": "ARÍSTIDES BASTIDAS",
+                "capital": "SAN PABLO",
+                "parroquia": [
+                    "ARÍSTIDES BASTIDAS"
+                ]
+            },
+            {
+                "municipio": "BOLÍVAR",
+                "capital": "AROA",
+                "parroquia": [
+                    "BOLÍVAR"
+                ]
+            },
+            {
+                "municipio": "BRUZUAL",
+                "capital": "CHIVACOA",
+                "parroquia": [
+                    "CHIVACOA",
+                    "CAMPO ELÍAS"
+                ]
+            },
+            {
+                "municipio": "COCOROTE",
+                "capital": "COCOROTE",
+                "parroquia": [
+                    "COCOROTE"
+                ]
+            },
+            {
+                "municipio": "INDEPENDENCIA",
+                "capital": "INDEPENDENCIA",
+                "parroquia": [
+                    "INDEPENDENCIA"
+                ]
+            },
+            {
+                "municipio": "JOSÉ ANTONIO PÁEZ",
+                "capital": "SABANA DE PARRA",
+                "parroquia": [
+                    "JOSÉ ANTONIO PÁEZ"
+                ]
+            },
+            {
+                "municipio": "LA TRINIDAD",
+                "capital": "BORAURE",
+                "parroquia": [
+                    "LA TRINIDAD"
+                ]
+            },
+            {
+                "municipio": "MANUEL MONGE",
+                "capital": "YUMARE",
+                "parroquia": [
+                    "MANUEL MONGE"
+                ]
+            },
+            {
+                "municipio": "NIRGUA",
+                "capital": "NIRGUA",
+                "parroquia": [
+                    "SALÓM",
+                    "TEMERLA",
+                    "NIRGUA"
+                ]
+            },
+            {
+                "municipio": "PEÑA",
+                "capital": "YARITAGUA",
+                "parroquia": [
+                    "SAN ANDRÉS",
+                    "YARITAGUA"
+                ]
+            },
+            {
+                "municipio": "SAN FELIPE",
+                "capital": "SAN FELIPE",
+                "parroquia": [
+                    "SAN JAVIER",
+                    "ALBARICO",
+                    "SAN FELIPE"
+                ]
+            },
+            {
+                "municipio": "SUCRE",
+                "capital": "GUAMA",
+                "parroquia": [
+                    "SUCRE"
+                ]
+            },
+            {
+                "municipio": "URACHICHE",
+                "capital": "URACHICHE",
+                "parroquia": [
+                    "URACHICHE"
+                ]
+            },
+            {
+                "municipio": "VEROES",
+                "capital": "FARRIAR",
+                "parroquia": [
+                    "EL GUAYABO",
+                    "FARRIAR"
+                ]
+            }
+        ],
+        "ciudades": [
+            "AROA",
+            "BORAURE",
+            "CAMPO ELÍAS DE YARACUY",
+            "CHIVACOA",
+            "COCOROTE",
+            "FARRIAR",
+            "GUAMA",
+            "MARÍN",
+            "NIRGUA",
+            "SABANA DE PARRA",
+            "SALOM",
+            "SAN FELIPE",
+            "SAN PABLO DE YARACUY",
+            "URACHICHE",
+            "YARITAGUA",
+            "YUMARE"
+        ]
+    },
+    {
+        "iso_31662": "VE-V",
+        "estado": "ZULIA",
+        "capital": "MARACAIBO",
+        "id_estado": 23,
+        "municipios": [
+            {
+                "municipio": "ALMIRANTE PADILLA",
+                "capital": "EL TORO",
+                "parroquia": [
+                    "ISLA DE TOAS",
+                    "MONAGAS"
+                ]
+            },
+            {
+                "municipio": "BARALT",
+                "capital": "SAN TIMOTEO",
+                "parroquia": [
+                    "GENERAL URDANETA",
+                    "LIBERTADOR",
+                    "MARCELINO BRICEÑO",
+                    "PUEBLO NUEVO",
+                    "MANUEL GUANIPA MATOS"
+                ]
+            },
+            {
+                "municipio": "CABIMAS",
+                "capital": "CABIMAS",
+                "parroquia": [
+                    "AMBROSIO",
+                    "CARMEN HERRERA",
+                    "LA ROSA",
+                    "GERMÁN RÍOS LINARES",
+                    "SAN BENITO",
+                    "RÓMULO BETANCOURT",
+                    "JORGE HERNÁNDEZ",
+                    "PUNTA GORDA",
+                    "ARÍSTIDES CALVANI"
+                ]
+            },
+            {
+                "municipio": "CATATUMBO",
+                "capital": "ENCONTRADOS",
+                "parroquia": [
+                    "ENCONTRADOS",
+                    "UDÓN PÉREZ"
+                ]
+            },
+            {
+                "municipio": "COLÓN",
+                "capital": "SAN CARLOS DEL ZULIA",
+                "parroquia": [
+                    "MORALITO",
+                    "SAN CARLOS DEL ZULIA",
+                    "SANTA CRUZ DEL ZULIA",
+                    "SANTA BÁRBARA",
+                    "URRIBARRÍ"
+                ]
+            },
+            {
+                "municipio": "FRANCISCO JAVIER PULGAR",
+                "capital": "PUEBLO NUEVO - EL CHIVO",
+                "parroquia": [
+                    "CARLOS QUEVEDO",
+                    "FRANCISCO JAVIER PULGAR",
+                    "SIMÓN RODRÍGUEZ",
+                    "GUAMO-GAVILANES"
+                ]
+            },
+            {
+                "municipio": "PÁEZ",
+                "capital": "SINAMAICA",
+                "parroquia": [
+                    "SINAMAICA",
+                    "ALTA GUAJIRA",
+                    "ELÍAS SÁNCHEZ RUBIO",
+                    "GUAJIRA"
+                ]
+            },
+            {
+                "municipio": "JESÚS ENRIQUE LOSSADA",
+                "capital": "LA CONCEPCIÓN",
+                "parroquia": [
+                    "LA CONCEPCIÓN",
+                    "SAN JOSÉ",
+                    "MARIANO PARRA LEÓN",
+                    "JOSÉ RAMÓN YÉPEZ"
+                ]
+            },
+            {
+                "municipio": "JESÚS MARÍA SEMPRÚN",
+                "capital": "CASIGUA - EL CUBO",
+                "parroquia": [
+                    "JESÚS MARÍA SEMPRÚN",
+                    "BARÍ"
+                ]
+            },
+            {
+                "municipio": "LA CAÑADA DE URDANETA",
+                "capital": "LA CONCEPCIÓN",
+                "parroquia": [
+                    "CONCEPCIÓN",
+                    "ANDRÉS BELLO",
+                    "CHIQUINQUIRÁ",
+                    "EL CARMELO",
+                    "POTRERITOS"
+                ]
+            },
+            {
+                "municipio": "LAGUNILLAS",
+                "capital": "CIUDAD OJEDA",
+                "parroquia": [
+                    "LIBERTAD",
+                    "ALONSO DE OJEDA",
+                    "VENEZUELA",
+                    "ELEAZAR LÓPEZ CONTRERAS",
+                    "CAMPO LARA"
+                ]
+            },
+            {
+                "municipio": "MACHIQUES DE PERIJÁ",
+                "capital": "MACHIQUES",
+                "parroquia": [
+                    "BARTOLOMÉ DE LAS CASAS",
+                    "LIBERTAD",
+                    "RÍO NEGRO",
+                    "SAN JOSÉ DE PERIJÁ"
+                ]
+            },
+            {
+                "municipio": "MARA",
+                "capital": "SAN RAFAEL DE EL MOJÁN",
+                "parroquia": [
+                    "SAN RAFAEL",
+                    "LA SIERRITA",
+                    "LAS PARCELAS",
+                    "LUIS DE VICENTE",
+                    "MONSEÑOR MARCOS SERGIO GODOY",
+                    "RICAURTE",
+                    "TAMARE"
+                ]
+            },
+            {
+                "municipio": "MARACAIBO",
+                "capital": "MARACAIBO",
+                "parroquia": [
+                    "ANTONIO BORJAS ROMERO",
+                    "BOLÍVAR",
+                    "CACIQUE MARA",
+                    "CARRACCIOLO PARRA PÉREZ",
+                    "CECILIO ACOSTA",
+                    "CRISTO DE ARANZA",
+                    "COQUIVACOA",
+                    "CHIQUINQUIRÁ",
+                    "FRANCISCO EUGENIO BUSTAMANTE",
+                    "IDELFONZO VÁSQUEZ",
+                    "JUANA DE ÁVILA",
+                    "LUIS HURTADO HIGUERA",
+                    "MANUEL DAGNINO",
+                    "OLEGARIO VILLALOBOS.",
+                    "RAÚL LEONI",
+                    "SANTA LUCÍA",
+                    "VENANCIO PULGAR",
+                    "SAN ISIDRO"
+                ]
+            },
+            {
+                "municipio": "MIRANDA",
+                "capital": "LOS PUERTOS DE ALTAGRACIA",
+                "parroquia": [
+                    "ALTAGRACIA",
+                    "FARÍA",
+                    "ANA MARÍA CAMPOS",
+                    "SAN ANTONIO",
+                    "SAN JOSÉ"
+                ]
+            },
+            {
+                "municipio": "ROSARIO DE PERIJÁ",
+                "capital": "LA VILLA DEL ROSARIO",
+                "parroquia": [
+                    "DONALDO GARCÍA",
+                    "EL ROSARIO",
+                    "SIXTO ZAMBRANO"
+                ]
+            },
+            {
+                "municipio": "SAN FRANCISCO",
+                "capital": "SAN FRANCISCO",
+                "parroquia": [
+                    "SAN FRANCISCO",
+                    "EL BAJO",
+                    "DOMITILA FLORES",
+                    "FRANCISCO OCHOA",
+                    "LOS CORTIJOS",
+                    "MARCIAL HERNÁNDEZ"
+                ]
+            },
+            {
+                "municipio": "SANTA RITA",
+                "capital": "SANTA RITA",
+                "parroquia": [
+                    "SANTA RITA",
+                    "EL MENE",
+                    "PEDRO LUCAS URRIBARRÍ",
+                    "JOSÉ CENOBIO URRIBARRÍ"
+                ]
+            },
+            {
+                "municipio": "SIMÓN BOLÍVAR",
+                "capital": "TÍA JUANA",
+                "parroquia": [
+                    "RAFAEL MARIA BARALT",
+                    "MANUEL MANRIQUE",
+                    "RAFAEL URDANETA"
+                ]
+            },
+            {
+                "municipio": "SUCRE",
+                "capital": "BOBURES",
+                "parroquia": [
+                    "BOBURES",
+                    "GIBRALTAR",
+                    "HERAS",
+                    "MONSEÑOR ARTURO ÁLVAREZ",
+                    "RÓMULO GALLEGOS",
+                    "EL BATEY"
+                ]
+            },
+            {
+                "municipio": "VALMORE RODRÍGUEZ",
+                "capital": "BACHAQUERO",
+                "parroquia": [
+                    "RAFAEL URDANETA",
+                    "LA VICTORIA",
+                    "RAÚL CUENCA"
+                ]
+            }
+        ],
+        "ciudades": [
+            "BACHAQUERO",
+            "BOBURES",
+            "CABIMAS",
+            "CAMPO CONCEPCIÓN",
+            "CAMPO MARA",
+            "CAMPO ROJO",
+            "CARRASQUERO",
+            "CASIGUA",
+            "CHIQUINQUIRÁ",
+            "CIUDAD OJEDA",
+            "EL BATEY",
+            "EL CARMELO",
+            "EL CHIVO",
+            "EL GUAYABO",
+            "EL MENE",
+            "EL VENADO",
+            "ENCONTRADOS",
+            "GIBRALTAR",
+            "ISLA DE TOAS",
+            "LA CONCEPCIÓN",
+            "LA PAZ",
+            "LA SIERRITA",
+            "LAGUNILLAS",
+            "LAS PIEDRAS",
+            "LOS CORTIJOS",
+            "MACHIQUES",
+            "MARACAIBO",
+            "MENE GRANDE",
+            "PALMAREJO",
+            "PARAGUAIPOA",
+            "POTRERITO",
+            "PUEBLO NUEVO",
+            "PUERTOS DE ALTAGRACIA",
+            "PUNTA GORDA",
+            "SABANETA DE PALMA",
+            "SAN FRANCISCO",
+            "SAN JOSÉ DE PERIJÁ",
+            "SAN RAFAEL DEL MOJÁN",
+            "SAN TIMOTEO",
+            "SANTA BÁRBARA DEL ZULIA",
+            "SANTA CRUZ DE MARA",
+            "SANTA CRUZ DEL ZULIA",
+            "SANTA RITA",
+            "SINAMAICA",
+            "TAMARE",
+            "TÍA JUANA",
+            "VILLA ROSARIO"
+        ]
+    }
+]
+
+}
+  

@@ -1,0 +1,48 @@
+.selected{
+  font-weight: bold !important;
+  transition: all ease .5s;
+}
+.text-bold{
+  font-weight: bold !important;
+}
+.form-control-file{
+  display: none;
+}
+.label-file{
+  cursor: pointer;
+}
+.contenedor-preafiliacion{
+  min-height: 100vh !important;
+}
+.transition-all{
+  transition: all ease 1.2s !important;
+}
+.transform-left{
+  transform: translateX(-300%) !important;
+  visibility: hidden !important;
+}
+input[type="text"]{
+  text-transform: uppercase;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  text-transform: uppercase !important;
+  opacity: 1; /* Firefox */
+}
+.icon-big{
+  font-size: 9rem;
+  color: lightgreen;
+}
+.icon-big-red{
+  font-size: 12rem;
+  color: #c22323;
+}
+.border-bottom-none{
+  border-bottom: none !important;
+}
+.mrb-10{
+  margin-bottom: 10rem;
+}
+.border-top-none{
+  border-top: none !important;
+
+}

@@ -1,0 +1,54 @@
+  <nav [class]="classNav" id="nav" style="z-index: 100;">
+    <div [class]="'row d-flex flex-row justify-content-md-between justify-content-lg-between align-items-center w-100 '+mt5">
+      <div class="col-6 col-md-4 col-lg-3 d-flex justify-content-start justify-content-lg-center ">
+        <div class="contenedor-logo position-relative">
+          <a routerLink="" class="w-100 h-100 position-absolute top-0"></a>
+          <img [src]="'assets/images/png/'+logoEmpresa" class="obj-fit img-fluid" id="logo">
+        </div>
+      </div>
+      <div class="col-4 col-md-8 col-lg-7 contenedor-nav disappear justify-content-center">
+        <div class="ul d-flex flex-row justify-content-center align-items-center">
+          <!-- <li><a class="a" routerLink="">INICIO</a></li> -->
+          <li><a [class]="'a text m-3 text-bold '+textDark" routerLink="/pos">POS</a></li> 
+          <li><a [class]="'a text m-3 text-bold '+textDark" routerLink="/recaudacion">RECAUDACIÓN</a></li>
+          <li class="text-center"><a [class]="'a text m-3 text-bold '+textDark" routerLink="/soluciones">SOLUCIONES DE PAGO</a></li>
+          <li><a [class]="'a text m-3 text-bold '+textDark" routerLink="/cobranza">COBRANZA</a></li>
+          <li><a [class]="'a text m-3 text-bold '+textDark" routerLink="/desarrollo">DESARROLLO</a></li>
+          <li><a [class]="'a text m-3 text-bold '+textDark" routerLink="/contact">CONTACTO</a></li>
+        </div>
+      </div>
+      <div class="col-lg-2 disappear d-flex justify-content-center">
+        <a target="_blank" class="btn btn-block btn-primary" href="https://app.paguetodo.com/loginv2/#/login">INGRESAR</a>
+      </div>
+    
+      <div class="col-6 col-md-6 col-lg-12 d-flex justify-content-center align-items-center pe-4 d-none-button">
+        <div class="button w-100 h-100 d-flex justify-content-end align-items-center" id="button-nav" (click)="menuToggle(!valueNav)">
+          <span [class]="bar" id="bar"><i class="fas fa-bars"></i></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="menu" id="menu-container" style="z-index: 1000;">
+    <div class="background" id="background" (click)="menuToggle(value)"></div>
+      <div class="menu-2 d-flex flex-column justify-content-between" id="menuBar">
+        <div>
+            <ul>
+                <li class="cancel text-color text-start" id="cancel"><a><span (click)="menuToggle(value)"><i class="fas fa-times-circle" (click)="menuToggle(value)"></i></span></a></li>
+                <li><a class="a text" routerLink="" (click)="menuToggle()">INICIO</a></li>
+                <li><a class="a text" routerLink="/pos" (click)="menuToggle(false)">POS</a></li>
+                <li><a class="a text" routerLink="/recaudacion" (click)="menuToggle(false)">RECAUDACIÓN</a></li>
+                <li><a class="a text" routerLink="/soluciones" (click)="menuToggle(false)">SOLUCIONES DE PAGO</a></li>
+                <li><a class="a text" routerLink="/cobranza" (click)="menuToggle(false)">COBRANZA</a></li>
+                <li><a class="a text" routerLink="/desarrollo" (click)="menuToggle(false)">DESARROLLO</a></li>
+                <li><a class="a text" routerLink="/contact" (click)="menuToggle(false)">CONTACTO</a></li>
+            </ul>
+        </div>
+        <div class="w-100 d-flex text-center d-flex justify-content-center">
+            <div class="btns text-center mb-4 d-flex flex-column p-5 d-flex flex-column">
+                <a target="_blank" href="https://app.paguetodo.com/loginv2/#/login" class="btn btn-block btn-primary">INGRESAR</a>
+                <a class="a mt-4" routerLink="/signin">¿Aun no estas registrado?<br>Hazlo aquí</a>
+            </div>
+        </div>
+      </div>
+    </div>
+ 

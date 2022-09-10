@@ -1,0 +1,52 @@
+.border-input-yellow{
+    border-color: yellow !important;
+  }
+  .border-input-yellow:focus{
+    color: yellow !important;
+  }
+.bg-blue-light{
+    background-color: rgba(179, 202, 202, 0.164) !important;
+}
+
+.bg-gradient{
+    background: rgb(182,32,32) !important;
+    background: linear-gradient(90deg, rgba(182,32,32,1) 22%, rgba(76,0,176,1) 67%, rgba(17,45,78,1) 100%) !important;
+}
+.bg-gradient::before{
+    content:"";
+    position: absolute;
+    height: 40%;
+    background: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: auto;
+}
+.btn-white{
+    background: transparent;
+    color:var(--color-primary);
+}
+@media screen and (max-width: 983px) {
+    .bg-gradient::before{
+        content:"";
+        position: absolute;
+        height: 30%;
+        background: white;
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 767px) {
+    .bg-gradient::before{
+        content:"";
+        position: absolute;
+        height: 0;
+        background: white;
+        width: 0;
+        top: 0;
+        left: 0;
+        margin: auto;
+    }
+}

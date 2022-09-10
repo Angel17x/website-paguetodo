@@ -1,0 +1,66 @@
+.button-r{
+    background-color: var(--color-secondary) !important;
+    color: white !important;
+    border-radius: 100%;
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 2rem 3.2rem;
+    margin: 1rem;
+}
+.myhand{
+    top: 50px !important;
+    left: 90% !important;
+    font-size: 2rem !important;
+    transform: rotate(-25deg) !important;
+    animation-name: handmove;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.button-r-2{
+    background-color: var(--color-secondary) !important;
+    color: white !important;
+    border-radius: 100%;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem 1.3rem;
+    margin: 1rem;
+    position: absolute;
+    top: -1rem;
+    left: 75%;
+}
+.line-border-2{
+    width: 0.01em;
+    background:#afafaf !important;
+    min-height: 300px;
+    padding: 0;
+}
+.line-border-horizontal{
+    height: 0.01em !important;
+    width: 8rem !important;
+    background:#afafaf !important;
+    padding: 0;
+}
+.lh-1-8{
+    line-height: 1.8rem;
+}
+.card{
+    height:auto !important;
+}
+@keyframes handmove {
+    0%{
+        visibility:visible;
+    }
+    25%{
+        visibility:hidden;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        visibility:hidden;
+    }
+    100%{
+        font-size: 2rem !important;
+    }
+}

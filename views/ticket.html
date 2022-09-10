@@ -1,0 +1,103 @@
+<navbar [className]="'other'"></navbar>
+<section id="ticket">
+    <div class="container mt-5">
+        <div data-aos="fade-right" data-aos-duration="1500"  class="card card-shadow border-radius-50 p-4">
+            <div *ngIf="route=='ticket'" class="confetti-piece"></div>
+            <div *ngIf="route=='ticket'" class="confetti-piece"></div>
+            <div *ngIf="route=='ticket'" class="confetti-piece"></div>
+            <div *ngIf="route=='ticket'" class="confetti-piece"></div>
+            <div *ngIf="route=='ticket'" class="confetti-piece"></div>
+            <div *ngIf="route=='ticket'" class="confetti-piece"></div>
+            <div *ngIf="route=='ticket'" class="confetti-piece"></div>
+            <div *ngIf="route=='ticket'" class="confetti-piece"></div>
+            <div *ngIf="route=='ticket'" class="confetti-piece"></div>
+            <div *ngIf="route=='ticket'" class="confetti-piece"></div>
+            <div *ngIf="route=='ticket'" class="confetti-piece"></div>
+            <div *ngIf="route=='ticket'" class="confetti-piece"></div>
+            <div *ngIf="route=='ticket'" class="confetti-piece"></div>
+            <div class="row d-flex align-items-center">
+              <div *ngIf="route=='consult'" class="col-lg-12">
+                <h2 class="title-4 m-2">Consulta tu estatus de ticket</h2>
+                  <div class="input-group mb-3">
+                      <input (paste)="onPaste($event.target.value)" (keyup)="keyupsearch($event)" (keypress)="keypressEvent($event)" class="pb-3 pt-3 form-control h-100 bg-transparent text-transform" required [(ngModel)]="nro" name="nro" id="nro" placeholder="Ingrese el código de ticket"  type="text"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" maxlength="6"/>
+                      <div class="input-group-append">
+                          <button (click)="search()" class="btn btn-outline-primary border-none btn-ticket" type="button">Buscar</button>
+                      </div>
+                      <div class="valid-feedback"></div>
+                      <div id="userNameClient2" class="invalid-feedback"></div>
+                  </div>
+              </div>
+                <div *ngIf="external_id!=null" class="col-12 d-flex flex-column justify-content-center align-items-center">
+                    <img src="assets/images/png/logo-paguetodo.png" class="img-fluid obj-fit">
+                    <h3 *ngIf="route=='ticket'" class="h3 text-center mt-2">Ticket procesado con éxito</h3>
+                </div>
+                
+                <div class="col-lg-6 d-flex flex-column">
+                    <h3 *ngIf="external_id!=null" class="title-4">Código del ticket: {{external_id}}</h3>
+                    <p *ngIf="external_id!=null" class="text text-danger">Por favor recuerde guardar el código del ticket. Sin el no podrá consultar el estado de su solicitud.</p>
+                    <p *ngIf="client_name!=null" class="text text-muted"><span class="text-bold">Nombre: </span>{{client_name}}</p>
+                    <p *ngIf="client_phone!=null" class="text text-muted"><span class="text-bold">Teléfono: </span>{{client_phone}}</p>
+                    <p *ngIf="type!=null" class="text text-muted"><span class="text-bold">Área: </span>{{translate2(type)}}</p>
+                    <p *ngIf="status!=null" class="text text-muted"><span class="text-bold">Estatus: </span>{{translate2(status)}}</p>
+                    <p *ngIf="client_id_doc!=null" class="text text-muted"><span class="text-bold">Rif: </span>{{client_id_doc}}</p>
+                    <p *ngIf="client_email!=null" class="text text-muted"><span class="text-bold">Email: </span>{{client_email}}</p>
+                    <div *ngIf="pos!=null">
+                        <h5 *ngIf="pos?.product!=null" class="h5">Dispositivo:</h5>
+                        <p *ngIf="pos?.product!=null" class="text text-muted mt-2"><span class="text-bold">Nombre del dispositivo: </span>{{pos?.product}}</p>
+                        <p *ngIf="pos?.count!=null" class="text text-muted"><span class="text-bold">Cantidad: </span>{{pos?.count}}</p>
+                        <p *ngIf="pos?.price!=null" class="text text-muted"><span class="text-bold">Precio: </span>${{pos?.price}}</p>
+                        <p *ngIf="pos?.count!=null" class="text text-muted"><span class="text-bold">Precio total: </span>${{pos.price * pos.count}}</p>
+                    </div>
+                    <div *ngIf="service_pay!=null || service_pay.length!=0">
+                      <h5 *ngIf="service_pay.length!=0" class="h5">Servicios:</h5>
+                      <p *ngFor="let item of service_pay" class="text text-muted mt-2">{{item.name}}</p>
+                    </div>
+                    <div>
+
+                    </div>
+                  </div>
+                <div *ngIf="external_id!=null" class="col-lg-6">
+                    <img src="assets/images/png/success.png" class="img-fluid obj-fit">
+                </div>
+                <div *ngIf="route=='ticket'" class="col-12 text-center">
+                    <h2 class="title-4 text-center">Gracias por afiliarte con paguetodo!</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="modal" tabindex="-1" role="dialog" style="text-align:center;margin-top:180px;" scroll="no" id="pleaseWait" data-backdrop="static" data-bs-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog" role="document">
+      <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+    </div>
+  </div>
+<div class="modal fade" id="modalFailed" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="modalSuccessLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-none">
+          <button type="button" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center d-flex justify-content-center flex-column">
+          <div class="row d-flex justify-content-center flex-column text-center">
+            <span class="icon-big-red"><i class="fa-solid fa-circle-xmark"></i></span>
+            <p class="title-6">{{mensaje}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalNotFound" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="modalSuccessLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-none">
+          <button type="button" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center d-flex justify-content-center flex-column">
+          <div class="row d-flex justify-content-center flex-column text-center">
+            <span class="icon-big-red text-blue-dark"><i class="fa-solid fa-user-slash"></i></span>
+            <p class="title-6">{{mensaje}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,199 @@
+<navbar [className]="'other'"></navbar>
+<section>
+    <div class="container mt-5">
+        <div class="row d-flex flex-column flex-wrap align-items-center justify-content-center position-relative w-auto h-auto">
+            <div data-aos="fade-up" data-aos-duration="800" class="col-lg-12" class="text-center col-12">
+                <div>
+                    <h2 data-aos="fade-up" data-aos-duration="800" class="title-6 text-center">Puntos de ventas</h2>
+                    <div class="d-flex flex-row align-items-center justify-content-center">
+                        <div data-aos="fade-right" class="border-text"></div>
+                        <p data-aos="fade-up" data-aos-duration="800" class="h5 text-blue">Presentamos nuestra línea de equipos POS</p>
+                        <div data-aos="fade-left" class="border-text"></div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="800" class="col-6">
+                <img src="assets/images/png/shop.png" class="img-fluid obj-fit w-100 h-100">
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+  <div *ngIf="pos()!=null || pos()!=undefined" class="container position-relative h-auto mt-5 ps-0">
+      <div class="row d-flex mt-5 flex-row flex-wrap align-items-stretch position-relative w-auto h-auto">
+        <div data-aos="fade-up" data-aos-duration="800" *ngFor="let pos of pos() let i = index" class="col-12 col-md-6 col-lg-4 p-4 top-0 d-flex flex-column align-items-stretch  pt-0">
+            <div class="card-border card-shadow   text-start position-relative w-100 h-100 d-flex flex-column justify-content-start">
+                <div *ngIf="pos.bestSeller" class="masvendido position-absolute">Más vendido</div>
+                <div class="container-images ">
+                    <img [src]="pos.images[0]" class="img-fluid obj-fit w-100 h-manual" (mouseenter)="mouseOverFunction($event.target, pos.images, true)" (mouseout)="mouseOverFunction($event.target, pos.images, false)"/>
+                </div>
+                <div class="h-80 row d-flex align-items-start ps-4 pe-4 p-4">
+                    <div class="col-12 p-2">
+                        <h3 class="text">{{pos.name}}</h3>
+                    </div>
+                    <div class="col-12 p-2">
+                        <p class="p">{{pos.details.Descripcion}}</p>
+                    </div>
+                    <div class="row align-items-start justify-content-start p-2 text-center">
+                    <div class="col-1 col-md-1 col-lg-1 text-end m-0 p-0 ps-3">
+                        <label class="text-2">US{{pos.currency}}</label>
+                    </div>
+                    <div class="col-4 col-md-4 col-lg-4 text-start m-0 p-0 ps-3">
+                        <h2 class="title-4">&nbsp;{{pos.price}}</h2>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-12 text-center d-flex align-items-stretch justify-content-end mt-2">
+                        <button class="btn btn-primary text-center pt-2 pb-2 m-1" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="showPos(pos)">Vista rapida</button>
+                        <button type="button" (click)="sendPos(pos)" class="btn btn-success text-center pt-2 pb-2 m-1">Adquirir</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+      </div>
+  </div>  
+</section>
+<section>
+<div class="container mt-100">
+  <div class="row d-flex align-items-lg-stretch justify-content-center pt-5 p-0 pb-0 overflow-hidden">
+    <div class="col-12"><h2 data-aos="fade-up" data-aos-duration="800" class="title-6 text-center col-12">¿Qué incluye el producto?</h2></div>
+        <div class="col-12 text-center d-flex justify-content-center">
+        <p data-aos="fade-up" data-aos-duration="800" class="text text-muted text-center mt-3 col-12 col-md-12 col-lg-6">
+          Incluye, servicios de mantenimiento, soporte técnico y gestión administrativa de la cuenta, 
+          no se cobra otras comisiones por transacciones o cierre de lotes
+        </p>
+        </div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="800" class="row d-flex align-items-stretch justify-content-center m-auto">
+        <div  class="col-12 col-md-6 col-lg-3 d-flex flex-row pt-50">
+            <div class="card-shadow m-2 border-radius d-flex flex-column text-start w-100 h-100 p-4 m-2">
+                <div class="header h-25 transform text-center">
+                    <span class="icon-6-rem text-success text-center"><i class="fas fa-check-circle"></i></span>
+                </div>
+                <div class="body h-75 mt-3">
+                    <h2 class="h3 text-center">Terminal POS  SIMCARD</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 d-flex flex-row  pt-50 position-relative">
+            <div class="card-shadow m-2 border-radius d-flex flex-column text-start w-100 h-100 p-4 m-2">
+                <div class="header h-25 transform text-center">
+                    <span class="icon-6-rem text-success text-center"><i class="fas fa-check-circle"></i></span>
+                </div>
+                <div class="body h-75 mt-3">
+                    <h2 class="h3 text-center">Activación y configuración  con la procesadora</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 d-flex flex-row  pt-50 position-relative">
+            <div class="card-shadow m-2 border-radius d-flex flex-column text-start w-100 h-100 p-4 m-2">
+                <div class="header h-25 transform text-center">
+                    <span class="icon-6-rem text-success text-center"><i class="fas fa-check-circle"></i></span>
+                </div>
+                <div class="body h-75 mt-3">
+                    <h2 class="h3 text-center">Soporte técnico especializado (preventivo y correctivo)</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 d-flex flex-row  pt-50 position-relative">
+            <div class="card-shadow m-2 border-radius d-flex flex-column text-start w-100 h-100 p-4 m-2">
+                <div class="header h-25 transform text-center">
+                    <span class="icon-6-rem text-success text-center"><i class="fas fa-check-circle"></i></span>
+                </div>
+                <div class="body h-75 mt-3">
+                    <h2 class="h3 text-center">Fee mensual de la procesadora</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 d-flex flex-row  pt-50 position-relative">
+            <div class="card-shadow m-2 border-radius d-flex flex-column text-start w-100 h-100 p-4 m-2">
+                <div class="header h-25 transform text-center">
+                    <span class="icon-6-rem text-success text-center"><i class="fas fa-check-circle"></i></span>
+                </div>
+                <div class="body h-75 mt-3">
+                    <h2 class="h3 text-center">Plan de datos</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</section>
+<section id="matenimiento">
+    <div class="container">
+        <div class="row d-flex flex-row justify-content-center align-items-center mt-5">
+            <div class="col-12 col-md-12 col-lg-5 d-flex flex-column justify-content-sm-center text-sm-center text-md-center text-lg-start">
+                <h2 data-aos="fade-up" data-aos-duration="800" class="font-sans-bold title-6 mt-4">Mantenimiento</h2>
+                <div class="mt-4" data-aos="fade-up" data-aos-duration="800">
+                  &nbsp;&nbsp;&nbsp;&nbsp;<div class="d-flex flex-row justify-content-start text-start align-items-center"><span class="text-success h1"><i class="fas fa-check-circle"></i></span>&nbsp;&nbsp;<p class="text text-muted">Garantía en mantenimiento y soporte que le proporciona al usuario un punto de contacto para  la atención de requerimientos e incidentes.</p></div>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<div class="d-flex flex-row justify-content-start text-start align-items-center"><span class="text-success h1"><i class="fas fa-check-circle"></i></span>&nbsp;&nbsp;<p class="text text-muted">Rapidez en atención y solución de incidencias.</p></div>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<div class="d-flex flex-row justify-content-start text-start align-items-center"><span class="text-success h1"><i class="fas fa-check-circle"></i></span>&nbsp;&nbsp;<p class="text text-muted">Equipo altamente capacitado.</p></div>
+                </div>
+                <div class="mt-4">
+                    <label data-aos="fade-up" data-aos-duration="800" class="text-muted">
+                        Tarifa del servicio de mantenimiento, soporte técnico y gestión administrativa de la cuenta, <b class="color-red">no cobramos otras comisiones por transacciones o cierres de lote.</b>
+                    </label>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="800" class="col-12 col-md-12 col-lg-6">
+              <img src="assets/images/png/support.png" class="img-fluid obj-fit">
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center mt-5">
+            <div class="col-12">
+                <div class="">
+                    <h2 data-aos="fade-up" data-aos-duration="800" class="title-6 text-blue-dark mt-4">Niveles de servicio</h2>
+                    <div class="line w-25 mt-2 bg-blue-light-2"></div>
+                </div>
+            </div>
+
+            <div  class="col-12 col-md-6 col-lg-4 d-flex flex-row align-items-center align-items-stretch">
+                <div class="card card-shadow border-radius d-flex flex-column text-start w-100 h-100 m-2">
+                    <h2 class="title-5 text-blue">01</h2>
+                    <h4 class="text text-bold">Atención telefónica para solución de incidencias o requerimientos.</h4>
+                </div>
+            </div>
+            <div  class="col-12 col-md-6 col-lg-4 d-flex flex-row align-items-center align-items-stretch">
+                <div class="card card-shadow border-radius d-flex flex-column text-start w-100 h-100 m-2">
+                    <h2 class="title-5 text-blue">02</h2>
+                    <h4 class="text text-bold">Soporte en sitio por fallas técnicas.</h4>
+                </div>
+            </div>
+            <div  class="col-12 col-md-6 col-lg-4 d-flex flex-row align-items-center align-items-stretch">
+                <div class="card card-shadow border-radius d-flex flex-column text-start w-100 h-100 m-2">
+                    <h2 class="title-5 text-blue">03</h2>
+                    <h4 class="text text-bold">Reparación de equipos.</h4>
+                </div>
+            </div>
+          </div>
+    </div>
+</section>
+<section>
+        <div class="container mt-5">
+            <div class="row flex-row-reverse mt-5 flex-column flex-lg-row-reverse p-2 d-flex flex-row align-items-center justify-content-between">
+                <div data-aos="fade-up" data-aos-duration="800" class="col-12 col-md-6 col-lg-6">
+                    <img src="assets/images/png/suggestions.png" alt="" class="img-fluid obj-fit w-100 h-100">
+                </div>
+                <div class="col-12 col-md-6 col-lg-5 text-justify">
+                    <h2 data-aos="fade-up" data-aos-duration="800" class="title-2 text-start">Solicitudes, sugerencias, quejas y reclamos</h2>
+                    <div data-aos="fade-up" data-aos-duration="800" class="btns text-center mt-2">
+                        <a [routerLink]='["/contact"]' class="btn btn-primary">Contáctanos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<section>
+    <div class="modal fade p-0" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen mw-100">
+            <div class="modal-content">
+                <div class="container-button d-flex flex-row-reverse p-2 position-relative">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="container-pos">
+
+                </div>
+            </div>
+        </div>
+      </div>
+</section>

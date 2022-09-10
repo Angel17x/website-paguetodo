@@ -1,0 +1,1254 @@
+
+<navbar [className]="'other'"></navbar>
+<div id="section1" class="contenedor-preafiliacion position-relative w-100 d-flex flex-row overflow-hidden">
+  <div [class]="class1">
+    <form novalidate>
+      <div class="row card-shadow">
+            <div class="col-12 col-md-12 col-lg-6 bg-blue-dark-2 d-flex justify-content-center">
+              <img src="assets/images/svg/emailAnimate.svg" alt="" class="img-fluid obj-fit d-none-img">
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 bg-white">
+              <div class="row p-5 pb-0">
+                <div class="col-12">
+                  <p class="title-6 text-start col-12">Preafiliación - Cliente nuevo</p>
+                </div>
+                <!-- <div *ngIf="type==='pos' || type==='recaudacion'" class="col-12 cursor-pointer mb-2" id="contratoPaguetodo" (click)="descargarContrato()">
+                  <label class="text-underline text label cursor-pointer">
+                    Descarga el contrato paguetodo, llenalo, escanealo y adjuntalo al final de la preafiliación:
+                    <span class="cursor-pointer label h5"><i class="fas fa-download"></i></span>
+                  </label>
+                  
+                </div> -->
+                <p class="text text-muted mb-2">Por favor, ingrese la información requerida para procesar su solicitud.</p>
+                <div class="bottom-text"></div>
+                <p class="text text-two-light text-start mb-4">A continuación, verifica que la información sea la correcta e ingrese los requisitos faltantes.</p>
+                <div class="col-12 col-md-12 col-lg-12">
+                  <div class="input-group mb-3">
+                    <input class="pb-3 pt-3 form-control h-100 client bg-transparent text-muted" required (paste)="false" (keyup)="keypressValidateInput($event.target, 'string', 4, null)" (keypress)="keypressValidateInput($event.target, 'string', 4, null)" [(ngModel)]="userNameClient" name="userNameClient" id="userNameClient" placeholder="Nombre y apellido"  type="text"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" maxlength="30"/>
+                    <div class="valid-feedback"></div>
+                    <div id="userNameClient2" class="invalid-feedback"></div>
+                  </div>
+                </div>
+                <div class="col-4 col-md-3 col-lg-3">
+                  <div class="input-group mb-3">
+                    <select [(ngModel)]="typeRif" name="typeRif" class="pt-3 w-100 input-group-text text-center bg-transparent text-muted" id="inputGroup-sizing-default">
+                      <option class="text-dark" value="V" selected>V</option>
+                      <option class="text-dark" value="E">E</option>
+                      <option class="text-dark" value="G">G</option>
+                      <option class="text-dark" value="P">P</option>
+                      <option class="text-dark" value="J">J</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-8 col-md-9 col-lg-9">
+                  <div class="input-group mb-3">
+                    <input required class="pt-3 pb-3 form-control h-100 client bg-transparent text-muted" [(ngModel)]="rifClient" (paste)="false" (keyup)="keypressValidateInput($event.target, 'string', 3, 'rif')" (keypress)="keypressValidateInput($event.target, 'string', 3, 'rif')" name="rifClient" id="rifClient" placeholder="rif/ci"  type="text"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" maxlength="9"/>
+                    <div class="valid-feedback"></div>
+                    <div id="rifClient2" class="invalid-feedback"></div>
+                  </div>
+                </div>
+                <div class="col-4 col-md-3 col-lg-3">
+                  <div class="input-group mb-3">
+                    <select [(ngModel)]="typeTelefonoClient" name="typeTelefonoClient" class="pt-3 w-100 input-group-text text-center bg-transparent text-muted" id="inputGroup-sizing-default">
+                      <option class="text-dark" value="414" selected>414</option>
+                      <option class="text-dark" value="424">424</option>
+                      <option class="text-dark" value="412">412</option>
+                      <option class="text-dark" value="416">416</option>
+                      <option class="text-dark" value="426">426</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-8 col-md-9 col-lg-9">
+                  <div class="input-group mb-3">
+                    <input required limit-to="7" class="pt-3 pb-3 form-control h-100 client tlf bg-transparent text-muted" [(ngModel)]="telefonoClient" (paste)="false" (keyup)="keypressValidateInput($event.target, 'string', 6, 'phone')" (keypress)="keypressValidateInput($event.target, 'string', 6, 'phone')" name="telefonoClient" id="telefonoClient" placeholder="Teléfono"  type="text"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" maxlength="7"/>
+                    <div class="valid-feedback"></div>
+                    <div id="telefonoClient2" class="invalid-feedback"></div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-12">
+                  <div class="input-group mb-3">
+                    <input required class="pt-3 pb-3 form-control h-100 client bg-transparent text-muted" [(ngModel)]="emailClient" (keyup)="keypressValidateInput($event.target, 'string', 4, 'email')" (keypress)="keypressValidateInput($event.target, 'string', 4, 'email')" name="emailClient" id="emailClient" placeholder="Correo electrónico"  type="email"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" maxlength="30"/>
+                    <div class="valid-feedback"></div>
+                    <div id="emailClient2" class="invalid-feedback"></div>
+                  </div>
+                </div>
+                <div class="col-12" *ngIf="type=='pos'">
+                  <h5 *ngIf="pos.id!=null" class="text text-bold text-start mb-2 cursor-pointer">Dispositivo seleccionado:</h5>
+                  <p *ngIf="pos.product!=null" class="text text-muted"><label class="text text-bold">Nombre:</label> {{pos.product}}</p>
+                  <p *ngIf="pos.price!=null" class="text text-muted"><label class="text text-bold">Precio:</label> ${{pos.price}}</p>
+                  <p *ngIf="pos.price!=null" class="text text-muted"><label class="text text-bold">Total:</label> ${{pos.price * count}}</p>
+                  <p *ngIf="count!=null" class="text text-muted mb-0"><label class="text text-bold">Cantidad:&nbsp;</label> ({{count}})</p>
+                  <div class="d-flex flex-row align-items-center">
+                    <span (click)="changeCount(0)" class="text-blue-dark title-4 m-2 mt-0 cursor-pointer"><i class="fa-solid fa-circle-minus"></i></span>
+                    <span (click)="changeCount(1)" class="text-blue-dark title-4 m-2 mt-0 cursor-pointer"><i class="fa-solid fa-circle-plus"></i></span>
+                    <label class="text-muted">min 1 - max 10</label>
+                  </div>
+                </div>
+                <div class="col-lg-12" *ngIf="type=='pos'">
+                  <h5 class="text text-bold text-start mb-2 cursor-pointer">Forma de entrega:</h5>
+                  <div class="d-flex">
+                        <div>
+                          <div class="form-check">
+                            <label class="form-check-label" for="retiroOficina">Retiro en oficina</label>
+                            <input disabled [checked]="retiroOficina" [value]="retiroOficina" [(ngModel)]="retiroOficina" (change)="checked($event.target)" class="form-check-input client" type="checkbox" id="retiroOficina" name="retiroOficina">
+                          </div>
+                          <div class="d-flex justify-content-start m-2 flex-column">
+                            <label class="text text-bold text-start mb-2 cursor-pointer">Dirección:</label>
+                              <label class="text text-start cursor-pointer">Av. Luis Roche con 3ra transversal de Altamira, Municipio Chacao, Torre Nuevo Mundo piso 7, Caracas, Venezuela.</label>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+                <div class="col-lg-12 mb-3" *ngIf="type=='pay-button'">
+                  <div class="d-flex">
+                    <div class="form-check">
+                      <label class="form-check-label text-muted" for="programmer">¿Posee programador?</label>
+                      <input [checked]="programmer" [value]="programmer" [(ngModel)]="programmer" class="form-check-input client" type="checkbox" id="programmer" name="programmer">
+                    </div>
+                  </div>
+                </div>
+                <div *ngIf="type=='recaudacion'" class="col-md-12 col-md-12 col-lg-12">
+                  <div class="input-group mb-3 d-flex flex-column" *ngIf="listServices!=null && listServices.length!=0">
+                    <p class="text text-bold">Seleccione los servicios:</p>
+                      <div class="form-check form-check-inline" *ngFor="let item of listServices let i = index">
+                        <input class="form-check-input text text-muted" (change)="addDataServices(item)" type="checkbox" [id]="'item_'+(i+1)">
+                        <label [class]="'form-check-label text '+ (item.classSelected ? item.classSelected : 'text-muted')" [attr.for]="'item_'+(i+1)"><h6>{{item?.name}}</h6></label>
+                      </div>
+                      <div class="valid-feedback"></div>
+                      <div class="invalid-feedback">Seleccione al menos uno de estos servicios</div>
+                  </div>
+                  <div class="invalid-feedback">Seleccione al menos uno de estos servicios</div>
+
+                </div>
+                
+              </div>
+              <div class="p-5 pt-2 row text-center col-12 d-flex flex-row justify-content-end flex-wrap">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 text-center text-md-end text-lg-end">
+                  <button type="button" (click)="back()" class="w-100 btn btn-outline-secondary text-center pt-2 pb-2 m-1">
+                    REGRESAR
+                  </button>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 text-center text-md-end text-lg-end">
+                  <button type="button" (click)="clean('form1')" class="w-100 btn btn-outline-warning text-center pt-2 pb-2 m-1">
+                    LIMPIAR
+                  </button>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 text-center text-md-start text-lg-start">
+                  <button type="submit" (click)="formClient()" class="btn btn-primary text-center pt-2 pb-2 m-1 w-100">
+                    CONTINUAR
+                  </button>
+                </div>
+              </div>
+            </div>
+          
+      </div>
+    </form>
+  </div>
+  
+  <div [class]="class2">
+    <form>
+      <div class="row card-shadow">
+        <div class="col-12 col-md-12 col-lg-6 d-flex justify-content-center">
+          <img src="assets/images/svg/message.svg" alt="" class="img-fluid obj-fit d-none-img">
+        </div>
+      <div class="col-12 col-md-12 col-lg-6 bg-white">
+        <div class="row p-5">
+          <div class="col-12">
+            <p class="title-6 text-start">Preafiliación - Datos del negocio</p>
+          </div>
+            <p class="text-nav text-start mb-2 mt-3">Por favor, ingrese la información requerida para procesar su solicitud.</p>
+            <div class="bottom-text"></div>
+            <p class="text-2 text-two-light text-start mb-4">A continuación, verifica que la información sea la correcta e ingrese los requisitos faltantes.</p>
+          
+          <div class="col-lg-12">
+            <div class="input-group mb-3">
+              <input class="pb-3 pt-3 form-control h-100 client bg-transparent text-muted" (paste)="false" (keyup)="keypressValidateInput($event.target, 'string', 4, null)" (keypress)="keypressValidateInput($event.target, 'string', 4, null)" required [(ngModel)]="nombreNegocio" name="nombreNegocio" id="nombreNegocio" placeholder="Nombre del negocio"  type="text"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" maxlength="30"/>
+              <div class="valid-feedback"></div>
+              <div id="nombreNegocio2" class="invalid-feedback"></div>
+            </div>
+          </div>
+          
+          <div class="col-4 col-md-3 col-lg-3">
+            <div class="input-group mb-3">
+              <select [(ngModel)]="typeRifNegocio" name="typeRifNegocio" class="pt-3 w-100 input-group-text text-center bg-transparent text-muted" id="typeRifNegocio">
+                <option class="text-dark" value="V" selected>V</option>
+                <option class="text-dark" value="E">E</option>
+                <option class="text-dark" value="G">G</option>
+                <option class="text-dark" value="P">P</option>
+                <option class="text-dark" value="J">J</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-8 col-md-9 col-lg-9">
+            <div class="input-group mb-3">
+              <input class="pt-3 pb-3 form-control h-100 client tlf bg-transparent text-muted" (keyup)="keypressValidateInput($event.target, 'string', null, 'rif')" (keypress)="keypressValidateInput($event.target, 'string', null, 'rif')" required [(ngModel)]="rifNegocio" name="rifNegocio" id="rifNegocio" placeholder="Rif del negocio"  type="text"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" maxlength="9"/>
+              <div class="valid-feedback"></div>
+              <div id="rifNegocio2" class="invalid-feedback"></div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="input-group mb-3">
+              <select required class="pt-3 w-100 input-group-text text-start bg-transparent text-muted" [(ngModel)]="actividadNegocio" (change)="actividadNegocioFunction($event.target)" name="actividadNegocio" id="actividadNegocio" aria-label="Default select example">
+                <option selected>SELECCIONE UNA ACTIVIDAD ECONÓMICA...</option>
+                <option value="AGRICULTURA">AGRICULTURA</option>
+                <option value="GANADERIA">GANADERÍA</option>
+                <option value="PESCA">PESCA</option>
+                <option value="MINERIA">MINERÍA</option>
+                <option value="INDUSTRIA">INDUSTRIA</option>
+                <option value="COMERCIO">COMERCIO</option>
+                <option value="OTROS">OTROS</option>
+              </select>
+              <div class="valid-feedback"></div>
+              <div id="actividadNegocio2" class="invalid-feedback"></div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-12">
+            <div class="input-group mb-3">
+              <input required class="pt-3 pb-3 form-control h-100 client bg-transparent text-muted" [(ngModel)]="emailCompany" (keyup)="keypressValidateInput($event.target, 'string', 4, 'email')" (keypress)="keypressValidateInput($event.target, 'string', 4, 'email')" name="emailCompany" id="emailCompany" placeholder="Correo electrónico"  type="email"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" maxlength="30"/>
+              <div class="valid-feedback"></div>
+              <div id="emailCompany2" class="invalid-feedback"></div>
+            </div>
+          </div>
+          <div class="col-12" *ngIf="actividadOtrosBoolean">
+            <div class="input-group mb-3">
+              <input class="pt-3 w-100 input-group-text text-start bg-transparent text-muted" (keyup)="keypressValidateInput($event.target, 'string', 4, null)" (keypress)="keypressValidateInput($event.target, 'string', 4, null)" required name="actividadOtros" [(ngModel)]="actividadOtros" id="actividadOtros" placeholder="Ingrese la actividad económica" type="text"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" maxlength="50"/>
+              <div class="valid-feedback"></div>
+              <div id="actividadOtros2" class="invalid-feedback"></div>
+            </div>
+          </div>
+        </div>
+        <div class="p-5 pt-2 row text-center d-flex flex-row justify-content-end flex-wrap">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 text-center text-md-end text-lg-end">
+            <button type="button" (click)="formNegocio('regresar')" class="w-100 btn btn-outline-secondary text-center pt-2 pb-2 m-1">
+              REGRESAR
+            </button>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 text-center text-md-end text-lg-end">
+            <button type="button" (click)="clean('form2')" class="w-100 btn btn-outline-warning text-center pt-2 pb-2 m-1">
+              LIMPIAR
+            </button>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 text-center text-md-start text-lg-start">
+            <button type="submit"  class="btn btn-primary text-center pt-2 pb-2 m-1 w-100" (click)="formNegocio()">
+              CONTINUAR
+            </button>
+          </div>
+        </div>
+        </div>
+      </div>
+      </form>
+  </div>
+  
+  <div [class]="class3">
+    <form>
+      <div class="row card-shadow">
+        <div class="col-12 col-md-12 col-lg-6">
+          <img src="assets/images/svg/checkList.svg" class="img-fluid obj-fit d-none-img">
+        </div>
+        <div class="col-12 col-md-12 col-lg-6">
+          <div class="row p-5">
+            <p class="title-6 text-start">Preafiliación - Dirección del negocio</p>
+          <p class="text-nav text-start mb-2 mt-3">Por favor, ingrese la información requerida para procesar su solicitud.</p>
+          <div class="bottom-text"></div>
+          <p class="text-2 text-two-light text-start mb-4">A continuación, verifica que la información sea la correcta e ingrese los requisitos faltantes.</p>
+          <div class="col-lg-6">
+            <div class="input-group mb-3">
+              <input maxlength="50"  required (keyup)="keypressValidateInput($event.target, 'string', 4, null)" (keypress)="keypressValidateInput($event.target, 'string', 4, null)" [(ngModel)]="addressNegocio" name="addressNegocio" id="addressNegocio" placeholder="Av / Calle / Negocio" class="pt-3 w-100 input-group-text text-start bg-transparent text-muted" type="text"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
+              <div class="valid-feedback"></div>
+              <div id="addressNegocio2-1" class="invalid-feedback"></div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="input-group mb-3">
+              <input maxlength="50"  required (keyup)="keypressValidateInput($event.target, 'string', 4, null)" (keypress)="keypressValidateInput($event.target, 'string', 4, null)" [(ngModel)]="addressNegocio2" name="addressNegocio2" id="addressNegocio2" placeholder="Edificio / Quinta / C.C" class="pt-3 w-100 input-group-text text-start bg-transparent text-muted" type="text"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
+              <div class="valid-feedback"></div>
+              <div id="addressNegocio2-2" class="invalid-feedback"></div>
+            </div>
+          </div>
+          
+          <div class="col-lg-6">
+            <div class="input-group mb-3">
+              <input maxlength="50"  required (keyup)="keypressValidateInput($event.target, 'string', 2, null)" (keypress)="keypressValidateInput($event.target, 'string', 2, null)" [(ngModel)]="addressNegocio3" id="addressNegocio3" name="addressNegocio3" placeholder="Piso / Casa / Local Oficina / Apto" class="pt-3 w-100 input-group-text text-start bg-transparent text-muted" type="text"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
+              <div class="valid-feedback"></div>
+              <div id="addressNegocio3-1" class="invalid-feedback"></div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="input-group mb-3">
+              <input maxlength="50"  required (keyup)="keypressValidateInput($event.target, 'string', 4, null)" (keypress)="keypressValidateInput($event.target, 'string', 4, null)" [(ngModel)]="addressNegocio4" id="addressNegocio4" name="addressNegocio4" placeholder="Urbanización / Sector" class="pt-3 w-100 input-group-text text-start bg-transparent text-muted" type="text"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
+              <div class="valid-feedback"></div>
+              <div id="addressNegocio4-1" class="invalid-feedback"></div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="input-group mb-3">
+              <select  (change)="estadoSelectedFunction($event.target.value)" [(ngModel)]="estadoSelected" name="estado" id="estado" class="pt-3 w-100 input-group-text text-start bg-transparent text-muted" aria-label="Default select example" required>
+                <option selected value="Estado...">Estado...</option>
+                <option *ngFor="let item of venezuelaData()" [value]="item.estado">{{item.estado}}</option>
+              </select>
+              <div class="valid-feedback"></div>
+              <div id="estado2" class="invalid-feedback"></div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="input-group mb-3">
+              <select (change)="ciudadSelectedFunction($event.target.value)" [(ngModel)]="ciudadSelected" id="ciudadSelected" name="ciudadSelected" class="pt-3 w-100 input-group-text text-start bg-transparent text-muted" aria-label="Default select example" required>
+                <option selected value="Ciudad...">Ciudad...</option>
+                <option *ngFor="let item of ciudad" [value]="item">{{item}}</option>
+              </select>
+              <div class="valid-feedback"></div>
+              <div id="ciudadSelected2" class="invalid-feedback"></div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div  class="input-group mb-3">
+              <select (change)="municipioSelectedFunction($event.target.value)" [(ngModel)]="municipioSelected" name="municipioSelected" id="municipioSelected" class="pt-3 w-100 input-group-text text-start bg-transparent text-muted" aria-label="Default select example">
+                <option selected value="Municipio...">Municipio...</option>
+                <option *ngFor="let item of municipio" [value]="item.municipio">{{item.municipio}}</option>
+              </select>
+              <div class="valid-feedback"></div>
+              <div id="municipioSelected2" class="invalid-feedback"></div>
+            </div>
+          </div>
+          <div class="col-4 col-md-3 col-lg-3">
+            <div class="input-group mb-3">
+              <select name="typeTelefonoNegocio2" [(ngModel)]="typeTelefonoNegocio2" class="pt-3 w-100 input-group-text text-start bg-transparent text-muted" id="inputGroup-sizing-default">
+                <option value="414" selected>414</option>
+                <option value="424">424</option>
+                <option value="412">412</option>
+                <option value="416">416</option>
+                <option value="426">426</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-8 col-md-3 col-lg-9">
+            <div class="input-group mb-3">
+              <input maxlength="7" limit-to="7" class="pt-3 w-100 input-group-text text-start bg-transparent text-muted tlf" (keyup)="keypressValidateInput($event.target, 'string', 6, 'phone')" (keypress)="keypressValidateInput($event.target, 'string', 6, null)" [(ngModel)]="telefonoNegocio2" name="telefonoNegocio2" id="telefonoNegocio2" placeholder="Teléfono"  type="text"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
+              <div class="valid-feedback"></div>
+              <div id="telefonoNegocio2-1" class="invalid-feedback"></div>
+            </div>
+          </div>
+          <div class="col-4 col-md-3 col-lg-3">
+            <div class="input-group mb-3">
+              <select name="typeTelefonoNegocio3" [(ngModel)]="typeTelefonoNegocio3" class="pt-3 w-100 input-group-text text-start bg-transparent text-muted" id="inputGroup-sizing-default">
+                <option value="212" selected>212</option>
+                <option value="234">234</option>
+                <option value="235">235</option>
+                <option value="237">237</option>
+                <option value="238">238</option>
+                <option value="239">239</option>
+                <option value="241">241</option>
+                <option value="242">242</option>
+                <option value="243">243</option>
+                <option value="244">244</option>
+                <option value="245">245</option>
+                <option value="246">246</option>
+                <option value="247">247</option>
+                <option value="248">248</option>
+                <option value="249">249</option>
+                <option value="251">251</option>
+                <option value="252">252</option>
+                <option value="253">253</option>
+                <option value="254">254</option>
+                <option value="255">255</option>
+                <option value="256">256</option>
+                <option value="257">257</option>
+                <option value="258">258</option>
+                <option value="261">261</option>
+                <option value="262">262</option>
+                <option value="263">263</option>
+                <option value="264">264</option>
+                <option value="265">265</option>
+                <option value="267">267</option>
+                <option value="269">269</option>
+                <option value="271">271</option>
+                <option value="272">272</option>
+                <option value="273">273</option>
+                <option value="274">274</option>
+                <option value="275">275</option>
+                <option value="276">276</option>
+                <option value="277">277</option>
+                <option value="278">278</option>
+                <option value="281">281</option>
+                <option value="282">282</option>
+                <option value="283">283</option>
+                <option value="284">284</option>
+                <option value="285">285</option>
+                <option value="286">286</option>
+                <option value="287">287</option>
+                <option value="288">288</option>
+                <option value="291">291</option>
+                <option value="292">292</option>
+                <option value="293">293</option>
+                <option value="294">294</option>
+                <option value="295">295</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-8 col-md-3 col-lg-9">
+            <div class="input-group mb-3">
+              <input maxlength="7" (keyup)="keypressValidateInput($event.target, 'string', 6, 'phone')" (keypress)="keypressValidateInput($event.target, 'string', 6, 'phone')" [(ngModel)]="telefonoNegocio3" name="telefonoNegocio3" id="telefonoNegocio3" placeholder="Teléfono Cantv / Local" class="pt-3 w-100 input-group-text text-start bg-transparent text-muted tlf" type="text"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
+              <div class="valid-feedback"></div>
+              <div id="telefonoNegocio3-1" class="invalid-feedback"></div>
+            </div>
+          </div>
+          <div [class]="type=='recaudacion' ? 'col-12': 'col-lg-6'">
+            <div class="input-group mb-3">
+              <input (keyup)="keypressValidateInput($event.target, 'string', 2, null)" (keypress)="keypressValidateInput($event.target, 'string', 2, null)" [(ngModel)]="zonaPostalNegocio" name="zonaPostalNegocio" id="zonaPostalNegocio" placeholder="Zona postal" class="pt-3 w-100 input-group-text text-start bg-transparent text-muted" type="text"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" maxlength="6"/>
+              <div class="valid-feedback"></div>
+              <div id="zonaPostalNegocio2" class="invalid-feedback"></div>
+            </div>
+          </div>
+          <div class="col-lg-6" *ngIf="type!='recaudacion'">
+            <div class="input-group mb-3">
+              <select required (change)="tipoLineaNegocioFunction($event.target)" [(ngModel)]="tipoLineaNegocio" name="tipoLineaNegocio" id="tipoLineaNegocio" class="pt-3 w-100 input-group-text text-start bg-transparent text-muted" aria-label="Default select example">
+                <option selected value="SELECCIONE LINEA DE TELEFONIA CELULAR...">SELECCIONE LINEA DE TELEFONIA CELULAR</option>
+                <option value="DIGITEL">DIGITEL</option>
+                <option value="MOVISTAR">MOVISTAR</option>
+              </select>
+              <div class="valid-feedback"></div>
+              <div id="tipoLineaNegocio2" class="invalid-feedback"></div>
+            </div>
+          </div>
+          </div>
+          <div class="p-5 pt-0 row text-center d-flex flex-row justify-content-end flex-wrap">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 text-center text-md-end text-lg-end">
+              <button type="button" (click)="formNegocioDireccion('regresar')" class="w-100 btn btn-outline-secondary text-center pt-2 pb-2 m-1">
+                REGRESAR
+              </button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 text-center text-md-end text-lg-end">
+              <button type="button" (click)="clean('form3')" class="w-100 btn btn-outline-warning text-center pt-2 pb-2 m-1">
+                LIMPIAR
+              </button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 text-center text-md-end text-lg-start">
+              <button type="submit"  class="btn btn-primary text-center pt-2 pb-2 m-1 w-100" (click)="formNegocioDireccion()">
+                CONTINUAR
+              </button>
+            </div>
+        </div>
+        </div>  
+      </div>
+        
+      </form>
+  </div>
+  
+  <div [class]="class4">
+    <form>
+      <div class="row card-shadow">
+        <div class="col-12 col-md-12 col-lg-6">
+          <img src="assets/images/svg/completed.svg" class="img-fluid obj-fit d-none-img">
+        </div>
+        <div class="col-12 col-md-12 col-lg-6">
+          <div class="row p-5">
+            <p class="title-6 text-start">Preafiliación - Datos del comerciante y/o representante legal</p>
+            <p class="text text-start mb-2 mt-3">Por favor, ingrese la información requerida para procesar su solicitud.</p>
+            <div class="bottom-text"></div>
+            <p class="text text-two-light text-start mb-4">A continuación, verifica que la información sea la correcta e ingrese los requisitos faltantes.</p>
+          <div class="col-lg-12">
+            <p class="text text-muted text-start">RIF DEL Negocio (PDF)</p>
+            <div class="input-group position-relative m-2">
+              <input required (change)="checkFile($event.target)" [(ngModel)]="rifNegocioPdf" name="rifNegocioPdf" id="rifNegocioPdf" type="file"  class="h-100 form-control text-muted" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback" id="rifNegocioPdf2">selecciona un archivo válido, ejemplo: [pdf]</div>
+            </div>
+          </div>
+          <div class="col-12">
+            <p class="text text-muted text-start">CÉDULA DE IDENTIDAD (PDF)</p>
+            <div class="input-group position-relative m-2">
+              <input required (change)="checkFile($event.target)" [(ngModel)]="cedula" name="cedula" id="cedula" type="file"  class="h-100 form-control text-muted" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback" id="cedula2">selecciona un archivo válido, ejemplo: [pdf]</div>
+            </div>
+          </div>
+          <div class="col-12">
+            <p class="text text-muted text-start">REGISTRO MERCANTIL (PDF)</p>
+            <div class="input-group position-relative m-2">
+              <input required (change)="checkFile($event.target)" [(ngModel)]="registroMercantil" name="registroMercantil" id="registroMercantil" type="file"    class="h-100 form-control text-muted" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback" id="registroMercantil2">selecciona un archivo válido, ejemplo: [pdf]</div>
+            </div>
+          </div>
+          
+          <!-- <div class="col-12" *ngIf="type==='pos' || type==='recaudacion'">
+            <p class="text text-muted text-start">CONTRATO DE SERVICIO PAGUETODO (PDF)</p>
+            <div class="input-group position-relative m-2">
+              <input required (change)="checkFile($event.target)" [(ngModel)]="contratoServicio" name="contratoServicio" id="contratoServicio" type="file"   class="h-100 form-control text-muted" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback" id="contratoServicio2">selecciona un archivo válido, ejemplo: [pdf]</div>
+            </div>
+          </div> -->
+          <div class="col-12" *ngIf="type==='pos'">
+            <p class="text text-muted text-start">Referencia Bancaria (PDF)</p>
+            <div class="input-group position-relative m-2">
+              <input required (change)="checkFile($event.target)" [(ngModel)]="refBancaria" name="refBancaria" id="refBancaria" type="file"    class="h-100 form-control text-muted" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback" id="registroMercantil2">selecciona un archivo válido, ejemplo: [pdf]</div>
+            </div>
+          </div>
+          <div class="col-12" *ngIf="type==='pos'">
+            <p class="text text-muted text-start">Referencia Personal  (PDF)</p>
+            <div class="input-group position-relative m-2">
+              <input required (change)="checkFile($event.target)" [(ngModel)]="refPersonal" name="refPersonal" id="refPersonal" type="file"    class="h-100 form-control text-muted" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback" id="registroMercantil2">selecciona un archivo válido, ejemplo: [pdf]</div>
+            </div>
+          </div>
+          <div class="col-12">
+            <p class="text text-muted text-start">COMPARTE CON NOSOTROS EL LOGO DE TU EMPRESA (PDF)</p>
+            <div class="input-group position-relative m-2">
+              <input [(ngModel)]="logoEmpresa" name="logoEmpresa" id="logoEmpresa" type="file" class="h-100 form-control text-muted" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">selecciona un archivo válido, ejemplo: [pdf]</div>
+            </div>
+          </div>
+          <div class="col-12" class="d-flex justify-content-center mt-4">
+          <div class="form-check form-switch">
+            <input [(ngModel)]="contribuyenteEspecial" (change)="!contribuyenteEspecial" name="contribuyenteEspecial" class="form-check-input" type="checkbox" id="flexSwitchCheckDefault"/>
+            <label class="form-check-label text-muted" for="flexSwitchCheckDefault">¿Eres contribuyente especial?</label>
+          </div>
+          </div>
+          <div class="col-12" class="d-flex justify-content-center mt-4">
+            <a class="text-color-blue button"></a>
+          </div>
+          </div>
+          <div class="p-5 pt-0 row text-center d-flex flex-row justify-content-end flex-wrap">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 text-center text-md-end text-lg-end">
+              <button type="button" (click)="finally('regresar')" class="w-100 btn btn-outline-secondary text-center pt-2 pb-2 m-1">
+                REGRESAR
+              </button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 text-center text-md-end text-lg-end">
+              <button type="button" (click)="clean('form4')" class="w-100 btn btn-outline-warning text-center pt-2 pb-2 m-1">
+                LIMPIAR
+              </button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 text-center text-md-end text-lg-start">
+              <button type="submit" (click)="finally()" class="btn btn-primary text-center pt-2 pb-2 m-1 w-100">
+                CONTINUAR
+              </button>
+            </div>
+        </div>
+        </div>
+        </div>
+        
+      </form>
+  </div>
+
+  <div [class]="class5">
+      <div *ngIf="json!=null" class="card border-radius-50 p-5">
+        <div class="row d-flex justify-content-start align-items-start flex-row flex-wrap">
+          <p class="h2 text-start">Verifica la información antes de ser enviada</p>
+          <p class="text text-muted text-start mb-4">A continuación, verifica que la información sea la correcta.</p>
+          <div class="col-lg-6 d-flex flex-column">
+              <h3 class="h3">Cliente:</h3>
+              <p *ngIf="json.client_name!=null" class="text text-muted"><span class="text-bold">Nombre: </span>{{json.client_name}}</p>
+              <p *ngIf="json.client_id_doc!=null" class="text text-muted"><span class="text-bold">Rif: </span>{{json.client_id_doc}}</p>
+              <p *ngIf="json.client_phone!=null" class="text text-muted"><span class="text-bold">Teléfono: </span>{{json.client_phone}}</p>
+              <p *ngIf="json.client_email!=null" class="text text-muted"><span class="text-bold">Correo: </span>{{json.client_email}}</p>
+              <p *ngIf="json.retiroOficina" class="text text-muted"><span class="text-bold">Retiro en oficina: </span>{{json.retiroOficina ? "Av. Luis Roche con 3ra transversal de Altamira, Municipio Chacao, Torre Nuevo Mundo piso 7, Caracas, Venezuela.": "NO"}}</p>
+          </div>
+            <div class="col-lg-6 d-flex flex-column">
+              <h3 class="h3">Negocio:</h3>
+              <p *ngIf="json.company_name!=null" class="text text-muted"><span class="text-bold">Nombre: </span>{{json.company_name}}</p>
+              <p *ngIf="json.company_id_doc!=null" class="text text-muted"><span class="text-bold">Rif: </span>{{json.company_id_doc}}</p>
+              <p *ngIf="json.company_activity!=null" class="text text-muted"><span class="text-bold">Actividad: </span>{{json.company_activity}}</p>
+              <p *ngIf="json.company_email!=null" class="text text-muted"><span class="text-bold">Correo: </span>{{json.company_email}}</p>
+            </div>
+            <div class="col-lg-6 d-flex flex-column">
+              <h3 class="h3">Negocio - Dirección:</h3>
+              <p *ngIf="json.sub_locality1!=null" class="text text-muted"><span class="text-bold">Av/calle/negocio: </span>{{json.sub_locality1}}</p>
+              <p *ngIf="json.sub_locality2!=null" class="text text-muted"><span class="text-bold">Edificio/quinta/C.C: </span>{{json.sub_locality2}}</p>
+              <p *ngIf="json.sub_locality3!=null" class="text text-muted"><span class="text-bold">Piso/casa/local/oficina: </span>{{json.sub_locality3}}</p>
+              <p *ngIf="json.sub_locality4!=null" class="text text-muted"><span class="text-bold">Urbanización/sector: </span>{{json.sub_locality4}}</p>
+              <p *ngIf="json.state!=null" class="text text-muted"><span class="text-bold">Estado: </span>{{json.state}}</p>
+              <p *ngIf="json.city!=null" class="text text-muted"><span class="text-bold">Ciudad: </span>{{json.city}}</p>
+              <p *ngIf="json.locality!=null" class="text text-muted"><span class="text-bold">Municipio: </span>{{json.locality}}</p>
+              <p *ngIf="json.company_phone!=null" class="text text-muted"><span class="text-bold">Teléfono: </span>{{json.company_phone}}</p>
+              <p *ngIf="json.company_phone_2!=null" class="text text-muted"><span class="text-bold">Teléfono Local/CANTV: </span>{{json.company_phone_2}}</p>
+              <p *ngIf="json.company_phone_3!=null" class="text text-muted"><span class="text-bold">Teléfono: </span>{{json.company_phone_3}}</p>
+              <p *ngIf="json.company_postal_zone!=null" class="text text-muted"><span class="text-bold">Zona postal: </span>{{json.company_postal_zone}}</p>
+              <p *ngIf="json.company_type_line!=null" class="text text-muted"><span class="text-bold">Tipo de linea: </span>{{json.company_type_line}}</p>
+              <!-- <p *ngIf="json.codigoVendedor" class="text text-muted"><span class="text-bold">Código vendedor: </span>{{json.codigoVendedor}}</p> -->
+            </div>
+            <div class="col-lg-6 d-flex flex-column">
+              <h3 class="h3">Negocio - Archivos adjuntos:</h3>
+              <p *ngIf="json.rifNegocioPdf!=null" class="text text-muted"><span class="text-bold">RIF: </span>{{json.rifNegocioPdf}}</p>
+              <p *ngIf="json.cedula!=null" class="text text-muted"><span class="text-bold">Cédula: </span>{{json.cedula}}</p>
+              <p *ngIf="json.registroMercantil!=null" class="text text-muted"><span class="text-bold">Registro mercantil: </span>{{json.registroMercantil}}</p>
+              <p *ngIf="json.contratoServicio!=null" class="text text-muted"><span class="text-bold">Contrato: </span>{{json.contratoServicio}}</p>
+              <p *ngIf="json.refBancaria!=null" class="text text-muted"><span class="text-bold">Ref. Bancaria: </span>{{json.refBancaria}}</p>
+              <p *ngIf="json.refPersonal!=null" class="text text-muted"><span class="text-bold">Ref. Personal: </span>{{json.refPersonal}}</p>
+              <p *ngIf="json.logoEmpresa!=null" class="text text-muted"><span class="text-bold">Logo empresa: </span>{{json.logoEmpresa}}</p>
+              <p *ngIf="json.contribuyenteEspecial" class="text text-muted"><span class="text-bold">Contribuyente especial: </span>{{json.contribuyenteEspecial ? "SI" : "NO"}}</p>
+            </div>
+            
+            <div class="col-12" *ngIf="type=='pos' && pos!=null">
+              <h3 *ngIf="pos.id!=null" class="h3">Dispositivo seleccionado:</h3>
+              <p *ngIf="pos.product!=null" class="text text-muted"><label class="text text-bold">Nombre:</label> {{pos.product}}</p>
+              <p *ngIf="pos.price!=null" class="text text-muted"><label class="text text-bold">Precio:</label> ${{pos.price}}</p>
+              <p *ngIf="pos.price!=null" class="text text-muted"><label class="text text-bold">Total:</label> ${{pos.price * pos.count}}</p>
+              <p *ngIf="pos.count!=null" class="text text-muted"><label class="text text-bold">Cantidad:</label> {{pos.count}}</p>
+            </div>
+            <div *ngIf="type=='recaudacion' && json?.service!=null">
+              <h3 *ngIf="json.service.length!=0" class="h3">Servicios seleccionados:</h3>
+              <div *ngIf="json.service.length!=0">
+                <p *ngFor="let item of json.service" class="text text-muted">{{item.name}}</p>
+              </div>
+            </div>
+        </div>
+        <!-- <div class="row mt-3">
+          <div class="col-12 d-flex flex-row justify-content-end text-end">
+            <div class="form-check">
+              <label class="form-check-label" for="conditions">Acepta las <a class="label cursor-pointer">Condiciones del servicio</a> y la <a class="label cursor-pointer">Política de privacidad</a></label>
+              <input [value]="conditions" [(ngModel)]="conditions" (change)="checked($event.target)"  class="form-check-input client" type="checkbox" id="conditions" name="conditions">
+              <div class="invalid-feedback text-start">Acepta las condiciones del servicio y la política</div>
+            </div>
+          </div>
+        </div> -->
+        <div class="row text-center mt-4 col-12 d-flex flex-row justify-content-end flex-wrap">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center text-md-end text-lg-end">
+            <button type="button" (click)="regresarFinally('regresar')" class="w-100 btn btn-outline-secondary text-center pt-2 pb-2 m-1">
+              REGRESAR
+            </button>
+          </div>
+          
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center text-md-start text-lg-start">
+            <button type="submit" (click)="sendData()" class="btn btn-primary text-center pt-2 pb-2 m-1 w-100">
+              ENVIAR
+            </button>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" style="text-align:center;margin-top:180px;" scroll="no" id="pleaseWait" data-backdrop="static" data-bs-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog" role="document">
+    <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+  </div>
+</div>
+<div class="modal fade" id="modalSuccess" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalSuccessLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-none">
+        <button type="button" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" [routerLink]='["/home"]' ></button>
+      </div>
+      <div class="modal-body text-center d-flex justify-content-center flex-column">
+        <div class="row d-flex justify-content-center flex-column text-center">
+          <span class="icon-big"><i class="fas fa-check-circle"></i></span>
+          <p class="title-6">Gracias por afiliarte con paguetodo!</p>
+          <div class="col-12 text-center d-flex align-items-center justify-content-center flex-column">
+            <div *ngIf="responseData!=null" class="col-12 col-md-12 col-lg-12 text-center">
+              <p *ngIf="responseData.sequence!=null" class="title-4">Número de ticket: {{responseData.sequence}}</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <p class="text text-danger">Por favor guarde el número de ticket. Sin el no podrá consultar el estado de su solicitud.</p>
+              <p class="text text-muted mt-2">Su solicitud de preafiliación esta siendo procesada por nuestros ejecutivos, será contactado via correo electrónico.</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="modal-footer border-top-none text-center justify-content-center">
+        <button type="button" type="button" data-bs-dismiss="modal" aria-label="Close" [routerLink]='["/home"]' class="btn btn-primary m-1 p-3">
+          CONTINUAR
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modalFailed" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="modalSuccessLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-none">
+        <button type="button" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center d-flex justify-content-center flex-column">
+        <div class="row d-flex justify-content-center flex-column text-center">
+          <span class="icon-big-red"><i class="fa-solid fa-circle-xmark"></i></span>
+          <p class="title-6">En estos momentos no podemos procesar su solicitud!</p>
+          <div class="col-12 d-flex justify-content-center">
+            <div class="col-12 col-md-6 col-lg-6">
+              <p class="text text-muted">Discúlpenos por los inconvenientes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- <div class="modal fade" id="modalConditions" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalConditionsLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title title-4" id="exampleModalLongTitle">Contrato de afiliación servicio de recaudación</h5>
+        <div class="modal-header border-bottom-none">
+          <button (click)="changeConditions()" type="button" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 d-flex flex-column">
+              <p class="text text-conditions">
+                Entre "SERVICIOS PAGUETODO C.A.", sociedad mercantil domiciliada en la ciudad de Caracas,
+                inscrita en el Registro Mercantil Segundo de la Circunscripción Judicial del Distrito Capital y del
+                Estado Miranda, el 18 de Noviembre de 2013, bajo el N° 64, Tomo 102-A SDO., Registro Único de
+                Informe Fiscal (R.I.F) N° J-40339964-6, Representada por su Presidente ATILANO ANTONIO
+                PRINCIPAL ABARCA, venezolano, mayor de edad, domiciliado en Caracas, titular de la Cedula de
+                Identidad N°. V-11.267.426, suficientemente facultado para este acto por Acta de Asamblea de
+                fecha 18 de Noviembre de 2013, e inscrita ante el mencionado Registro en fecha 18 de Noviembre
+                de 2013, bajo el N° 64, Tomo 102-A SDO, xxxxxxxxxxxxxxxxxxxxxxxxx", sociedad mercantil
+                domiciliada en la ciudad de xxxxxxx, inscrita en el Registro Mercantil xxxxxxxxxxxxx de la
+                Circunscripción Judicial del Distrito Capital y del Estado Miranda, el xx de xxxx de xxxx, bajo el N°
+                xx, Tomo xxxxx, Registro Único de Informe Fiscal (R.I.F) N° xxxxxxxxx, Representada por
+                xxxxxxxxxxxxxxx, venezolano, mayor de edad, domiciliado en xxxxxxx, titular de la Cedula de
+                Identidad N°. V-xx.xxx.xxx, suficientemente facultado para este acto por Acta de Asamblea de
+                fecha xx de xxxx de xxxx, e inscrita ante el mencionado Registro en fecha xxx de xxxxxxxx de
+                xxxx, bajo el N° xx, Tomo xxxx, REGISTRO MERCANTIL xxxxxxxxxxxxx, en lo sucesivo
+                "EL ALIADO", se ha convenido en celebrar el presente contrato de "ACUERDO OPERATIVO
+                PARA EL OFRECIMIENTO DE SERVICIOS DE RECAUDACIÓN", que se regirá por las siguientes
+                clausulas:
+              </p>
+            </div>
+            <div class="col-12 d-flex flex-column">
+              <h2 class="title-4 text-center">CAPITULO I: DEFINICIONES</h2>
+              <p class="text text-conditions">
+                <label class="text-bold">CLAUSULA PRIMERA. DEFINICIONES.</label> Para todos los efectos del presente documento y con el
+                propósito de facilitar su interpretación, las siguientes palabras o frases tendrán el significado que
+                aquí se les acuerda, salvo que se indique expresamente lo contrario. Las palabras o expresiones
+                definidas en singular incluirán el plural y viceversa; y las palabras o expresiones definidas en
+                género masculino incluirán el género femenino y viceversa: 
+              </p>
+              <ul>
+                <li class="text text-conditions">
+                  <label class="text-bold">EL ALIADO:</label> Persona jurídica que posee un establecimiento comercial en el cual se haya
+                  instalado un PUNTO DE RECAUDACIÓN para comercializar productos y/o servicios
+                  ofrecidos por PAGUETODO. Según lo dispuesto en el presente contrato Persona jurídica
+                  cuya razón social define su actividad económica en el sector comercial o de servicios,
+                  que ha acordado con PAGUETODO la posibilidad de servir de canales de distribución de
+                  Servicios de Recaudación hacia personas naturales y jurídicas, a nombre y por cuenta de
+                  PAGUETODO. 
+                </li>
+                <li class="text text-conditions">
+                  <label class="text-bold">CLIENTE O USUARIO:</label> Persona natural o jurídica que cumple con los requisitos legales
+                  y contractuales para efectuar operaciones activas, pasivas y neutras con EL ALIADO, que
+                  ofrecerá el servicio contratado por PAGUETODO. 
+                </li>
+                <li class="text text-conditions">
+                  <label class="text-bold">PUNTO DE RECAUDACIÓN:</label> Punto electrónico manejado por personal de EL ALIADO,
+                  ubicado en la caja del establecimiento de EL ALIADO, con la finalidad que CLIENTES 0
+                  USUARIOS puedan realizar las TRANSACCIONES para las cuales haya sido autorizado
+                  EL ALIADO por PAGUETODO. 
+                </li>
+                <li class="text text-conditions">
+                  <label class="text-bold">ANEXOS:</label> Documentos considerados parte integrante de este contrato y que tienen
+                  plena validez entre las partes una vez que estos hayan sido firmados por estas. Son
+                  ANEXOS los siguientes documentos:
+                  <ul>
+                    <li class="text-conditions">ANEXO A - REMUNERACIÓN.</li>
+                    <li class="text-conditions">En caso que lo establecido en el anexo contravenga lo establecido en el presente
+                      contrato, prevalecerá lo establecido en este último.</li>
+                  </ul>
+                </li>
+                <li class="text text-conditions">
+                  <label class="text-bold">TRANSACCIÓN:</label> Operaciones realizadas por CLIENTES O USUARIOS con la finalidad
+                  de hacer uso de los productos y servicios de PAGUETODO a través de EL ALIADO. 
+                </li>
+                <li class="text text-conditions">
+                  <label class="text-bold">EL OPERADOR:</label> Es la persona natural, empleado de EL ALIADO, que finalmente
+                  efectúa la transacción con el CLIENTE.
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 d-flex flex-column">
+              <h2 class="title-4 text-center">CAPITULO II: OBJETO Y OBLIGACIONES</h2>
+              <p class="text text-conditions">
+                <label class="text-bold">CLAUSULA SEGUNDA. OBJETO DEL CONTRATO. </label> EL ALIADO prestara a los CLIENTES O
+                USUARIOS que así lo soliciten los servicios autorizados en nombre de PAGUETODO de
+                conformidad con lo establecido en este contrato y en EL MANUAL. 
+              </p>
+              <p class="text text-conditions">
+                <label class="text-bold">CLAUSULA TERCERA. OPERACIONES REALIZADAS A TRAVES DE EL ALIADO.</label> La actividad
+                de EL ALIADO se limitará a la prestación de servicios acordados con PAGUETODO.
+                Correspondiendo a PAGUETODO, en forma exclusiva.  
+              </p>
+              <p class="text text-conditions">
+                Dentro del marco legal vigente, PAGUETODO se reserva el derecho de ampliar, modificar, reducir
+                y restringir el número de transacciones, productos o servicios de PAGUETODO que se ofrecerán
+                por parte de EL ALIADO, así como los medios electrónicos disponibles, mediante acuerdo expreso
+                y escrito que suscriban ambas partes y que será parte integrante del presente contrato para todos
+                los efectos legales. 
+              </p>
+              <p class="text text-conditions">
+                Los Servicios que PAGUETODO podrá ofrecer a personas naturales y jurídicas, mediante la figura
+                de EL ALIADO, serán de acuerdo los referidos a:  
+              </p>
+              <ul>
+                <li class="text text-conditions">
+                  Recargas.
+                </li>
+                <li class="text text-conditions">
+                  Telecomunicaciones, entre otros.
+                </li>
+              </ul>
+              <p class="text text-conditions">
+                Adicionalmente, EL ALIADO, podrá ofrecer informaciones a CLIENTES o USUARIOS, sobre las
+                condiciones y características de los demás servicios y productos ofrecidos por PAGUETODO con la que haya
+                suscrito el servicio objeto de la presente norma. 
+              </p>
+              <p class="text text-conditions">
+                <label class="text-bold">CLAUSULA CUARTA. OBLIGACIONES DE LAS PARTES. </label>
+                PAGUETODO es responsable frente a LOS ALIADOS por los servicios prestados, a su vez EL
+                ALIADO será responsable frente a los CLIENTES o USUARIOS, por lo que tanto EL ALIADO como
+                PAGUETODO adoptaran todas las medidas necesarias de información y señalización al respecto.
+                A continuación se identifican los riesgos inherentes al manejo y/o administración de los fondos en efectivo, 
+                que se generan por la prestación del servicio y sus mitigantes: 
+              </p>
+              <ul>
+                <li class="text text-conditions">
+                  Riesgo de Diferencia en Caja. La situación puede presentarse en las siguientes transacciones: 
+                  <ul>
+                    <li class="text text-conditions">
+                      <label class="text text-conditions">Entre EL OPERADOR y EL CLIENTE:</label>
+                      <p class="text text-conditions">
+                        Es la contingencia que puede presentarse en el momento que EL CLIENTE realiza una
+                        transacción, activa o pasiva, y EL OPERADOR no la verifica en presencia del Cliente, pudiendo
+                        darse una diferencia a favor o en contra de EL ALIADO o del Cliente.
+                      </p>
+                    </li>
+                    <li class="text text-conditions">
+                      <label class="text text-conditions">Entre EL ALIADO y EL OPERADOR:</label>
+                      <p class="text text-conditions">Es la contingencia que puede presentarse en el momento en que se efectúa traspaso de efectivo,
+                        activa o pasivamente, entre EL ALIADO y EL OPERADOR, y EL ALIADO no verifica la transacción
+                        en presencia de EL OPERADOR.</p>      
+                    </li>
+                    <li class="text text-conditions">
+                      Ambas situaciones se mitigan cuando el efectivo y la transacción son verificados en presencia de
+                      las partes correspondientes en cada caso, previamente a la realización de la transacción. Lo
+                      anterior se comprueba mediante la firma plasmada, en señal de aceptación de la transacción, en el
+                      Comprobante correspondiente a la operación que emite el sistema suministrado por PAGUETODO,
+                      esto ocurrirá en los casos en los que las transacciones arrojan un comprobante.
+                    </li>
+                  </ul>
+                </li>
+                <li class="text text-conditions">
+                  Riesgo de no conciliación de balances.
+                  <ul>
+                    <li class="text text-conditions">
+                      Es la contingencia que puede presentarse cuando EL ALIADO no realiza la conciliación diaria de la
+                      operación, validando el efectivo neto entregado a PAGUETODO por las transacciones y el
+                      correspondiente registro realizado por PAGUETODO en la cuenta designada por EL ALIADO, tal
+                      como está establecido en EL MANUAL. 
+                    </li>
+                    <li class="text text-conditions">
+                      Con el fin de mitigar este riesgo, PAGUETODO ha dispuesto de un reporte de transacciones
+                      diarias que contiene la información necesaria para realizar rápidamente la conciliación diaria de la
+                      operación por parte de EL ALIADO. 
+                    </li>
+                    <li class="text text-conditions">De existir diferencias en la Conciliación diaria EL ALIADO será responsable frente a PAGUETODO
+                      por las mismas. </li>
+                  </ul>
+                </li>
+                <li class="text text-conditions">
+                  Riesgo de mal resguardo de clave.
+                  <ul>
+                    <li class="text text-conditions">
+                      Es la contingencia que puede presentarse si EL ALIADO, voluntaria o involuntariamente, cede a un
+                      tercero la clave otorgada para identificarse y autorizar las transacciones de EL ALIADO y por ende
+                      pueda ser víctima de pérdidas financieras por el uso no autorizado de los sistemas. 
+                    </li>
+                    <li class="text text-conditions">
+                      Este riesgo puede mitigarse cumpliendo los mecanismos dispuestos para autorizar la realización
+                      de transacciones seguras, mediante la asignación de un usuario a EL ALIADO por parte de
+                      PAGUETODO y la definición de una clave secreta por parte de EL ALIADO al momento de ingresar
+                      al sistema, la cual es intransferible. EL ALIADO será el único responsable frente a PAGUETODO
+                      por la clave asignada. 
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Riesgo de robo
+                  <ul>
+                    <li class="text text-conditions">Es la contingencia que puede presentarse durante las operaciones de caja con el público o sin él,
+                      por medio de violencia o amenazas de graves daños inminentes contra personas o cosas,
+                      constriña a EL OPERADOR o a EL ALIADO con el fin de apropiarse el dinero disponible en caja
+                      para la realización de operaciones. EL ALIADO será responsable frente a PAGUETODO por la
+                      totalidad de la pérdida sufrida.</li>
+                    <li class="text text-conditions">Asimismo, PAGUETODO mediante el establecimiento de límites al monto de las transacciones
+                      diarias tiene como propósito de reducir la exposición global de EL ALIADO a este riesgo. </li>
+                  </ul>
+                </li>
+                <li>
+                </li>
+              </ul>
+              <p class="text text-conditions text-bold">
+                OBLIGACIONES DE EL ALIADO:
+              </p>
+              <ul>
+                <li class="text text-conditions">Establecer los límites para la prestación de los Servicios, en lo relativo a los montos máximos
+                  efectivo que pueden ser manejados.
+                </li>
+                <li class="text text-conditions">
+                  Prestar el apoyo logístico, operacional y de adiestramiento técnico, a EL ALIADO, a fin de que el
+                  ofrecimiento al público de Servicios cumpla con condiciones de calidad, idoneidad, confianza y
+                  precisión.
+                </li>
+                <li class="text text-conditions">
+                  Brindar el adiestramiento al personal que laborará en EL ALIADO, para desempeñar y ejecutar
+                  las funciones y actividades inherentes a la prestación de los Servicios, así como mantendrá
+                  actualizado dicho adiestramiento en base a los cambios o modificaciones que PAGUETODO lleve
+                  a cabo en sus Manuales operacionales y que se relacione con los servicios contratados, o ello sea
+                  requerido por EL ALIADO.
+                </li>
+                <li class="text text-conditions">
+                  Implementar consistentes y amplios mecanismos de control interno, idóneos para la
+                  funcionalidad de EL ALIADO, que provean de niveles razonables de seguridad, precisión y
+                  previsión de riesgos, en la administración, registros y realización de las transacciones y
+                  operaciones que se generen en tales instancias. 
+                </li>
+                <li class="text text-conditions">
+                  Contar con medios de divulgación apropiados para informar a los CLIENTES o USUARIOS
+                  acerca de la ubicación y los servicios que se presten a través de EL ALIADO. 
+                </li>
+                <li class="text text-conditions">
+                  Suministrar a EL ALIADO toda la información, instrucciones y demás documentos para el cabal
+                  cumplimiento del contrato y los que se requieran para ser puestos a disposición de los CLIENTES
+                  O USUARIOS, incluyendo EL MANUAL. 
+                </li>
+                <li class="text text-conditions">
+                  Informar directamente a LOS ALIADOS sobre los reclamos que se presenten por los CLIENTES
+                  o USUARIOS sobre sus solicitudes y EL ALIADO transfiera dicha información a PAGUETODO.
+                </li>
+                <li class="text text-conditions">
+                  Tramitar todos los reclamos de LOS ALIADOS, provenientes del servicio. 
+                </li>
+                <li class="text text-conditions">
+                  Pagarle a EL ALIADO la remuneración acordada, en la periodicidad establecida
+                </li>
+                <li class="text text-conditions">
+                  Brindarle información suficiente y oportuna a los CLIENTES o USUARIOS de la localidad, para
+                  que conozcan de la prestación de productos y servicios de PAGUETODO a través de EL ALIADO.  
+                </li>
+                <li class="text text-conditions">
+                  Realizar las notificaciones a EL ALIADO cuando haya cambios en los servicios, en los manuales
+                  o en los sistemas tecnológicos. 
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 d-flex flex-column">
+              <h2 class="title-4 text-center">CLÁUSULA QUINTA. PROHIBICIONES.</h2>
+              <p class="text text-conditions">
+                Sin perjuicio de otras prohibiciones contenidas en el presente contrato y en la ley, a EL ALIADO le
+                está prohibido: 
+              </p>
+              <ul>
+                <li class="text text-conditions">Efectuar operaciones para PAGUETODO cuando los dispositivos electrónicos se encuentren
+                  fuera de servicio o no exista conexión en línea con PAGUETODO, situación que deberá ser
+                  informada a los CLIENTES o USUARIOS.</li>
+                <li class="text text-conditions">Se prohíbe cobrar a los clientes o usuarios comisiones o tarifas por cualquiera de los servicios
+                  que éstos realicen con EL ALIADO, salvo las establecidas por PAGUETODO. </li>
+                <li class="text text-conditions">Ofrecer garantías a Clientes o Usuarios en relación a la no transferencia a terceros de sus
+                  productos o servicios adquiridos en PAGUETODO.</li>
+                <li class="text text-conditions">Ceder las obligaciones que le corresponden en cumplimiento del presente contrato o hacerse
+                  sustituir por terceros en ejecución de las mismas.</li>
+                <li class="text text-conditions">Prestar servicios por cuenta propia. EL ALIADO conoce y acepta que la realización de tales
+                  actividades se entenderá ejercicio ilegal de la actividad y acarreará las consecuencias previstas en
+                  la ley.</li>
+                <li class="text text-conditions">Limitar o condicionar la prestación de los servicios a que se refiere el contrato, a la adquisición de
+                  bienes o servicios propios del establecimiento de EL ALIADO.</li>
+              </ul>
+            </div>
+            <div class="col-12 d-flex flex-column">
+              <h2 class="title-4 text-center">CAPITULO III: CLÁUSULAS DE LA ACTIVIDAD DE RECAUDACIÓN.</h2>
+              <p class="text text-conditions">
+                <label class="text-bold">CLÁUSULA SEXTA HORARIOS-CALENDARIO.</label> La ejecución del presente contrato se efectuará
+                en los días hábiles del calendario y en el horario indicado en el anexo A acordado entre
+                PAGUETODO y EL ALIADO. No obstante, LAS PARTES podrán acordar otros horarios o colocar
+                uno distinto en fechas especiales, o cuando las circunstancias así lo ameriten.
+              </p>
+              <p class="text text-conditions">
+                <label class="text-bold">CLÁUSULA SÉPTIMA. PROCEDIMIENTOS.</label> EL ALIADO realizará los procedimientos de
+                transacciones y prestación de servicios según las indicaciones y normas establecidos por
+                PAGUETODO en EL MANUAL.
+              </p>
+              <p class="text text-conditions">PAGUETODO indicará las políticas e instrucciones sobre los productos, procesos, controles y
+                manejo de riesgos por parte de EL ALIADO, así como las condiciones técnicas y de sistemas y en
+                general, las instrucciones especiales a las que deban someterse en cumplimiento del presente
+                contrato
+              </p>
+              <p class="text text-conditions">
+                <label class="text-bold">CLÁUSULA OCTAVA. REMUNERACIÓN.</label> PAGUETODO reconocerá y pagará a EL ALIADO
+                comisiones por concepto de las transacciones realizadas, según lo establecido en el Anexo A. Las
+                remuneraciones establecidas en el Anexo A podrán ser revisadas y reajustadas por PAGUETODO,
+                y serán notificadas oportunamente a EL ALIADO. EL ALIADO entregará a PAGUETODO facturas
+                correspondientes a las comisiones por cobrar por concepto de las operaciones realizadas, de
+                acuerdo a lo señalado en el párrafo anterior. PAGUETODO realizará el pago dentro de los treinta
+                (30) días hábiles siguientes a la recepción de la factura, de acuerdo a lo establecido en el Anexo A.
+                Las remuneraciones acordadas no incluyen ningún tipo de impuestos ni actuales, ni futuros. Las
+                partes asumirán los impuestos vigentes de acuerdo con la obligación que a cada una de ellas le
+                impongan las leyes tributarias vigentes en la República Bolivariana de Venezuela. PAGUETODO
+                asumirá el Impuesto al Valor Agregado (IVA), sobre lo facturado correspondiente a los servicios
+                prestados. PAGUETODO al hacer el pago de los servicios, y si así procede de acuerdo con las
+                leyes tributarias o fiscales vigentes, retendrá el monto del tributo correspondiente y remitirá a EL
+                ALIADO, los comprobantes demostrativos de los montos retenidos. 
+              </p>
+            </div>
+            <div class="col-12 d-flex flex-column">
+              <h2 class="title-4 text-center">CAPITULO IV: CLÁUSULAS GENERALES.</h2>
+              <p class="text text-conditions">
+                <label class="text-conditions">CLÁUSULA NOVENA AUTONOMÍA E INDEPENDENCIA.</label> EL ALIADO actúa por cuenta y en
+                nombre de PAGUETODO, sin obrar en ningún caso con autonomía, en la definición de los términos
+                de las negociaciones. Todas las operaciones celebradas a través de EL ALIADO donde se
+                comentan hecho negligente o imprudente serán responsabilidad de EL ALIADO ante el USUARIO
+                O CLIENTE, sin perjuicio de la responsabilidad que pueda reclamar PAGUETODO a EL ALIADO.
+                PAGUETODO conservará completa autonomía administrativa y directiva, de manera que la
+                celebración del presente contrato no conlleva la delegación de las decisiones que le corresponde
+                tomar.
+              </p>
+              <p class="text text-conditions">
+                EL ALIADO podrá continuar ejerciendo su actividad propia a través del establecimiento, con total
+                autonomía e independencia, garantizando la debida y oportuna atención de los CLIENTES o
+                USUARIOS de PAGUETODO. La celebración del presente contrato no conlleva para EL ALIADO la
+                posibilidad de desarrollar operaciones de recaudación por cuenta propia ni actividades para cuya
+                realización no está legalmente habilitado.
+              </p>
+              <p class="text text-conditions">
+                <label class="text-conditions">CLÁUSULA DÉCIMA. CONOCIMIENTO DEL CLIENTE O USUARIOS.</label> EL ALIADO se obliga a poner en conocimiento de PAGUETODO cualquier situación anormal o
+                sospechosa sobre CLIENTES o USUARIOS que a su juicio, puedan estar adelantando,
+                encubriendo o de alguna forma, estén relacionados con las actividades ilícitas tipificadas en las
+                leyes venezolanas.
+                tomar.
+              </p>
+              <p class="text text-conditions">
+                <label class="text-conditions">CLÁUSULA DÉCIMA PRIMERA. DILIGENCIA:</label> EL ALIADO en las transacciones y operaciones
+                que se lleven a cabo en cumplimiento de este contrato, empleará toda la diligencia, pudiendo
+                negarse a realizar cualquier transacción que infrinja las normas vigentes o las instrucciones
+                impartidas por PAGUETODO.
+              </p>
+              <p class="text text-conditions">
+                <label class="text-conditions">CLÁUSULA DÉCIMA SEGUNDA. RESPONSABILIDAD.</label> EL ALIADO será responsable frente a
+                PAGUETODO por las obligaciones que adquiere en virtud del presente contrato, y por tanto
+                responderá frente a éste por los daños y perjuicios que le ocasione a PAGUETODO y que sean
+                consecuencia de incumplimiento del contrato, o de dolo, negligencia, fallas o errores en la
+                prestación de los servicios imputables a EL ALIADO o a cualquiera de sus dependientes o
+                empleados. 
+              </p>
+              <p class="text text-conditions">
+                <label class="text-conditions">CLÁUSULA DÉCIMA TERCERA. TERMINACIÓN.</label> El presente contrato tendrá una duración de un
+                (1) año, contados a partir de la fecha de la firma del presente documento, pudiendo prorrogarse
+                automáticamente por períodos iguales, a menos que una cualesquiera de las partes manifiesten a
+                la otra con sesenta (60) días continuos de anticipación a la fecha de vencimiento del presente
+                contrato. Sin embargo, las partes convienen en que el presente contrato podrá igualmente, sin
+                causa justificada, terminarse en cualquier momento y por cualesquiera de las partes, mediante
+                aviso escrito a la otra, de su intención de terminarlo unilateralmente, aviso que se dará con una
+                antelación de treinta (30) días continuos cuando la terminación fuese por parte de PAGUETODO y
+                con noventa (90) días continuos cuando fuese por parte de EL ALIADO, plazo éste que se concede
+                con el fin de que PAGUETODO pueda proceder al desmonte de la operación, darle aviso a los
+                CLIENTES O USUARIOS y en general, buscar los medios para continuar con la prestación del
+                servicio en la localidad. La terminación no dará lugar a indemnización a favor de la otra parte. 
+              </p>
+              <p class="text text-conditions">
+                  No obstante lo anterior, PAGUETODO podrá resolver el vínculo establecido en el presente
+                  contrato, con efecto inmediato, sin perjuicio de la indemnización correspondiente a PAGUETODO
+                  por los daños y perjuicios que se le hubieren podido ocasionar, cuando EL ALIADO incurra en
+                  alguno de los siguientes supuestos: 
+              </p>
+              <ul>
+                <li class="text text-conditions">Incumplimiento de una de las obligaciones del presente contrato.</li>
+                <li class="text text-conditions">Inobservancia reiterada del procedimiento establecido por PAGUETODO.</li>
+                <li class="text text-conditions">Sea denunciado reiteradamente por los CLIENTES o USUARIOS por vicios,
+                  eficiente calidad en los servicios o deficiencia en la atención. </li>
+                <li class="text text-conditions">Incurra en cualquier tipo de conducta que, a criterio de PAGUETODO, pueda llegar
+                  a afectar el prestigio de PAGUETODO. </li>
+                <li class="text text-conditions">Si por medio de una auditoria o investigación, surgen indicios o se descubre que
+                  EL ALIADO está o ha participado en actividades fraudulentas o ilícitas, aunque
+                  éstas resultaren producto del accionar infiel de su personal.</li>
+                <li class="text text-conditions">EL ALIADO le devolverá a PAGUETODO la documentación y equipos que éste le
+                  haya suministrado para el cumplimiento del contrato.</li>
+              </ul>
+              <p class="text text-conditions">
+                <label class="text-conditions">CLÁUSULA DÉCIMA CUARTA. MODIFICACIONES AL CONTRATO.</label> EL ALIADO presta expresa
+                conformidad para que se consideren, como parte integrante del presente contrato las normas
+                operativas necesarias para su ejecución e incluidas en EL MANUAL.  
+              </p>
+              <p class="text text-conditions">
+                Igualmente, EL ALIADO reconoce a PAGUETODO la facultad de modificar las condiciones
+                establecidas en el presente contrato, mediante notificación con treinta (30) días continuos o de
+                anticipación a la entrada en vigencia de dichas modificaciones, plazo durante el cual EL ALIADO
+                podrá optar por resolver el vínculo contractual sin que ello genere responsabilidad alguna para las
+                partes, salvo el pago de las comisiones que por servicios corresponda hasta la fecha en que
+                efectivamente se haya prestado el servicio. 
+              </p>
+              <p class="text text-conditions">
+                Asimismo, EL ALIADO reconoce a PAGUETODO la facultad de modificar el contenido de los
+                Anexos, cuyos textos podrán ser re-estructurados de común acuerdo, mediante emisión y
+                suscripción por ambas partes de nuevos anexos debidamente firmados, los cuales sustituirán y
+                dejarán sin efecto los anteriores. 
+              </p>
+              <p class="text text-conditions">
+                EL ALIADO presta expresa conformidad para la utilización de Boletines entregados según lo
+                estipulado en la CLÁUSULA VIGÉSIMA QUINTA y los avisos en prensa de circulación nacional
+                como medio para efectuar las notificaciones relacionadas con el funcionamiento la y/o sus
+                condiciones de seguridad y/o cambio de condiciones contractuales. 
+              </p>
+              <p class="text text-conditions">
+                <label class="text-conditions">CLÁUSULA DECIMA QUINTA. DECLARACIÓN DE LICITUD DE OBJETO DE EL ALIADO Y LA
+                  PROVENIENCIA DE FONDOS.</label> EL ALIADO con la firma del presente contrato declara: que no ha
+                  sido condenado, que no se encuentra siendo investigado, que no se encuentra en trámite o
+                  proceso ante cualquier autoridad, ni que se ha declarado en su contra sentencia o fallo en relación
+                  con los siguientes: Delitos contra el patrimonio, enriquecimiento ilícito, legitimación de capitales,
+                  fraudes, o ilícitos cambiarios. Actividades relacionadas con el tráfico de estupefacientes, lotería y
+                  juegos de envite y azar. Igual declaración efectúa respecto de sus representantes legales.
+                  EL ALIADO se abstendrá mientras estuviere en vigencia el presente contrato, de nombrar como
+                  representante legal de EL ALIADO a personas respecto de las cuales no se cumplan las
+                  declaraciones de la presente cláusula. 
+              </p>
+              <p class="text text-conditions">
+                EL ALIADO declara que, los bienes y/o valores con los cuales se efectuarán las transacciones
+                derivadas del presente contrato, provienen de fuentes lícitas y por lo tanto no tienen ninguna
+                relación directa o indirecta con fondos provenientes de actividades ilícitas en general, y
+                específicamente, no provienen de actividades contempladas en las Leyes penales vigentes de la
+                República Bolivariana de Venezuela o de cualquier otra Ley o disposiciones que las modifiquen o
+                complementen. Asimismo, declara, que no utilizará los servicios que presta PAGUETODO en nombre 
+                propio, ni para efectuar operaciones con fondos provenientes de actividades ilícitas o a
+                favor de personas naturales o jurídicas relacionadas directa o indirectamente con las mismas.
+              </p>
+              <p class="text text-conditions">
+                <label class="text-conditions">CLÁUSULA DECIMA SEXTA. AUDITORÍA.</label> PAGUETODO podrá en cualquier tiempo y sin
+                anuncio previo, realizar visitas a las instalaciones de EL ALIADO para efectuar evaluaciones de los
+                servicios y en especial a la seguridad de los procesos relacionados con los mismos.
+                La auditoría podrá estar acompañada por un funcionario de EL ALIADO, quien le prestará su
+                mayor colaboración para realizar la labor encomendada. En caso de no requerirse la visita,
+                PAGUETODO podrá solicitar por escrito la información relativa a los servicios necesaria para su
+                evaluación. 
+              </p>
+              <p class="text text-conditions">
+                EL ALIADO solicitará al momento del ingreso de los funcionarios delegados por PAGUETODO el
+                carnet o credenciales que los acrediten como funcionarios de PAGUETODO y verificará a través de
+                una llamada telefónica a las oficinas de PAGUETODO que en efecto se trate de funcionarios
+                autorizados. Funcionarios de PAGUETODO podrán verificar en los equipos, los registros y
+                procesos, el cumplimiento de las condiciones de seguridad de los procesos relacionados con los
+                servicios. 
+              </p>
+              <p class="text text-conditions">
+                EL ALIADO atenderá oportunamente las observaciones, requerimientos de control y reclamos
+                justificados que hiciere PAGUETODO. 
+              </p>
+            </div>
+            <div class="col-12 d-flex flex-column">
+              <h2 class="title-4 text-center">CAPITULO V: CONFIDENCIALIDAD/RESOLUCIÓN DE CONFLICTOS</h2>
+              <p class="text text-conditions">
+                <label class="text-bold">CLÁUSULA DECIMA SEPTIMA. CESIONES.</label> EL ALIADO no podrá ceder el presente contrato, ni
+                los créditos, derechos y obligaciones derivados del mismo. PAGUETODO podrá ceder este
+                Contrato a cualquier empresa afiliada o miembro del Grupo, sin requerir consentimiento alguno de
+                EL ALIADO, bastando para ello la simple notificación.
+              </p>
+              <p class="text text-conditions">
+                <label class="text-bold">CLÁUSULA DECIMA OCTAVA. CONFIDENCIALIDAD.</label> Cada una de las partes expresamente se
+                compromete en mantener confidencial toda la información, datos, tecnología, investigación y
+                conocimientos transmitidos a dicha parte por la otra parte conforme a este Convenio, que dicha
+                parte ha designado como información reservada o confidencial o que, por la naturaleza de las
+                circunstancias debiera tratarse de buena fe como información reservada o confidencial. Quien
+                reciba, por cualquier medio, alguna Información Confidencial deberá protegerla con el mismo nivel
+                de cuidado con que protege su propia Información Confidencial y no hará uso de dicha información
+                excepto aquel que esté de acuerdo con las disposiciones de este Convenio. El término Información
+                Confidencial incluye toda la información relacionada con el servicio de recaudación, con la
+                excepción de la información que: 
+              </p>
+              <ul>
+                <li class="text text-conditions">Es del dominio público para el momento de su divulgación, o se hace del dominio
+                  público después de su divulgación sin culpa alguna de la parte que la haya
+                  recibido.</li>
+                <li class="text text-conditions"> La parte que recibe la información puede demostrar que ya la poseía antes de su
+                  divulgación por la parte divulgante o le fue posteriormente divulgada sin obligación
+                  alguna de confidencialidad por una tercera parte con derecho a divulgarla.</li>
+                <li class="text text-conditions">Ha sido desarrollada independientemente por la parte que la recibe sin referencia a
+                  la información Confidencial de la parte divulgante</li>
+                <li class="text text-conditions">Se exige sea divulgada por ministerio de ley, regulaciones u otros procesos
+                  legales, y la parte que la recibe notifica con prontitud, por escrito, sobre dicha
+                  exigencia. La obligación de confidencialidad que acuerdan las partes según el
+                  presente contrato regirá durante toda la vigencia del mismo e inclusive diez (10)
+                  años después de la extinción del mismo. A la terminación o extinción del presente
+                  contrato, EL ALIADO deberá devolver a PAGUETODO toda la información
+                  confidencial y todas las copias y resguardos que hubiese de las mismas</li>
+              </ul>
+              <p class="text text-conditions">Queda expresamente convenido entre las partes y así lo aceptan que está prohibida la divulgación
+                del contenido del presente contrato y sus ANEXOS, sin la previa autorización por escrito de la otra
+                parte.</p>
+              <p class="text text-conditions">EL ALIADO únicamente proporcionará la información confidencial al personal asignado por él para
+                la realización de las actividades relacionadas con el presente contrato, a quienes les darán
+                instrucciones acerca de la confidencialidad que deben guardar.</p>
+              <p class="text text-conditions">Cualquier infracción a esta cláusula acarreará a la parte divulgante responsabilidad por los daños y
+                perjuicios que su hecho ocasionare a la otra parte.</p>
+              <p class="text text-conditions">Asimismo, tanto PAGUETODO como EL ALIADO declaran expresamente que deberán garantizar
+                el resguardo de la información de los clientes que efectúen operaciones en el establecimiento, en
+                los casos que corresponda.</p>
+              <p class="text text-conditions">
+                <label class="text-bold">CLÁUSULA DECIMA NOVENA. AVISOS Y NOTIFICACIONES.</label> Todas las notificaciones o avisos
+                que sea necesario dar con motivo de este contrato, serán dados por escrito con acuse de recibo, a
+                las siguientes direcciones: 
+              </p>
+              <p class="text text-conditions text-bold">
+                A PAGUETODO:
+              </p>
+              <ul>
+                <li class="text text-conditions"><label class="text-bold">Empresa: </label>SERVICIOS PAGUETODO C.A</li>
+                <li class="text text-conditions"><label class="text-bold">Dirección: </label>Av. Luis Roche c/3era transversal de Altamira, Torre Nuevo Mundo, piso 7, Ala
+                  Este, Altamira.</li>
+                <li class="text text-conditions"><label class="text-bold">Teléfono: </label>(212) 2639370/2668812</li>
+                <li class="text text-conditions"><label class="text-bold">Correo: </label>info@paguetodo.com</li>
+              </ul>
+              <p class="text text-conditions text-bold">
+                A EL ALIADO:
+              </p>
+              <ul>
+                <li class="text text-conditions"><label class="text-bold">Empresa: </label>Nombre de la empresa</li>
+                <li class="text text-conditions"><label class="text-bold">Dirección: </label>Dirección de ubicación.</li>
+                <li class="text text-conditions"><label class="text-bold">Atención: </label>Persona de contacto.</li>
+                <li class="text text-conditions"><label class="text-bold">Teléfono: </label>(212) xxx.xxxx/ (416) xxx.xxxx</li>
+                <li class="text text-conditions"><label class="text-bold">Correo: </label>nombre@dominio.com</li>
+              </ul>
+              <p class="text text-conditions">
+                <label class="text-bold">CLÁUSULA VIGÉSIMA LICENCIAS Y PATENTES.</label> Cualquier desarrollo, información, diseño,
+                especificación, software, esquema, proyecto o material ideado y ejecutado por PAGUETODO para
+                el cumplimiento de los servicios objetos del presente acuerdo, será exclusiva propiedad de
+                PAGUETODO, por lo tanto cualquier práctica o utilización por parte de EL ALIADO o terceros
+                causará todo tipo de penalizaciones e indemnizaciones previstas en la ley. 
+              </p>
+              <p class="text text-conditions">
+                <label class="text-bold">CLÁUSULA VIGÉSIMA PRIMERA: RESOLUCIÓN DE CONFLICTOS.</label> Cualquier controversia que
+                se suscite entre las partes será resuelta mediante mutuo acuerdo, de no llegar a un acuerdo dentro
+                de los 10 días hábiles siguientes al surgimiento de la misma, la controversia se someterá a arbitraje
+                ante la Centro de Arbitraje de la Cámara de Caracas.
+              </p> 
+              <p class="text text-conditions">
+                <label class="text-bold">CLÁUSULA VIGÉSIMA SEGUNDA: IMPUESTOS.</label> Las partes asumirán los impuestos vigentes de
+                acuerdo con la obligación que a cada una de ellas le impongan las leyes tributarias vigentes en la
+                República Bolivariana de Venezuela. 
+              </p>
+              <p class="text text-conditions">
+                <label class="text-bold">CLÁUSULA VIGÉSIMA TERCERA.</label> Este contrato anula cualquier otro acuerdo verbal o escrito celebrado
+                anteriormente con idéntico objeto. Leído lo anterior y para todos los efectos del presente contrato, se hacen
+                dos (2) ejemplares de un mismo tenor y a un solo efecto. Caracas, a los XXXXX (XX) días del mes de
+                XXXXXX de 2022. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="form-check">
+          <label class="form-check-label" for="conditions2">Acepta el contrato de afiliación servicio de recaudación</label>
+          <input [value]="conditions2" [(ngModel)]="conditions2" (change)="checked($event.target)"  class="form-check-input client" type="checkbox" id="conditions2" name="conditions2">
+          <div class="invalid-feedback text-start">Acepta contrato de afiliación servicio de recaudación</div>
+        </div>
+        <button (click)="acceptConditions()" type="button" class="btn btn-primary">Continuar</button>
+      </div>
+    </div>
+  </div>
+</div> -->

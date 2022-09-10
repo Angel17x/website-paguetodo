@@ -1,0 +1,39 @@
+{
+  "name": "web",
+  "version": "1.0.119",
+  "description": "web",
+  "main": "index4.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "grunt production_ --force",
+    "produccion": "grunt subir",
+    "test2": "grunt concat",
+    "start": "grunt menu"
+  },
+  "author": "Luis & Martha & Angel",
+  "license": "ISC",
+  "dependencies": {
+    "grunt": "^1.4.1",
+    "grunt-bump": "^0.8.0",
+    "grunt-comment-toggler": "^0.2.2",
+    "grunt-contrib-compress": "^2.0.0",
+    "grunt-contrib-concat": "^2.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^4.0.0",
+    "grunt-contrib-jshint": "^3.1.1",
+    "grunt-contrib-qunit": "^5.1.1",
+    "grunt-contrib-uglify": "^5.0.1",
+    "grunt-downloadfile": "^2.1.1",
+    "grunt-menu": "^1.0.2",
+    "grunt-move": "^1.0.3",
+    "grunt-pack-static": "^0.2.1",
+    "grunt-replace-attribute": "^1.0.1",
+    "grunt-yui-compressor": "^0.4.0",
+    "grunt-zip": "^0.14.0",
+    "matchdep": "^2.0.0",
+    "workbox-cli": "^6.5.2"
+  },
+  "devDependencies": {
+    "grunt-exec": "^3.0.0"
+  }
+}
